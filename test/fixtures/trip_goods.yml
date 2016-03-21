@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  city_id: 
+  guider_id: 
+  date_begining: 2016-03-21
+  date_end: 2016-03-21
+  price: 1
+  rating: 1
+  review: MyString
+  on_shelf: false
+  introduction: MyString
+  title: MyString
+  timestamp: 2016-03-21 12:08:44
+  capacity: 1
+
+two:
+  city_id: 
+  guider_id: 
+  date_begining: 2016-03-21
+  date_end: 2016-03-21
+  price: 1
+  rating: 1
+  review: MyString
+  on_shelf: false
+  introduction: MyString
+  title: MyString
+  timestamp: 2016-03-21 12:08:44
+  capacity: 1

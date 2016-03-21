@@ -1,3 +1,4 @@
 class State < ActiveRecord::Base
-  belongs_to :country
+  belongs_to :countries
+  has_many :cities
 end

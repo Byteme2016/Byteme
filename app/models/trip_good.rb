@@ -1,4 +1,7 @@
 class TripGood < ActiveRecord::Base
-  belongs_to :city
-  belongs_to :guider
+  belongs_to :cities
+  belongs_to :guiders
+  has_many :catagories
+  has_many :ordered_trips
+
 end

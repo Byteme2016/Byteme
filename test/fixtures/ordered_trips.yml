@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ordered_time: 2016-03-22 21:55:52
+  requirement: 
+  trip_good_id_id: 
+  plan_id_id: 
+  traveler_id_id: 
+
+two:
+  ordered_time: 2016-03-22 21:55:52
+  requirement: 
+  trip_good_id_id: 
+  plan_id_id: 
+  traveler_id_id: 

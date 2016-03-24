@@ -5,11 +5,11 @@ class CreateGuiders < ActiveRecord::Migration
       t.string :middle_name
       t.string :last_name
       t.string :password_digest
-      t.string :e-mail
+      t.string :email
       t.string :user_name
       t.string :gender
       t.integer :age
-      t.data :photo
+      t.column(:photo, :binary, limit: 2.megabytes)
       t.string :contact_number
       t.string :alter_number
       t.string :driver_license
@@ -21,7 +21,6 @@ class CreateGuiders < ActiveRecord::Migration
       t.string :stree_address
       t.string :city
       t.string :state
-
       t.timestamps null: false
     end
   end

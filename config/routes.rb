@@ -1,12 +1,11 @@
 Rails.application.routes.draw do
   get 'sessions/index'
-
   get 'travelers/index'
   get 'navigator/index'
   get    'signup'  => 'accounts#new'
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
-  get    'workspace' => 'sessions#show'#this should be changed into the address of worksspace
+  get    'workspace' => 'sessions#show'
   resources :travelers 
 
   # The priority is based upon order of creation: first created -> highest priority.

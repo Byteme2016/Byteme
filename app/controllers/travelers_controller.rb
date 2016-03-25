@@ -14,7 +14,7 @@ class TravelersController < ApplicationController
   def create
     @traveler = Traveler.new(traveler_params)
     if @traveler.save
-     redirect_to @traveler 
+     redirect_to login_path
     else  
       flash.now[:danger] = 'Registration failed, some information is missing!'  
       render 'new'
@@ -22,7 +22,8 @@ class TravelersController < ApplicationController
   end
   
   def show
-    @traveler = Traveler.new
+    @traveler = Traveler.find_by(id: session[:id])
+    flash.now[:notice] = 'Welcome back! Dear '+@traveler.first_name
   end
   def traveler_params
    params.require(:traveler).permit(:first_name,:middle_name,:last_name,:password,:password_confirmation,:email,:username,:gender,:age,:photo,:contact_number,:alter_number,:street_address,:city,:state,:zip_code,:country)

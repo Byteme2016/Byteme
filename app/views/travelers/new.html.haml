@@ -3,7 +3,7 @@
 
 =render 'sessions/signin'
 %fieldset
- %flash
+ %flash,
   =flash[:danger] 
  =form_for @traveler do |f|
   =f.text_field :first_name, {:placeholder => 'Firstname'}
@@ -11,6 +11,8 @@
   =f.text_field :last_name,  {:placeholder => 'Lastname'}
   %div{:style => "margin-bottom:10px"}
   =f.text_field :age, {:placeholder => 'age'}
+  %div{:style => "margin-bottom:10px"}
+  =f.text_field :gender, {:placeholder => 'gender'}
   %div{:style => "margin-bottom:10px"}
   =f.text_field :email, {:placeholder => 'E-mail'}
   =f.text_field :password, {:type=>'password',:placeholder => 'password'}

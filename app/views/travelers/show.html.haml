@@ -1,2 +1,41 @@
-%h1 Login
-=render 'sessions/signin'
+%h1 Travel Uber
+=flash[:notice]
+%fieldset
+ %h1 Profile
+ %div{:id=>'@traveler',:class=>'basic_info'}
+  %strong
+   Photo
+  %br 
+  %img{:src=>"http://i2.hdslb.com/video/31/31fd26b6842ef1fe811c020324d80a1e.jpg",:alt=>"HTML5 Icon",:style=>"width:300px;height:222px;"}
+  %br
+  %strong 
+   Name
+  = @traveler.first_name
+  = @traveler.last_name
+  %br
+  %strong
+   Age 
+  = @traveler.age
+  %br
+  %strong 
+   My Current Street
+  %br 
+  %strong
+   street:
+  = @traveler.street_address
+  %strong
+   city:
+  = @traveler.city
+  %strong
+   state:
+  = @traveler.state
+  %strong
+   country:
+  = @traveler.country
+  %strong
+   zip_code:
+  = @traveler.zip_code
+
+  
+
+  

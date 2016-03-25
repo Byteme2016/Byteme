@@ -1,0 +1,1101 @@
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateGuiders (20160321164749)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateGuiders (20160321164749)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateGuiders (20160321164749)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateGuiders (20160321164749)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateGuiders (20160321164749)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "guiders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "middle_name" varchar, "last_name" varchar, "password_digest" varchar, "email" varchar, "user_name" varchar, "gender" varchar, "age" integer, "photo" blob(2097152), "contact_number" varchar, "alter_number" varchar, "driver_license" varchar, "passport_number" varchar, "SSN" varchar, "rating" integer, "comment" varchar, "introduction" varchar, "stree_address" varchar, "city" varchar, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160321164749"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCountries (20160321170339)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateGuiders (20160321164749)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.9ms)[0m  DROP TABLE "guiders"
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20160321164749"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateGuiders (20160321164749)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "guiders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "middle_name" varchar, "last_name" varchar, "password_digest" varchar, "email" varchar, "user_name" varchar, "gender" varchar, "age" integer, "photo" blob(2097152), "contact_number" varchar, "alter_number" varchar, "driver_license" varchar, "passport_number" varchar, "SSN" varchar, "rating" integer, "comment" varchar, "introduction" varchar, "stree_address" varchar, "city" varchar, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160321164749"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCountries (20160321170339)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "countries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160321170339"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Migrating to CreateStates (20160321170417)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "states" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "country_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_states_on_country_id" ON "states" ("country_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160321170417"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCities (20160321170448)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "cities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "state_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_cities_on_state_id" ON "cities" ("state_id")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160321170448"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateTripGoods (20160321170844)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamp` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /Users/zhangsikai/GitHub/Byteme/db/migrate/20160321170844_create_trip_goods.rb:15)
+  [1m[35m (0.3ms)[0m  CREATE TABLE "trip_goods" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "city_id" integer, "guider_id" integer, "date_begining" date, "date_end" date, "price" integer, "rating" integer, "review" varchar, "on_shelf" boolean, "introduction" varchar, "title" varchar, "capacity" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_trip_goods_on_city_id" ON "trip_goods" ("city_id")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_trip_goods_on_guider_id" ON "trip_goods" ("guider_id")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160321170844"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateLanguages (20160321171003)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "languages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "guider_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_languages_on_guider_id" ON "languages" ("guider_id")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160321171003"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateCatagories (20160321171052)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "catagories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "trip_good_id" integer, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_catagories_on_trip_good_id" ON "catagories" ("trip_good_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160321171052"]]
+  [1m[36m (3.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateTravelers (20160321190508)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "travelers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "middle_name" varchar, "last_name" varchar, "password" varchar, "email" varchar, "username" varchar, "gender" varchar, "age" integer, "photo" blob(2097152), "contact_number" varchar, "alter_number" varchar, "street_address" varchar, "city" varchar, "state" varchar, "zip_code" varchar, "country" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160321190508"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreatePayingMethods (20160323024348)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "paying_methods" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "api_name" varchar(50), "traveler_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_paying_methods_on_traveler_id" ON "paying_methods" ("traveler_id")
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160323024348"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to CreateOrderedTrips (20160323025552)
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePayingMethods (20160323024348)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.7ms)[0m  DROP TABLE "paying_methods"
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20160323024348"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_catagories_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_catagories_on_trip_good_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cities_on_state_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cities_on_state_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_languages_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_languages_on_guider_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_states_on_country_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_states_on_country_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePayingMethods (20160323024348)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "paying_methods" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "api_name" varchar(50), "traveler_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.6ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_paying_methods_on_traveler_id" ON "paying_methods" ("traveler_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160323024348"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Migrating to CreateOrderedTrips (20160323025552)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateOrderedTrips (20160323025552)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "ordered_trips" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ordered_time" datetime, "requirement" varchar(256), "trip_good_id_id" integer, "plan_id_id" integer, "traveler_id_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_ordered_trips_on_trip_good_id_id" ON "ordered_trips" ("trip_good_id_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_ordered_trips_on_plan_id_id" ON "ordered_trips" ("plan_id_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_ordered_trips_on_traveler_id_id" ON "ordered_trips" ("traveler_id_id")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_ordered_trips_on_requirement" ON "ordered_trips" ("requirement")
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160323025552"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Migrating to CreatePlans (20160323025826)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePlans (20160323025826)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "plans" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "plan_name" varchar(50), "budget" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160323025826"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_catagories_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_catagories_on_trip_good_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cities_on_state_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cities_on_state_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_languages_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_languages_on_guider_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_paying_methods_on_traveler_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_paying_methods_on_traveler_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_states_on_country_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_states_on_country_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeColoumnPassword (20160324231457)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeColoumnPassword (20160324231457)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.6ms)[0m  [1mCREATE TEMPORARY TABLE "atravelers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "middle_name" varchar, "last_name" varchar, "password_digest" varchar, "email" varchar, "username" varchar, "gender" varchar, "age" integer, "photo" blob, "contact_number" varchar, "alter_number" varchar, "street_address" varchar, "city" varchar, "state" varchar, "zip_code" varchar, "country" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.4ms)[0m  SELECT * FROM "travelers"
+  [1m[36m (0.6ms)[0m  [1mDROP TABLE "travelers"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "travelers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "middle_name" varchar, "last_name" varchar, "password_digest" varchar, "email" varchar, "username" varchar, "gender" varchar, "age" integer, "photo" blob, "contact_number" varchar, "alter_number" varchar, "street_address" varchar, "city" varchar, "state" varchar, "zip_code" varchar, "country" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mSELECT * FROM "atravelers"[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "atravelers"
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160324231457"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_catagories_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_catagories_on_trip_good_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cities_on_state_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cities_on_state_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_languages_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_languages_on_guider_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_paying_methods_on_traveler_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_paying_methods_on_traveler_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_states_on_country_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_states_on_country_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-24 18:31:04 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %h4 and nested within it.):
+    1: %h1
+    2:  Welcome to App Navigator
+    3: %h4 Use the links below to navigate
+    4:   =link_to "Traveler Signup page", travelers_path
+    5:   %br
+  app/views/navigator/index.haml:4
+
+
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.3ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.3ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (99.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (96.6ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (3.7ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (204.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-24 18:31:45 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %h4 and nested within it.):
+    1: %h1
+    2:  Welcome to App Navigator
+    3: %h4 Use the links below to navigate
+    4:  =link_to "Traveler Signup page", travelers_path
+    5:  %br
+  app/views/navigator/index.haml:4
+
+
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.9ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (104.1ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (78.2ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (177.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-24 18:32:12 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (3.0ms)
+Completed 200 OK in 2371ms (Views: 2361.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/navigator.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-24 18:32:15 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-24 18:32:15 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-24 18:32:15 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-24 18:32:15 -0500
+
+
+Started GET "/assets/travelers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-03-24 18:32:15 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-24 18:32:15 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-24 18:32:15 -0500
+
+
+Started GET "/assets/navigator.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-24 18:32:15 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-24 18:32:15 -0500
+
+
+Started GET "/assets/travelers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-03-24 18:32:15 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-24 18:32:15 -0500
+
+
+Started GET "/travelers" for 127.0.0.1 at 2016-03-24 18:32:17 -0500
+Processing by TravelersController#index as HTML
+Redirected to http://localhost:3000/travelers/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers/new" for 127.0.0.1 at 2016-03-24 18:32:17 -0500
+Processing by TravelersController#new as HTML
+  Rendered sessions/_signin.html.haml (9.4ms)
+  Rendered travelers/new.html.haml within layouts/application (31.3ms)
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+     5: %fieldset
+     6:  %flash
+     7:   =flash[:danger] 
+     8:  =form_for @account do |f|
+     9:   =f.text_field :first_name, {:placeholder => 'Firstname'}
+    10:   =f.text_field :middle_name, {:placeholder => 'Middlename'}
+    11:   =f.text_field :last_name,  {:placeholder => 'Lastname'}
+  app/views/travelers/new.html.haml:8:in `_app_views_travelers_new_html_haml__631643478314092177_70133975850080'
+
+
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (81.1ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (78.6ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (166.2ms)
+
+
+Started GET "/travelers" for 127.0.0.1 at 2016-03-24 18:32:17 -0500
+Processing by TravelersController#index as HTML
+Redirected to http://localhost:3000/travelers/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers/new" for 127.0.0.1 at 2016-03-24 18:32:17 -0500
+Processing by TravelersController#new as HTML
+  Rendered sessions/_signin.html.haml (2.5ms)
+  Rendered travelers/new.html.haml within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+     5: %fieldset
+     6:  %flash
+     7:   =flash[:danger] 
+     8:  =form_for @account do |f|
+     9:   =f.text_field :first_name, {:placeholder => 'Firstname'}
+    10:   =f.text_field :middle_name, {:placeholder => 'Middlename'}
+    11:   =f.text_field :last_name,  {:placeholder => 'Lastname'}
+  app/views/travelers/new.html.haml:8:in `_app_views_travelers_new_html_haml__631643478314092177_70133969593120'
+
+
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (75.8ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (63.0ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (135.4ms)
+
+
+Started GET "/travelers/new" for 127.0.0.1 at 2016-03-24 18:33:03 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TravelersController#new as HTML
+  Rendered sessions/_signin.html.haml (8.4ms)
+  Rendered travelers/new.html.haml within layouts/application (31.3ms)
+Completed 200 OK in 415ms (Views: 385.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/travelers/new" for 127.0.0.1 at 2016-03-24 18:33:04 -0500
+Processing by TravelersController#new as HTML
+  Rendered sessions/_signin.html.haml (1.6ms)
+  Rendered travelers/new.html.haml within layouts/application (10.4ms)
+Completed 200 OK in 41ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/travelers" for 127.0.0.1 at 2016-03-24 18:33:24 -0500
+Processing by TravelersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iRSKT3jxab4k0ryZomLT9WeuR5HI0FWqgN+oVL4zhREa4m7dDOcJmSwL4PSXsw58fsU9G86w1V8XHnVEclM70A==", "traveler"=>{"first_name"=>"", "middle_name"=>"", "last_name"=>"", "age"=>"", "email"=>"zhangsikai@tamu.edu", "password"=>"[FILTERED]", "contact_number"=>"", "alter_number"=>"", "street_address"=>"", "city"=>"", "state"=>"", "country"=>"", "zip_code"=>""}, "commit"=>"Join us now!"}
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant TravelersController::Traveler_params):
+  app/controllers/travelers_controller.rb:15:in `create'
+
+
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.7ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (75.8ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (153.9ms)
+
+
+Started GET "/travelers" for 127.0.0.1 at 2016-03-24 18:34:10 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TravelersController#index as HTML
+Redirected to http://localhost:3000/travelers/new
+Completed 302 Found in 12ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers/new" for 127.0.0.1 at 2016-03-24 18:34:10 -0500
+Processing by TravelersController#new as HTML
+  Rendered sessions/_signin.html.haml (14.6ms)
+  Rendered travelers/new.html.haml within layouts/application (37.7ms)
+Completed 200 OK in 527ms (Views: 482.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/travelers/new" for 127.0.0.1 at 2016-03-24 18:34:31 -0500
+Processing by TravelersController#new as HTML
+  Rendered sessions/_signin.html.haml (1.0ms)
+  Rendered travelers/new.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 38ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/travelers" for 127.0.0.1 at 2016-03-24 18:34:38 -0500
+Processing by TravelersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"10q573JpbGRx+Ekcr5G70nH7g5PzvFGB/hfHUNs+ChJEvF19Bn8MQ3khFXGaQGZbaJD5GfXc0XRp1hpAF1600w==", "traveler"=>{"first_name"=>"", "middle_name"=>"", "last_name"=>"", "age"=>"", "email"=>"zhangsikai@tamu.edu", "password"=>"[FILTERED]", "contact_number"=>"", "alter_number"=>"", "street_address"=>"", "city"=>"", "state"=>"", "country"=>"", "zip_code"=>""}, "commit"=>"Join us now!"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "travelers" ("first_name", "middle_name", "last_name", "password_digest", "email", "contact_number", "alter_number", "street_address", "city", "state", "zip_code", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", ""], ["middle_name", ""], ["last_name", ""], ["password_digest", "$2a$10$t5TMPBUmbS8LDGtrPOkrS.rZzWWilZr4rlxIyPdJtoQ/d/rm06BZq"], ["email", "zhangsikai@tamu.edu"], ["contact_number", ""], ["alter_number", ""], ["street_address", ""], ["city", ""], ["state", ""], ["zip_code", ""], ["country", ""], ["created_at", "2016-03-24 23:34:39.040023"], ["updated_at", "2016-03-24 23:34:39.040023"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/travelers/1
+Completed 302 Found in 132ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/travelers/1" for 127.0.0.1 at 2016-03-24 18:34:39 -0500
+Processing by TravelersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered sessions/_signin.html.haml (1.1ms)
+  Rendered travelers/show.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 58ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-24 18:34:57 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tWOkxom8ocOZbzo17GdWEZngbcvVo4ao5F9+oph5gKsmlUBU/arB5JG2ZljZtouYgIsXQdPDBl1znqOyVBk+ag==", "session"=>{"email"=>"zhangsikai123@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[36mTraveler Load (1.1ms)[0m  [1mSELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1[0m  [["email", "zhangsikai123@tamu.edu"]]
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.1ms)
+
+ActionView::MissingTemplate (Missing template Travelers/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :haml, :jbuilder]}. Searched in:
+  * "/Users/zhangsikai/GitHub/Byteme/app/views"
+):
+  app/controllers/sessions_controller.rb:13:in `create'
+
+
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (80.1ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (77.9ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (162.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-03-24 18:35:43 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/_signin.html.haml (7.5ms)
+  Rendered sessions/new.html.haml within layouts/application (17.6ms)
+Completed 200 OK in 451ms (Views: 415.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-24 18:35:51 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9xeBbFjTGWLF1nE6zdgISjLRXL6AOEJ4kawjEdRXcr1k4WX+LMV5Rc0PLVf4CdXDK7omNIZYwo0Gbf4BGDfMfA==", "session"=>{"email"=>"zhangsikai123@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mTraveler Load (0.3ms)[0m  SELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1  [["email", "zhangsikai123@tamu.edu"]]
+  Rendered sessions/_signin.html.haml (0.9ms)
+  Rendered travelers/show.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 46ms (Views: 33.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-24 18:36:25 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gR2G9Pp8+tpk/g63YtM78mfEJrToY3zvGA9fivwTXKIS62Jmjmqa/WwnUtpXAuZ7fq9cPu4D/BqPzoKaMHPiYw==", "session"=>{"email"=>"zhangsikai@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[36mTraveler Load (0.1ms)[0m  [1mSELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1[0m  [["email", "zhangsikai@tamu.edu"]]
+Completed 500 Internal Server Error in 129ms (ActiveRecord: 0.1ms)
+
+NoMethodError (undefined method `log_in' for #<SessionsController:0x007fd7dcc96d30>
+Did you mean?  login_url):
+  app/controllers/sessions_controller.rb:9:in `create'
+
+
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.3ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (87.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (199.6ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-24 18:37:51 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gR2G9Pp8+tpk/g63YtM78mfEJrToY3zvGA9fivwTXKIS62Jmjmqa/WwnUtpXAuZ7fq9cPu4D/BqPzoKaMHPiYw==", "session"=>{"email"=>"zhangsikai@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mTraveler Load (0.6ms)[0m  SELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1  [["email", "zhangsikai@tamu.edu"]]
+Completed 500 Internal Server Error in 159ms (ActiveRecord: 1.3ms)
+
+NoMethodError (undefined method `traveler_log_in' for #<SessionsController:0x007ff7dc8730f8>
+Did you mean?  traveler_url):
+  app/controllers/sessions_controller.rb:9:in `create'
+
+
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (93.0ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (75.8ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (163.6ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-24 18:40:01 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gR2G9Pp8+tpk/g63YtM78mfEJrToY3zvGA9fivwTXKIS62Jmjmqa/WwnUtpXAuZ7fq9cPu4D/BqPzoKaMHPiYw==", "session"=>{"email"=>"zhangsikai@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mTraveler Load (0.3ms)[0m  SELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1  [["email", "zhangsikai@tamu.edu"]]
+Redirected to http://localhost:3000navigator#index
+Completed 302 Found in 141ms (ActiveRecord: 0.8ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-24 18:40:04 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gR2G9Pp8+tpk/g63YtM78mfEJrToY3zvGA9fivwTXKIS62Jmjmqa/WwnUtpXAuZ7fq9cPu4D/BqPzoKaMHPiYw==", "session"=>{"email"=>"zhangsikai@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[36mTraveler Load (0.2ms)[0m  [1mSELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1[0m  [["email", "zhangsikai@tamu.edu"]]
+Redirected to http://localhost:3000navigator#index
+Completed 302 Found in 95ms (ActiveRecord: 0.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-24 18:40:07 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gR2G9Pp8+tpk/g63YtM78mfEJrToY3zvGA9fivwTXKIS62Jmjmqa/WwnUtpXAuZ7fq9cPu4D/BqPzoKaMHPiYw==", "session"=>{"email"=>"zhangsikai@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mTraveler Load (0.2ms)[0m  SELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1  [["email", "zhangsikai@tamu.edu"]]
+Redirected to http://localhost:3000navigator#index
+Completed 302 Found in 98ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-03-24 18:40:08 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/_signin.html.haml (9.5ms)
+  Rendered sessions/new.html.haml within layouts/application (20.1ms)
+Completed 200 OK in 378ms (Views: 377.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-24 18:40:15 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OZloWjqWSmXYy4ldqmD6QnX52vWb3c95lI9TaNfvm5Gqb4zIToAqQtAS1TCfsSfLbJKgf529T4wDTo54G48lUA==", "session"=>{"email"=>"zhangsikai@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[36mTraveler Load (0.1ms)[0m  [1mSELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1[0m  [["email", "zhangsikai@tamu.edu"]]
+Redirected to http://localhost:3000navigator#index
+Completed 302 Found in 98ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-24 18:40:15 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OZloWjqWSmXYy4ldqmD6QnX52vWb3c95lI9TaNfvm5Gqb4zIToAqQtAS1TCfsSfLbJKgf529T4wDTo54G48lUA==", "session"=>{"email"=>"zhangsikai@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mTraveler Load (0.1ms)[0m  SELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1  [["email", "zhangsikai@tamu.edu"]]
+Redirected to http://localhost:3000navigator#index
+Completed 302 Found in 93ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-24 18:40:19 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OZloWjqWSmXYy4ldqmD6QnX52vWb3c95lI9TaNfvm5Gqb4zIToAqQtAS1TCfsSfLbJKgf529T4wDTo54G48lUA==", "session"=>{"email"=>"zhangsikai@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[36mTraveler Load (0.1ms)[0m  [1mSELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1[0m  [["email", "zhangsikai@tamu.edu"]]
+Redirected to http://localhost:3000navigator#index
+Completed 302 Found in 91ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-24 18:40:19 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OZloWjqWSmXYy4ldqmD6QnX52vWb3c95lI9TaNfvm5Gqb4zIToAqQtAS1TCfsSfLbJKgf529T4wDTo54G48lUA==", "session"=>{"email"=>"zhangsikai@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mTraveler Load (0.1ms)[0m  SELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1  [["email", "zhangsikai@tamu.edu"]]
+Redirected to http://localhost:3000navigator#index
+Completed 302 Found in 96ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-24 18:40:20 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OZloWjqWSmXYy4ldqmD6QnX52vWb3c95lI9TaNfvm5Gqb4zIToAqQtAS1TCfsSfLbJKgf529T4wDTo54G48lUA==", "session"=>{"email"=>"zhangsikai@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[36mTraveler Load (0.1ms)[0m  [1mSELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1[0m  [["email", "zhangsikai@tamu.edu"]]
+Redirected to http://localhost:3000navigator#index
+Completed 302 Found in 105ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-24 18:40:20 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OZloWjqWSmXYy4ldqmD6QnX52vWb3c95lI9TaNfvm5Gqb4zIToAqQtAS1TCfsSfLbJKgf529T4wDTo54G48lUA==", "session"=>{"email"=>"zhangsikai@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mTraveler Load (0.1ms)[0m  SELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1  [["email", "zhangsikai@tamu.edu"]]
+Redirected to http://localhost:3000navigator#index
+Completed 302 Found in 92ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-24 18:40:20 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OZloWjqWSmXYy4ldqmD6QnX52vWb3c95lI9TaNfvm5Gqb4zIToAqQtAS1TCfsSfLbJKgf529T4wDTo54G48lUA==", "session"=>{"email"=>"zhangsikai@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[36mTraveler Load (0.1ms)[0m  [1mSELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1[0m  [["email", "zhangsikai@tamu.edu"]]
+Redirected to http://localhost:3000navigator#index
+Completed 302 Found in 101ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-24 18:40:26 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OZloWjqWSmXYy4ldqmD6QnX52vWb3c95lI9TaNfvm5Gqb4zIToAqQtAS1TCfsSfLbJKgf529T4wDTo54G48lUA==", "session"=>{"email"=>"zhangsikai@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mTraveler Load (0.4ms)[0m  SELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1  [["email", "zhangsikai@tamu.edu"]]
+  Rendered sessions/_signin.html.haml (1.8ms)
+  Rendered travelers/show.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 175ms (Views: 77.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-24 18:41:05 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uYuDcSrIFkvltXDvGczQUVeAOW1o5p/l8K5ADd0ca/EqfWfjXt52bO1sLIIsHQ3YTutD526GHxBnb50dEXzVMA==", "session"=>{"email"=>"zhangsikai@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mTraveler Load (0.4ms)[0m  SELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1  [["email", "zhangsikai@tamu.edu"]]
+Redirected to http://localhost:3000navigator#index
+Completed 302 Found in 150ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-03-24 18:41:08 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/_signin.html.haml (8.7ms)
+  Rendered sessions/new.html.haml within layouts/application (18.1ms)
+Completed 200 OK in 393ms (Views: 392.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-24 18:43:37 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yBTEpUNR2OfQRKQmYoLZPlPWeGeUu3yhndLz0963kxBb4iA3N0e4wNid+EtXUwS3Sr0C7ZLb/FQKEy7DEtct0Q==", "session"=>{"email"=>"zhangsikai@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mTraveler Load (1.0ms)[0m  SELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1  [["email", "zhangsikai@tamu.edu"]]
+Redirected to http://localhost:3000navigator#index
+Completed 302 Found in 170ms (ActiveRecord: 1.8ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-24 18:43:41 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yBTEpUNR2OfQRKQmYoLZPlPWeGeUu3yhndLz0963kxBb4iA3N0e4wNid+EtXUwS3Sr0C7ZLb/FQKEy7DEtct0Q==", "session"=>{"email"=>"zhangsikai@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[36mTraveler Load (0.1ms)[0m  [1mSELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1[0m  [["email", "zhangsikai@tamu.edu"]]
+Redirected to http://localhost:3000navigator#index
+Completed 302 Found in 93ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-24 18:43:42 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yBTEpUNR2OfQRKQmYoLZPlPWeGeUu3yhndLz0963kxBb4iA3N0e4wNid+EtXUwS3Sr0C7ZLb/FQKEy7DEtct0Q==", "session"=>{"email"=>"zhangsikai@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mTraveler Load (0.1ms)[0m  SELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1  [["email", "zhangsikai@tamu.edu"]]
+Redirected to http://localhost:3000navigator#index
+Completed 302 Found in 90ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-24 18:43:42 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yBTEpUNR2OfQRKQmYoLZPlPWeGeUu3yhndLz0963kxBb4iA3N0e4wNid+EtXUwS3Sr0C7ZLb/FQKEy7DEtct0Q==", "session"=>{"email"=>"zhangsikai@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[36mTraveler Load (0.1ms)[0m  [1mSELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1[0m  [["email", "zhangsikai@tamu.edu"]]
+Redirected to http://localhost:3000navigator#index
+Completed 302 Found in 97ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-24 18:43:42 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yBTEpUNR2OfQRKQmYoLZPlPWeGeUu3yhndLz0963kxBb4iA3N0e4wNid+EtXUwS3Sr0C7ZLb/FQKEy7DEtct0Q==", "session"=>{"email"=>"zhangsikai@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mTraveler Load (0.1ms)[0m  SELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1  [["email", "zhangsikai@tamu.edu"]]
+Redirected to http://localhost:3000navigator#index
+Completed 302 Found in 89ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-24 18:43:42 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yBTEpUNR2OfQRKQmYoLZPlPWeGeUu3yhndLz0963kxBb4iA3N0e4wNid+EtXUwS3Sr0C7ZLb/FQKEy7DEtct0Q==", "session"=>{"email"=>"zhangsikai@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[36mTraveler Load (0.2ms)[0m  [1mSELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1[0m  [["email", "zhangsikai@tamu.edu"]]
+Redirected to http://localhost:3000navigator#index
+Completed 302 Found in 90ms (ActiveRecord: 0.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-24 18:43:42 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yBTEpUNR2OfQRKQmYoLZPlPWeGeUu3yhndLz0963kxBb4iA3N0e4wNid+EtXUwS3Sr0C7ZLb/FQKEy7DEtct0Q==", "session"=>{"email"=>"zhangsikai@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mTraveler Load (0.4ms)[0m  SELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1  [["email", "zhangsikai@tamu.edu"]]
+Redirected to http://localhost:3000navigator#index
+Completed 302 Found in 89ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-03-24 18:43:43 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/_signin.html.haml (6.7ms)
+  Rendered sessions/new.html.haml within layouts/application (16.5ms)
+Completed 200 OK in 405ms (Views: 404.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-24 18:46:19 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DgYT88Puxb6jBeTncrXGEunLg9d6IuZJiK3dv/VPUQqd8Pdht/ilmavcuIpHZBub8KD5XXxCZrwfbACvOS/vyw==", "session"=>{"email"=>"zhangsikai@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mTraveler Load (0.4ms)[0m  SELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1  [["email", "zhangsikai@tamu.edu"]]
+Redirected to http://localhost:3000show
+Completed 302 Found in 165ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-03-24 18:46:24 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/_signin.html.haml (8.6ms)
+  Rendered sessions/new.html.haml within layouts/application (19.1ms)
+Completed 200 OK in 379ms (Views: 378.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-24 18:46:30 -0500
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (1.8ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers" for 127.0.0.1 at 2016-03-24 18:46:38 -0500
+Processing by TravelersController#index as HTML
+Redirected to http://localhost:3000/travelers/new
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers" for 127.0.0.1 at 2016-03-24 18:46:38 -0500
+Processing by TravelersController#index as HTML
+Redirected to http://localhost:3000/travelers/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers" for 127.0.0.1 at 2016-03-24 18:46:38 -0500
+Processing by TravelersController#index as HTML
+Redirected to http://localhost:3000/travelers/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers/new" for 127.0.0.1 at 2016-03-24 18:46:38 -0500
+Processing by TravelersController#new as HTML
+  Rendered sessions/_signin.html.haml (6.3ms)
+  Rendered travelers/new.html.haml within layouts/application (29.0ms)
+Completed 200 OK in 77ms (Views: 75.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-03-24 18:47:37 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/_signin.html.haml (7.4ms)
+  Rendered sessions/new.html.haml within layouts/application (18.5ms)
+Completed 200 OK in 439ms (Views: 409.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-24 18:47:47 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VxF/2Y+lwq+OuAlbHfBvIqB9jluXqN706Dn7v4zY7dnE55tL+7OiiIZhVTYoIbKruRb00ZHIXgF/+CavQLhTGA==", "session"=>{"email"=>"zhangsikai@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mTraveler Load (0.3ms)[0m  SELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1  [["email", "zhangsikai@tamu.edu"]]
+Redirected to 
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 0.3ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"sessions"}):
+  app/controllers/sessions_controller.rb:10:in `create'
+
+
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.0ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (72.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (170.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-03-24 18:49:57 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/_signin.html.haml (9.3ms)
+  Rendered sessions/new.html.haml within layouts/application (18.8ms)
+Completed 200 OK in 424ms (Views: 393.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-24 18:50:04 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e34tJ3o+Qi9LhPIQCClh0auWNcH6Elub7S3Yz1EcVEHoiMm1DigiCENdrn09+LxYsv1PS/xy22567AXfnXzqgA==", "session"=>{"email"=>"zhangsikai@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mTraveler Load (1.2ms)[0m  SELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1  [["email", "zhangsikai@tamu.edu"]]
+Redirected to http://localhost:3000/workspace
+Completed 302 Found in 109ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/workspace" for 127.0.0.1 at 2016-03-24 18:50:04 -0500
+Processing by SessionsController#show as HTML
+  Rendered sessions/show.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 43ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-24 18:51:41 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"travelers"} missing required keys: [:id]):
+    2:  Welcome to App Navigator
+    3: %h4 Use the links below to navigate
+    4: =link_to "Traveler Signup page", travelers_path
+    5: =link_to "Log_in", traveler_path
+    6: %br
+  app/views/navigator/index.haml:5:in `_app_views_navigator_index_haml__1371360140623395068_70097589317540'
+
+
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.1ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (90.0ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (87.8ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (181.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-24 18:53:21 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (3.4ms)
+Completed 200 OK in 374ms (Views: 363.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers" for 127.0.0.1 at 2016-03-24 18:53:23 -0500
+Processing by TravelersController#index as HTML
+Redirected to http://localhost:3000/travelers/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers/new" for 127.0.0.1 at 2016-03-24 18:53:23 -0500
+Processing by TravelersController#new as HTML
+  Rendered sessions/_signin.html.haml (15.0ms)
+  Rendered travelers/new.html.haml within layouts/application (39.5ms)
+Completed 200 OK in 123ms (Views: 95.5ms | ActiveRecord: 1.0ms)

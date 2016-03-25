@@ -5,11 +5,11 @@ class CreateTravelers < ActiveRecord::Migration
       t.string :middle_name
       t.string :last_name
       t.string :password
-      t.string :e-mail
+      t.string :email
       t.string :username
       t.string :gender
       t.integer :age
-      t.data :photo
+      t.column(:photo, :binary, limit: 2.megabytes)
       t.string :contact_number
       t.string :alter_number
       t.string :street_address

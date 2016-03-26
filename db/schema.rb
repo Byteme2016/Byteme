@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160324231457) do
+ActiveRecord::Schema.define(version: 20160326175443) do
 
   create_table "catagories", force: :cascade do |t|
     t.integer  "trip_good_id"
@@ -60,6 +60,8 @@ ActiveRecord::Schema.define(version: 20160324231457) do
     t.string   "state"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.string   "country"
+    t.string   "zip_code"
   end
 
   create_table "languages", force: :cascade do |t|
@@ -73,18 +75,18 @@ ActiveRecord::Schema.define(version: 20160324231457) do
 
   create_table "ordered_trips", force: :cascade do |t|
     t.datetime "ordered_time"
-    t.string   "requirement",     limit: 256
-    t.integer  "trip_good_id_id"
-    t.integer  "plan_id_id"
-    t.integer  "traveler_id_id"
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
+    t.string   "requirement",  limit: 256
+    t.integer  "trip_good_id"
+    t.integer  "plan_id"
+    t.integer  "traveler_id"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
-  add_index "ordered_trips", ["plan_id_id"], name: "index_ordered_trips_on_plan_id_id"
+  add_index "ordered_trips", ["plan_id"], name: "index_ordered_trips_on_plan_id"
   add_index "ordered_trips", ["requirement"], name: "index_ordered_trips_on_requirement"
-  add_index "ordered_trips", ["traveler_id_id"], name: "index_ordered_trips_on_traveler_id_id"
-  add_index "ordered_trips", ["trip_good_id_id"], name: "index_ordered_trips_on_trip_good_id_id"
+  add_index "ordered_trips", ["traveler_id"], name: "index_ordered_trips_on_traveler_id"
+  add_index "ordered_trips", ["trip_good_id"], name: "index_ordered_trips_on_trip_good_id"
 
   create_table "paying_methods", force: :cascade do |t|
     t.string   "api_name",    limit: 50

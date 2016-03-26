@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160326175443) do
+ActiveRecord::Schema.define(version: 20160326205149) do
 
   create_table "catagories", force: :cascade do |t|
     t.integer  "trip_good_id"
@@ -137,8 +137,8 @@ ActiveRecord::Schema.define(version: 20160326175443) do
   create_table "trip_goods", force: :cascade do |t|
     t.integer  "city_id"
     t.integer  "guider_id"
-    t.date     "date_begining"
-    t.date     "date_end"
+    t.date     "beginning_date"
+    t.date     "end_date"
     t.integer  "price"
     t.integer  "rating"
     t.string   "review"

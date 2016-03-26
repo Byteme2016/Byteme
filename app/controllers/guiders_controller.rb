@@ -25,6 +25,6 @@ class GuidersController < ApplicationController
     @guider = Guider.new
   end
   def guider_params
-   params.require(:guider).permit(:first_name,:middle_name,:last_name,:password,:password_confirmation,:email,:username,:gender,:age,:photo,:contact_number,:alter_number,:street_address,:city,:state,:zip_code,:country)
+   params.require(:guider).permit(:first_name,:middle_name,:last_name,:password,:password_confirmation,:email,:username,:gender,:age,:photo,:contact_number,:alter_number,:street_address,:city,:state,:zip_code, :passport_number, :driver_license, :SSN, :rating, :introduction, :comment)
   end
 end

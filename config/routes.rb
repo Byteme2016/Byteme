@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'guiders_sessions/new'
+
   get 'guiders/new'
 
   get 'guiders/new'

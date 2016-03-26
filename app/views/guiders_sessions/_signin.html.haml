@@ -1,0 +1,18 @@
+%flash
+ =flash[:danger]
+%fieldset
+ %legend
+ =form_for(:session, url: ) do |f|
+
+  =f.text_field :email, {:placeholder => 'E-mail' }
+
+  =f.text_field :password,{:placeholder => 'Password', :type=>'password'}
+  
+  =f.submit 'I am already a member!'
+  %div{:style => 'margin-bottom:5px'}
+  .checkbox
+  =f.check_box :keep_me_logged_in 
+  keep me logged in 
+
+ 
+  

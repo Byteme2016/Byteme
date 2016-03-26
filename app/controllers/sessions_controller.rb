@@ -2,7 +2,7 @@ class SessionsController < ApplicationController
  def new
    flash.now[:notice] = 'Congratulations!Now go ahead and login!'
    @traveler =Traveler.new
-  end
+ end
   def create
    @traveler = Traveler.find_by(email: params[:session][:email].downcase)
   #@traveler.authenticate('123456')

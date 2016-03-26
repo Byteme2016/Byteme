@@ -6604,3 +6604,10 @@ Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.110.242.99 at 2016-03-26 22:41:52 +0000
 Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 129.110.242.99 at 2016-03-26 22:48:41 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (0.9ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.0ms)

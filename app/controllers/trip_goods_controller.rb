@@ -17,12 +17,12 @@ class TripGoodsController < ApplicationController
 		end
 
 		start_year = params[:trip_good]["date_beginning(1i)"]
-		start_month = params[:trip_good]["date_beginning(2i)"].ljust(2,'0')
-		start_day = params[:trip_good]["date_beginning(3i)"].ljust(2,'0')
+		start_month = params[:trip_good]["date_beginning(2i)"].rjust(2,'0')
+		start_day = params[:trip_good]["date_beginning(3i)"].rjust(2,'0')
 
 		end_year = params[:trip_good]["date_end(1i)"]
-		end_month = params[:trip_good]["date_end(2i)"].ljust(2,'0')
-		end_day = params[:trip_good]["date_end(3i)"].ljust(2,'0')
+		end_month = params[:trip_good]["date_end(2i)"].rjust(2,'0')
+		end_day = params[:trip_good]["date_end(3i)"].rjust(2,'0')
 
 		start_date = start_year,start_month,start_day
 		end_date = end_year,end_month,end_day

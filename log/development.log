@@ -4534,3 +4534,84 @@ Migrating to ChangeColBeiginningDate (20160326175443)
             FROM sqlite_temp_master
             WHERE name='index_trip_goods_on_city_id' AND type='index'
 [0m
+
+
+Started GET "/travelers/new" for ::1 at 2016-03-26 13:05:36 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TravelersController#new as HTML
+  Rendered sessions/_signin.html.haml (9.6ms)
+  Rendered travelers/new.html.haml within layouts/application (33.0ms)
+Completed 200 OK in 796ms (Views: 764.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/guiders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-26 13:05:37 -0500
+
+
+Started GET "/assets/guiders_sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-26 13:05:37 -0500
+
+
+Started GET "/assets/guiders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-26 13:05:37 -0500
+
+
+Started GET "/assets/guiders_sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-26 13:05:37 -0500
+
+
+Started GET "/travelers" for ::1 at 2016-03-26 13:05:42 -0500
+Processing by TravelersController#index as HTML
+Redirected to http://localhost:3000/travelers/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers/new" for ::1 at 2016-03-26 13:05:42 -0500
+Processing by TravelersController#new as HTML
+  Rendered sessions/_signin.html.haml (2.2ms)
+  Rendered travelers/new.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-26 13:05:47 -0500
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (2.2ms)
+Completed 200 OK in 34ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for ::1 at 2016-03-26 13:05:48 -0500
+Processing by GuidersController#index as HTML
+Redirected to http://localhost:3000/guiders/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for ::1 at 2016-03-26 13:05:48 -0500
+Processing by GuidersController#new as HTML
+  Rendered guiders_sessions/_signin.html.haml (3.1ms)
+  Rendered guiders/new.html.haml within layouts/application (13.0ms)
+Completed 200 OK in 73ms (Views: 44.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/guiders" for ::1 at 2016-03-26 13:07:45 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kHQg4wIpfdR8C7BK2ptV1yGpOocNU9LdAeFnPrWR3pgDgsRxdj8d83TS7CfvSoheOMJADQszUiiWILouefFgWQ==", "guider"=>{"first_name"=>"", "middle_name"=>"", "last_name"=>"", "age"=>"", "email"=>"123", "password"=>"[FILTERED]", "contact_number"=>"", "alter_number"=>"", "city"=>"", "stree_address"=>"", "state"=>"", "country"=>"", "zip_code"=>"", "driver_license"=>"", "passport_number"=>"", "SSN"=>"", "introduction"=>"", "rating"=>"", "comment"=>""}, "commit"=>"Join us now!"}
+Unpermitted parameters: stree_address, country
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "guiders" ("first_name", "middle_name", "last_name", "password_digest", "email", "contact_number", "alter_number", "city", "state", "zip_code", "passport_number", "driver_license", "SSN", "introduction", "comment", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", ""], ["middle_name", ""], ["last_name", ""], ["password_digest", "$2a$10$YfAaK7DuSPiAxk6xIQ1z5u61JxkXqfIWVG7.xzIBR8.wKqHEES1vy"], ["email", "123"], ["contact_number", ""], ["alter_number", ""], ["city", ""], ["state", ""], ["zip_code", ""], ["passport_number", ""], ["driver_license", ""], ["SSN", ""], ["introduction", ""], ["comment", ""], ["created_at", "2016-03-26 18:07:46.575615"], ["updated_at", "2016-03-26 18:07:46.575615"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/guiders/7
+Completed 302 Found in 172ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/guiders/7" for ::1 at 2016-03-26 13:07:46 -0500
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"7"}
+  Rendered sessions/_signin.html.haml (7.4ms)
+  Rendered guiders/show.html.haml within layouts/application (17.8ms)
+Completed 200 OK in 513ms (Views: 511.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2016-03-26 13:07:52 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/e89TyvUPhWpNf78MCp7n2cBg0JfZinoH5FRZQOXE+FuGdndX8JeMqHsopEF+6YWfmr5yFkGqR2IUIx1z/etIA==", "session"=>{"email"=>"123", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[36mTraveler Load (0.4ms)[0m  [1mSELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1[0m  [["email", "123"]]
+  Rendered sessions/_signin.html.haml (1.2ms)
+  Rendered travelers/show.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 87ms (Views: 70.5ms | ActiveRecord: 0.7ms)

@@ -6,7 +6,7 @@ class GuidersSessionsController < ApplicationController
    @guider = Guider.find_by(email: params[:session][:email].downcase)
   #@guider.authenticate('123456')
    if @guider && @guider.authenticate(params[:session][:password])
-      guider_log_in  @guider
+      guider_login  @guider
       redirect_to action: 'show'
     else
     flash.now[:danger] = 'Wrong email/password combination!'  

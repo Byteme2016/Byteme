@@ -11671,6 +11671,7 @@ Redirected to http://localhost:3000/guiders/1
 Completed 302 Found in 90ms (ActiveRecord: 0.3ms)
 
 
+<<<<<<< HEAD
 Started GET "/guiders/1" for ::1 at 2016-03-26 18:04:19 -0500
 Processing by GuidersController#show as HTML
   Parameters: {"id"=>"1"}
@@ -11704,3 +11705,215 @@ Did you mean?  stree_address
   Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
   Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
   Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (147.4ms)
+=======
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangedColumnAddress (20160326231230)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (3.0ms)[0m  [1mCREATE TEMPORARY TABLE "aguiders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "middle_name" varchar, "last_name" varchar, "password_digest" varchar, "email" varchar, "user_name" varchar, "gender" varchar, "age" integer, "photo" blob, "contact_number" varchar, "alter_number" varchar, "driver_license" varchar, "passport_number" varchar, "SSN" varchar, "rating" integer, "comment" varchar, "introduction" varchar, "street_address" varchar, "city" varchar, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "country" varchar, "zip_code" varchar) [0m
+  [1m[35m (0.6ms)[0m  SELECT * FROM "guiders"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (1, 'swe', NULL, 's', NULL, NULL, NULL, NULL, 22, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2016-03-26 05:47:12.606025', '2016-03-26 05:47:12.606025', NULL, NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (2, 'Swetha', '', 'R', '$2a$10$GJXaJ.IaqFese9gz9eVlfeCnGOnBoC6HJBLeK2cFSOlEgj/m3LC3a', 'swethasridharan1236@gmail.com', NULL, NULL, 22, NULL, '', '', '', '', '', NULL, '', '', NULL, 'College Station', 'Texas', '2016-03-26 17:27:26.784589', '2016-03-26 17:27:26.784589', NULL, '778401231')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (3, 'Sagar', '', 's', '$2a$10$LFI7JRb2L01cSF5LF09WqOs3YaNa1ZkSF6DhJqaZFVmPWEhqbIt8C', 'swe@tamu.edu', NULL, NULL, NULL, NULL, '', '', '', '', '', NULL, '', '', NULL, '', '', '2016-03-26 17:29:05.391251', '2016-03-26 17:29:05.391251', NULL, '')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (7, '', '', '', '$2a$10$YfAaK7DuSPiAxk6xIQ1z5u61JxkXqfIWVG7.xzIBR8.wKqHEES1vy', '123', NULL, NULL, NULL, NULL, '', '', '', '', '', NULL, '', '', NULL, '', '', '2016-03-26 18:07:46.575615', '2016-03-26 18:07:46.575615', NULL, '')
+  [1m[36m (0.9ms)[0m  [1mDROP TABLE "guiders"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "guiders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "middle_name" varchar, "last_name" varchar, "password_digest" varchar, "email" varchar, "user_name" varchar, "gender" varchar, "age" integer, "photo" blob, "contact_number" varchar, "alter_number" varchar, "driver_license" varchar, "passport_number" varchar, "SSN" varchar, "rating" integer, "comment" varchar, "introduction" varchar, "street_address" varchar, "city" varchar, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "country" varchar, "zip_code" varchar) 
+  [1m[36m (0.3ms)[0m  [1mSELECT * FROM "aguiders"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "guiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (1, 'swe', NULL, 's', NULL, NULL, NULL, NULL, 22, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2016-03-26 05:47:12.606025', '2016-03-26 05:47:12.606025', NULL, NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "guiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (2, 'Swetha', '', 'R', '$2a$10$GJXaJ.IaqFese9gz9eVlfeCnGOnBoC6HJBLeK2cFSOlEgj/m3LC3a', 'swethasridharan1236@gmail.com', NULL, NULL, 22, NULL, '', '', '', '', '', NULL, '', '', NULL, 'College Station', 'Texas', '2016-03-26 17:27:26.784589', '2016-03-26 17:27:26.784589', NULL, '778401231')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "guiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (3, 'Sagar', '', 's', '$2a$10$LFI7JRb2L01cSF5LF09WqOs3YaNa1ZkSF6DhJqaZFVmPWEhqbIt8C', 'swe@tamu.edu', NULL, NULL, NULL, NULL, '', '', '', '', '', NULL, '', '', NULL, '', '', '2016-03-26 17:29:05.391251', '2016-03-26 17:29:05.391251', NULL, '')
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "guiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (7, '', '', '', '$2a$10$YfAaK7DuSPiAxk6xIQ1z5u61JxkXqfIWVG7.xzIBR8.wKqHEES1vy', '123', NULL, NULL, NULL, NULL, '', '', '', '', '', NULL, '', '', NULL, '', '', '2016-03-26 18:07:46.575615', '2016-03-26 18:07:46.575615', NULL, '')[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "aguiders"
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160326231230"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_catagories_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_catagories_on_trip_good_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cities_on_state_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cities_on_state_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_languages_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_languages_on_guider_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_paying_methods_on_traveler_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_paying_methods_on_traveler_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_states_on_country_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_states_on_country_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+
+
+
+Started GET "/guiders/1" for ::1 at 2016-03-26 18:16:05 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered sessions/_signin.html.haml (7.8ms)
+  Rendered guiders/show.html.haml within layouts/application (17.2ms)
+Completed 200 OK in 504ms (Views: 461.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/login" for ::1 at 2016-03-26 18:16:13 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Dtx1R6aZg5Tylrz6OpVPmaEbLFkhXsTbPps1EqXtKGGdKpHV0o/js/pP4JcPRJIQuHBW0yc+RC6pWugCaY2WoA==", "session"=>{"email"=>"123", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mTraveler Load (0.6ms)[0m  SELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1  [["email", "123"]]
+  Rendered sessions/_signin.html.haml (2.8ms)
+  Rendered travelers/show.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 110ms (Views: 88.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-03-26 18:16:23 -0500
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (3.6ms)
+Completed 200 OK in 55ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for ::1 at 2016-03-26 18:16:24 -0500
+Processing by GuidersController#index as HTML
+Redirected to http://localhost:3000/guiders/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for ::1 at 2016-03-26 18:16:24 -0500
+Processing by GuidersController#new as HTML
+  Rendered guiders_sessions/_signin.html.haml (4.1ms)
+  Rendered guiders/new.html.haml within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/zhangsikai/GitHub/Byteme/app/views/guiders_sessions/_signin.html.haml:5: syntax error, unexpected ')'
+haml_temp = form_for(:session, url: ) do |f|
+                                     ^
+/Users/zhangsikai/GitHub/Byteme/app/views/guiders_sessions/_signin.html.haml:16: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/guiders_sessions/_signin.html.haml:5: syntax error, unexpected ')'
+  app/views/guiders_sessions/_signin.html.haml:16: syntax error, unexpected keyword_ensure, expecting end-of-input
+  app/views/guiders/new.html.haml:3:in `_app_views_guiders_new_html_haml___165518708106447593_70145777104760'
+
+
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (78.7ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (164.7ms)
+
+
+Started GET "/guiders" for ::1 at 2016-03-26 18:16:26 -0500
+Processing by GuidersController#index as HTML
+Redirected to http://localhost:3000/guiders/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for ::1 at 2016-03-26 18:16:26 -0500
+Processing by GuidersController#new as HTML
+  Rendered guiders_sessions/_signin.html.haml (2.7ms)
+  Rendered guiders/new.html.haml within layouts/application (11.1ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/zhangsikai/GitHub/Byteme/app/views/guiders_sessions/_signin.html.haml:5: syntax error, unexpected ')'
+haml_temp = form_for(:session, url: ) do |f|
+                                     ^
+/Users/zhangsikai/GitHub/Byteme/app/views/guiders_sessions/_signin.html.haml:16: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/guiders_sessions/_signin.html.haml:5: syntax error, unexpected ')'
+  app/views/guiders_sessions/_signin.html.haml:16: syntax error, unexpected keyword_ensure, expecting end-of-input
+  app/views/guiders/new.html.haml:3:in `_app_views_guiders_new_html_haml___165518708106447593_70145799459320'
+
+
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.6ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.0ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (124.5ms)
+>>>>>>> master

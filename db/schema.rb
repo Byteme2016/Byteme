@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160326075022) do
+ActiveRecord::Schema.define(version: 20160326175443) do
 
   create_table "catagories", force: :cascade do |t|
     t.integer  "trip_good_id"

@@ -12,15 +12,25 @@ class Traveler < ActiveRecord::Base
   :on => [ :create ]
   #validates :email
   validates :email, email: true
-  validates_email_realness_of :email
+  ##validates_email_realness_of :email
   EmailVerifier.config do |config|
-  config.verifier_email = "realname@realdomain.com"
+   config.verifier_email = "realname@realdomain.com"
+  end
   ###################################
   #validates :name validator
-  VALID_USERNAME_REGEX = /^[a-zA-Z]+$/
-  validates :first_name,:middle_name,:last_name length: { maximum: 20 },
-                                    format: { with: VALID_USERNAME_REGEX },
+  INVALID_NAME_REGEX = /[^a-zA-Z	 ]/
+  validates :first_name,:last_name,
+  length: { maximum: 20 },
+  format: { without: INVALID_NAME_REGEX }
   #validates :unique email                                  
-  validates  :                                  uniqueness: { case_sensitive: false }
-  end
+  validates  :email,
+  uniqueness: { case_sensitive: false }
+  #####################################
+  #validates :number validator 
+  INVALID_NUMBER_REGEX = /[^0-9 	]/
+  validates :contact_number,
+  length: { maximum: 20 },
+  format: { without: INVALID_NUMBER_REGEX }
+  
+  
 end

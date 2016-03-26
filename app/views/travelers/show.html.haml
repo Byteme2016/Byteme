@@ -1,7 +1,9 @@
 %h1 Travel Uber
-=flash[:notice]
+%flash
+ =flash[:notice]
+ =flash[:danger]
 %fieldset
- %h1 Profile
+ %h3 Profile
  %div{:id=>'@traveler',:class=>'basic_info'}
   %strong
    Photo
@@ -9,13 +11,17 @@
   %img{:src=>"http://i2.hdslb.com/video/31/31fd26b6842ef1fe811c020324d80a1e.jpg",:alt=>"HTML5 Icon",:style=>"width:300px;height:222px;"}
   %br
   %strong 
-   Name
+   Name:
   = @traveler.first_name
   = @traveler.last_name
   %br
   %strong
-   Age 
+   Age: 
   = @traveler.age
+  %br
+  %strong
+   Gender:
+  = @traveler.gender 
   %br
   %strong 
    My Current Street
@@ -35,7 +41,21 @@
   %strong
    zip_code:
   = @traveler.zip_code
-
-  
+%fieldset  
+ %h3 Update my profile
+ =form_for @traveler do |f|
+  =f.text_field :age, {:placeholder => 'age'}
+  =f.text_field :gender, {:placeholder => 'gender'}
+  %div{:style => "margin-bottom:10px"}
+  %div{:style => "margin-bottom:10px"}
+  =f.text_field :street_address, {:placeholder => 'street_address'}
+  =f.text_field :city, {:placeholder => 'city'}
+  %div{:style => "margin-bottom:10px"}
+  =f.text_field :state, {:placeholder => 'state'}
+  =f.text_field :country, {:placeholder => 'country'}
+  %div{:style => "margin-bottom:10px"}
+  =f.text_field :zip_code, {:placeholder => 'zip_code'}
+  %p
+  =f.submit 'Update my profile'
 
   

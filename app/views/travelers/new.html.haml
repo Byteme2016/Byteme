@@ -1,18 +1,20 @@
 %h1
  Travel Uber
-
 =render 'sessions/signin'
 %fieldset
- %flash,
-  =flash[:danger] 
+ -if @traveler.errors.any?
+  %div{:id=>"error_explanations"}
+   =pluralize(@traveler.errors.count, "error") #count the amount of errors(error)
+   has been found!
+   %ul
+    -@traveler.errors.full_messages.each do |msg|
+     %li
+      =msg
+      
  =form_for @traveler do |f|
   =f.text_field :first_name, {:placeholder => 'Firstname'}
   =f.text_field :middle_name, {:placeholder => 'Middlename'}
   =f.text_field :last_name,  {:placeholder => 'Lastname'}
-  %div{:style => "margin-bottom:10px"}
-  =f.text_field :age, {:placeholder => 'age'}
-  %div{:style => "margin-bottom:10px"}
-  =f.text_field :gender, {:placeholder => 'gender'}
   %div{:style => "margin-bottom:10px"}
   =f.text_field :email, {:placeholder => 'E-mail'}
   =f.text_field :password, {:type=>'password',:placeholder => 'password'}
@@ -20,12 +22,5 @@
   =f.text_field :contact_number, {:placeholder => 'Primary Contact Number'}
   =f.text_field :alter_number, {:placeholder => 'Alternate Contact Number'}
   %div{:style => "margin-bottom:10px"}
-  =f.text_field :street_address, {:placeholder => 'street_address'}
-  =f.text_field :city, {:placeholder => 'city'}
-  %div{:style => "margin-bottom:10px"}
-  =f.text_field :state, {:placeholder => 'state'}
-  =f.text_field :country, {:placeholder => 'country'}
-  %div{:style => "margin-bottom:10px"}
-  =f.text_field :zip_code, {:placeholder => 'zip_code'}
   %p
   =f.submit 'Join us now!'

@@ -9,7 +9,8 @@ Rails.application.routes.draw do
   get    'workspace' => 'sessions#show'#this should be changed into the address of worksspace
   resources :travelers 
   resources :guiders
- 
+  
+  get 'search_goods' => 'trip_goods#show'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

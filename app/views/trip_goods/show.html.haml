@@ -10,10 +10,10 @@
 
     .row
     = label_tag 'Trip Start' 
-    = date_select('trip_good','date_beginning',:use_two_digit_numbers =>true, :include_blank=>true,:required=>true) 
+    = date_select('trip_good','beginning_date',:use_two_digit_numbers =>true, :include_blank=>true,:required=>true) 
 
     = label_tag 'Trip End'
-    = date_select('trip_good','date_end',:use_two_digit_numbers =>true,:include_blank=>true,:required=>true)
+    = date_select('trip_good','end_date',:use_two_digit_numbers =>true,:include_blank=>true,:required=>true)
 
     .row
     = submit_tag 'Launch Search'

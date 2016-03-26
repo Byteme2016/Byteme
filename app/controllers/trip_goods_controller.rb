@@ -16,13 +16,13 @@ class TripGoodsController < ApplicationController
 			return
 		end
 
-		start_year = params[:trip_good]["date_beginning(1i)"]
-		start_month = params[:trip_good]["date_beginning(2i)"].rjust(2,'0')
-		start_day = params[:trip_good]["date_beginning(3i)"].rjust(2,'0')
+		start_year = params[:trip_good]["beginning_date(1i)"]
+		start_month = params[:trip_good]["beginning_date(2i)"].rjust(2,'0')
+		start_day = params[:trip_good]["beginning_date(3i)"].rjust(2,'0')
 
-		end_year = params[:trip_good]["date_end(1i)"]
-		end_month = params[:trip_good]["date_end(2i)"].rjust(2,'0')
-		end_day = params[:trip_good]["date_end(3i)"].rjust(2,'0')
+		end_year = params[:trip_good]["end_date(1i)"]
+		end_month = params[:trip_good]["end_date(2i)"].rjust(2,'0')
+		end_day = params[:trip_good]["end_date(3i)"].rjust(2,'0')
 
 		start_date = start_year,start_month,start_day
 		end_date = end_year,end_month,end_day
@@ -36,7 +36,7 @@ class TripGoodsController < ApplicationController
 			return
 		end
 
-		@trip_goods = TripGood.where("city_id = ? and date_begining <= ? and date_end >= ?",city_id,start_date.join,end_date.join)
+		@trip_goods = TripGood.where("city_id = ? and beginning_date <= ? and end_date >= ?",city_id,start_date.join,end_date.join)
 
 	  end
 	end

@@ -9,5 +9,6 @@ class Traveler < ActiveRecord::Base
   length: { in: 6..20,
              to_short: "your password should be at least %{count} characters",
              to_long: "your password should be at most %{count} characters" },
-   :on => [ :create ]          
+  :on => [ :create ]
+  validates :email, email: true
 end

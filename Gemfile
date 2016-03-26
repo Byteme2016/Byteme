@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'email_validator'
 gem 'bcrypt'
 gem 'rerun'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

@@ -2000,8 +2000,16 @@ Migrating to ChangeOrderedtripColumn (20160325234242)
             FROM sqlite_temp_master
             WHERE name='index_trip_goods_on_city_id' AND type='index'
 
+<<<<<<< HEAD
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+=======
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "guiders" ("first_name", "last_name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["first_name", "swe"], ["last_name", "s"], ["age", 22], ["created_at", "2016-03-26 05:47:12.606025"], ["updated_at", "2016-03-26 05:47:12.606025"]]
+  [1m[36m (12.6ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+>>>>>>> guider
   [1m[36m (0.2ms)[0m  [1m            SELECT sql
             FROM sqlite_master
             WHERE name='index_catagories_on_trip_good_id' AND type='index'
@@ -2010,7 +2018,11 @@ Migrating to ChangeOrderedtripColumn (20160325234242)
             FROM sqlite_temp_master
             WHERE name='index_catagories_on_trip_good_id' AND type='index'
 [0m
+<<<<<<< HEAD
   [1m[35m (0.2ms)[0m              SELECT sql
+=======
+  [1m[35m (0.1ms)[0m              SELECT sql
+>>>>>>> guider
             FROM sqlite_master
             WHERE name='index_cities_on_state_id' AND type='index'
             UNION ALL
@@ -2066,16 +2078,930 @@ Migrating to ChangeOrderedtripColumn (20160325234242)
             FROM sqlite_temp_master
             WHERE name='index_paying_methods_on_traveler_id' AND type='index'
 
+<<<<<<< HEAD
   [1m[36m (0.2ms)[0m  [1m            SELECT sql
+=======
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+>>>>>>> guider
             FROM sqlite_master
             WHERE name='index_states_on_country_id' AND type='index'
             UNION ALL
             SELECT sql
             FROM sqlite_temp_master
             WHERE name='index_states_on_country_id' AND type='index'
+[0m
+<<<<<<< HEAD
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+=======
+  [1m[35m (0.8ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+[0m
+
+
+Started GET "/" for 165.91.12.100 at 2016-03-26 06:18:11 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (4.5ms)
+Completed 200 OK in 710ms (Views: 696.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/guiders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 165.91.12.100 at 2016-03-26 06:18:12 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/navigator.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 165.91.12.100 at 2016-03-26 06:18:12 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/travelers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 165.91.12.100 at 2016-03-26 06:18:12 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 165.91.12.100 at 2016-03-26 06:18:12 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 165.91.12.100 at 2016-03-26 06:18:12 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 165.91.12.100 at 2016-03-26 06:18:12 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 165.91.12.100 at 2016-03-26 06:18:12 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 165.91.12.100 at 2016-03-26 06:18:12 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 165.91.12.100 at 2016-03-26 06:18:12 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/navigator.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 165.91.12.100 at 2016-03-26 06:18:12 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 165.91.12.100 at 2016-03-26 06:18:12 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/travelers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 165.91.12.100 at 2016-03-26 06:18:12 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 165.91.12.100 at 2016-03-26 06:18:12 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 165.91.12.100 at 2016-03-26 06:23:58 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (4.6ms)
+Completed 200 OK in 327ms (Views: 313.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for 165.91.12.100 at 2016-03-26 06:24:03 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.12.100 at 2016-03-26 06:24:03 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered sessions/_signin.html.haml (27.6ms)
+  Rendered guiders/new.html.haml within layouts/application (103.4ms)
+Completed 500 Internal Server Error in 142ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined method `street_address' for #<Guider:0x007f96a12d0750>
+Did you mean?  stree_address
+               stree_address?
+               stree_address=):
+    17:   =f.text_field :contact_number, {:placeholder => 'Primary Contact Number'}
+    18:   =f.text_field :alter_number, {:placeholder => 'Alternate Contact Number'}
+    19:   %div{:style => "margin-bottom:10px"}
+    20:   =f.text_field :street_address, {:placeholder => 'street_address'}
+    21:   =f.text_field :city, {:placeholder => 'city'}
+    22:   %div{:style => "margin-bottom:10px"}
+    23:   =f.text_field :state, {:placeholder => 'state'}
+  app/views/guiders/new.html.haml:20:in `block in _app_views_guiders_new_html_haml___2581553973625554531_18328060'
+  app/views/guiders/new.html.haml:7:in `_app_views_guiders_new_html_haml___2581553973625554531_18328060'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (92.6ms)
+
+
+Started GET "/guiders" for 165.91.12.100 at 2016-03-26 06:24:04 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.12.100 at 2016-03-26 06:24:04 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered sessions/_signin.html.haml (2.4ms)
+  Rendered guiders/new.html.haml within layouts/application (23.0ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `street_address' for #<Guider:0x007f96a2147040>
+Did you mean?  stree_address
+               stree_address?
+               stree_address=):
+    17:   =f.text_field :contact_number, {:placeholder => 'Primary Contact Number'}
+    18:   =f.text_field :alter_number, {:placeholder => 'Alternate Contact Number'}
+    19:   %div{:style => "margin-bottom:10px"}
+    20:   =f.text_field :street_address, {:placeholder => 'street_address'}
+    21:   =f.text_field :city, {:placeholder => 'city'}
+    22:   %div{:style => "margin-bottom:10px"}
+    23:   =f.text_field :state, {:placeholder => 'state'}
+  app/views/guiders/new.html.haml:20:in `block in _app_views_guiders_new_html_haml___2581553973625554531_70142470510860'
+  app/views/guiders/new.html.haml:7:in `_app_views_guiders_new_html_haml___2581553973625554531_70142470510860'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (84.9ms)
+
+
+Started GET "/travelers" for 165.91.12.100 at 2016-03-26 06:26:14 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TravelersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/travelers/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers/new" for 165.91.12.100 at 2016-03-26 06:26:14 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TravelersController#new as HTML
+  Rendered sessions/_signin.html.haml (0.8ms)
+  Rendered travelers/new.html.haml within layouts/application (7.6ms)
+Completed 200 OK in 45ms (Views: 30.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 165.91.12.100 at 2016-03-26 06:26:47 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (5.3ms)
+Completed 200 OK in 346ms (Views: 330.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for 165.91.12.100 at 2016-03-26 06:26:49 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.12.100 at 2016-03-26 06:26:49 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered sessions/_signin.html.haml (29.2ms)
+  Rendered guiders/new.html.haml within layouts/application (102.6ms)
+Completed 500 Internal Server Error in 144ms (ActiveRecord: 1.8ms)
+
+ActionView::Template::Error (undefined method `street_address' for #<Guider:0x007f385d352f90>
+Did you mean?  stree_address
+               stree_address?
+               stree_address=):
+    17:   =f.text_field :contact_number, {:placeholder => 'Primary Contact Number'}
+    18:   =f.text_field :alter_number, {:placeholder => 'Alternate Contact Number'}
+    19:   %div{:style => "margin-bottom:10px"}
+    20:   =f.text_field :street_address, {:placeholder => 'street address'}
+    21:   =f.text_field :city, {:placeholder => 'city'}
+    22:   %div{:style => "margin-bottom:10px"}
+    23:   =f.text_field :state, {:placeholder => 'state'}
+  app/views/guiders/new.html.haml:20:in `block in _app_views_guiders_new_html_haml___4541516109730067500_24876320'
+  app/views/guiders/new.html.haml:7:in `_app_views_guiders_new_html_haml___4541516109730067500_24876320'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (93.2ms)
+
+
+Started GET "/guiders" for 165.91.12.100 at 2016-03-26 06:26:50 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.12.100 at 2016-03-26 06:26:50 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered sessions/_signin.html.haml (2.4ms)
+  Rendered guiders/new.html.haml within layouts/application (32.8ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `street_address' for #<Guider:0x007f385df5ea28>
+Did you mean?  stree_address
+               stree_address?
+               stree_address=):
+    17:   =f.text_field :contact_number, {:placeholder => 'Primary Contact Number'}
+    18:   =f.text_field :alter_number, {:placeholder => 'Alternate Contact Number'}
+    19:   %div{:style => "margin-bottom:10px"}
+    20:   =f.text_field :street_address, {:placeholder => 'street address'}
+    21:   =f.text_field :city, {:placeholder => 'city'}
+    22:   %div{:style => "margin-bottom:10px"}
+    23:   =f.text_field :state, {:placeholder => 'state'}
+  app/views/guiders/new.html.haml:20:in `block in _app_views_guiders_new_html_haml___4541516109730067500_69940035643300'
+  app/views/guiders/new.html.haml:7:in `_app_views_guiders_new_html_haml___4541516109730067500_69940035643300'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (88.8ms)
+
+
+Started GET "/" for 165.91.12.100 at 2016-03-26 06:33:03 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (5.3ms)
+Completed 200 OK in 365ms (Views: 349.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for 165.91.12.100 at 2016-03-26 06:33:06 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.12.100 at 2016-03-26 06:33:07 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered sessions/_signin.html.haml (28.9ms)
+  Rendered guiders/new.html.haml within layouts/application (88.2ms)
+Completed 500 Internal Server Error in 130ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined method `country' for #<Guider:0x007f59a12ccf48>):
+    20:   =f.text_field :city, {:placeholder => 'city'}
+    21:   %div{:style => "margin-bottom:10px"}
+    22:   =f.text_field :state, {:placeholder => 'state'}
+    23:   =f.text_field :country, {:placeholder => 'country'}
+    24:   %div{:style => "margin-bottom:10px"}
+    25:   =f.text_field :zip_code, {:placeholder => 'zip_code'}
+    26:   %p
+  app/views/guiders/new.html.haml:23:in `block in _app_views_guiders_new_html_haml__2260265953947343705_16050140'
+  app/views/guiders/new.html.haml:7:in `_app_views_guiders_new_html_haml__2260265953947343705_16050140'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (90.2ms)
+
+
+Started GET "/guiders" for 165.91.12.100 at 2016-03-26 06:33:07 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.12.100 at 2016-03-26 06:33:07 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered sessions/_signin.html.haml (3.0ms)
+  Rendered guiders/new.html.haml within layouts/application (20.4ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `country' for #<Guider:0x007f59a213be30>):
+    20:   =f.text_field :city, {:placeholder => 'city'}
+    21:   %div{:style => "margin-bottom:10px"}
+    22:   =f.text_field :state, {:placeholder => 'state'}
+    23:   =f.text_field :country, {:placeholder => 'country'}
+    24:   %div{:style => "margin-bottom:10px"}
+    25:   =f.text_field :zip_code, {:placeholder => 'zip_code'}
+    26:   %p
+  app/views/guiders/new.html.haml:23:in `block in _app_views_guiders_new_html_haml__2260265953947343705_70011474006440'
+  app/views/guiders/new.html.haml:7:in `_app_views_guiders_new_html_haml__2260265953947343705_70011474006440'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (82.8ms)
+
+
+Started GET "/" for 165.91.12.100 at 2016-03-26 06:34:11 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (4.8ms)
+Completed 200 OK in 310ms (Views: 295.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for 165.91.12.100 at 2016-03-26 06:34:16 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.12.100 at 2016-03-26 06:34:16 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered sessions/_signin.html.haml (38.9ms)
+  Rendered guiders/new.html.haml within layouts/application (105.5ms)
+Completed 500 Internal Server Error in 142ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (undefined method `zip_code' for #<Guider:0x007f62f13526d0>):
+    21:   %div{:style => "margin-bottom:10px"}
+    22:   =f.text_field :state, {:placeholder => 'state'}
+    23:   %div{:style => "margin-bottom:10px"}
+    24:   =f.text_field :zip_code, {:placeholder => 'zip_code'}
+    25:   %p
+    26:   =f.submit 'Join us now!'
+  app/views/guiders/new.html.haml:24:in `block in _app_views_guiders_new_html_haml__3377460108966836414_26649480'
+  app/views/guiders/new.html.haml:7:in `_app_views_guiders_new_html_haml__3377460108966836414_26649480'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (98.7ms)
+
+
+Started GET "/guiders" for 165.91.12.100 at 2016-03-26 06:34:17 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.12.100 at 2016-03-26 06:34:17 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered sessions/_signin.html.haml (2.7ms)
+  Rendered guiders/new.html.haml within layouts/application (21.1ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `zip_code' for #<Guider:0x007f62f21cc300>):
+    21:   %div{:style => "margin-bottom:10px"}
+    22:   =f.text_field :state, {:placeholder => 'state'}
+    23:   %div{:style => "margin-bottom:10px"}
+    24:   =f.text_field :zip_code, {:placeholder => 'zip_code'}
+    25:   %p
+    26:   =f.submit 'Join us now!'
+  app/views/guiders/new.html.haml:24:in `block in _app_views_guiders_new_html_haml__3377460108966836414_70031471457260'
+  app/views/guiders/new.html.haml:7:in `_app_views_guiders_new_html_haml__3377460108966836414_70031471457260'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (99.8ms)
+
+
+Started GET "/" for 165.91.12.100 at 2016-03-26 06:35:53 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (4.8ms)
+Completed 200 OK in 318ms (Views: 305.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for 165.91.12.100 at 2016-03-26 06:35:57 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.12.100 at 2016-03-26 06:35:58 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered sessions/_signin.html.haml (33.1ms)
+  Rendered guiders/new.html.haml within layouts/application (106.9ms)
+Completed 500 Internal Server Error in 154ms (ActiveRecord: 0.9ms)
+
+ActionView::Template::Error (undefined method `street_address' for #<Guider:0x007fce5537d6a8>
+Did you mean?  stree_address
+               stree_address?
+               stree_address=):
+    18:   =f.text_field :alter_number, {:placeholder => 'Alternate Contact Number'}
+    19:   %div{:style => "margin-bottom:10px"}
+    20:   =f.text_field :city, {:placeholder => 'city'}
+    21:   =f.text_field :street_address, {:placeholder => 'street address'}
+    22:   %div{:style => "margin-bottom:10px"}
+    23:   =f.text_field :state, {:placeholder => 'state'}
+    24:   =f.text_field :country, {:placeholder => 'country'}
+  app/views/guiders/new.html.haml:21:in `block in _app_views_guiders_new_html_haml___1152288952756340889_17961640'
+  app/views/guiders/new.html.haml:7:in `_app_views_guiders_new_html_haml___1152288952756340889_17961640'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (104.2ms)
+
+
+Started GET "/guiders" for 165.91.12.100 at 2016-03-26 06:35:58 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.12.100 at 2016-03-26 06:35:58 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered sessions/_signin.html.haml (2.6ms)
+  Rendered guiders/new.html.haml within layouts/application (27.6ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `street_address' for #<Guider:0x007fce56007d60>
+Did you mean?  stree_address
+               stree_address?
+               stree_address=):
+    18:   =f.text_field :alter_number, {:placeholder => 'Alternate Contact Number'}
+    19:   %div{:style => "margin-bottom:10px"}
+    20:   =f.text_field :city, {:placeholder => 'city'}
+    21:   =f.text_field :street_address, {:placeholder => 'street address'}
+    22:   %div{:style => "margin-bottom:10px"}
+    23:   =f.text_field :state, {:placeholder => 'state'}
+    24:   =f.text_field :country, {:placeholder => 'country'}
+  app/views/guiders/new.html.haml:21:in `block in _app_views_guiders_new_html_haml___1152288952756340889_70262091427840'
+  app/views/guiders/new.html.haml:7:in `_app_views_guiders_new_html_haml___1152288952756340889_70262091427840'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (102.1ms)
+
+
+Started GET "/travelers" for 165.91.12.100 at 2016-03-26 06:36:03 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TravelersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/travelers/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers/new" for 165.91.12.100 at 2016-03-26 06:36:03 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TravelersController#new as HTML
+  Rendered sessions/_signin.html.haml (1.0ms)
+  Rendered travelers/new.html.haml within layouts/application (9.6ms)
+Completed 200 OK in 50ms (Views: 34.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 165.91.12.100 at 2016-03-26 06:40:54 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (7.1ms)
+Completed 200 OK in 367ms (Views: 352.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for 165.91.12.100 at 2016-03-26 06:40:58 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.12.100 at 2016-03-26 06:40:58 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered sessions/_signin.html.haml (30.3ms)
+  Rendered guiders/new.html.haml within layouts/application (113.1ms)
+Completed 500 Internal Server Error in 149ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined method `street_address' for #<Guider:0x007f32d92ded90>
+Did you mean?  stree_address
+               stree_address?
+               stree_address=):
+    18:   =f.text_field :alter_number, {:placeholder => 'Alternate Contact Number'}
+    19:   %div{:style => "margin-bottom:10px"}
+    20:   =f.text_field :city, {:placeholder => 'city'}
+    21:   =f.text_field :street_address, {:placeholder => 'street address'}
+    22:   %div{:style => "margin-bottom:10px"}
+    23:   =f.text_field :state, {:placeholder => 'state'}
+    24:   =f.text_field :country, {:placeholder => 'country'}
+  app/views/guiders/new.html.haml:21:in `block in _app_views_guiders_new_html_haml___123406464104011136_17301820'
+  app/views/guiders/new.html.haml:7:in `_app_views_guiders_new_html_haml___123406464104011136_17301820'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (64.5ms)
+
+
+Started GET "/guiders" for 165.91.12.100 at 2016-03-26 06:40:59 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.12.100 at 2016-03-26 06:40:59 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered sessions/_signin.html.haml (2.4ms)
+  Rendered guiders/new.html.haml within layouts/application (25.2ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `street_address' for #<Guider:0x007f32d9ef3680>
+Did you mean?  stree_address
+               stree_address?
+               stree_address=):
+    18:   =f.text_field :alter_number, {:placeholder => 'Alternate Contact Number'}
+    19:   %div{:style => "margin-bottom:10px"}
+    20:   =f.text_field :city, {:placeholder => 'city'}
+    21:   =f.text_field :street_address, {:placeholder => 'street address'}
+    22:   %div{:style => "margin-bottom:10px"}
+    23:   =f.text_field :state, {:placeholder => 'state'}
+    24:   =f.text_field :country, {:placeholder => 'country'}
+  app/views/guiders/new.html.haml:21:in `block in _app_views_guiders_new_html_haml___123406464104011136_69928190709200'
+  app/views/guiders/new.html.haml:7:in `_app_views_guiders_new_html_haml___123406464104011136_69928190709200'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (90.8ms)
+
+
+Started GET "/guiders" for 165.91.12.100 at 2016-03-26 06:41:20 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.12.100 at 2016-03-26 06:41:20 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered sessions/_signin.html.haml (1.1ms)
+  Rendered guiders/new.html.haml within layouts/application (24.0ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `street_address' for #<Guider:0x0000000410c648>
+Did you mean?  stree_address
+               stree_address?
+               stree_address=):
+    18:   =f.text_field :alter_number, {:placeholder => 'Alternate Contact Number'}
+    19:   %div{:style => "margin-bottom:10px"}
+    20:   =f.text_field :city, {:placeholder => 'city'}
+    21:   =f.text_field :street_address, {:placeholder => 'street address'}
+    22:   %div{:style => "margin-bottom:10px"}
+    23:   =f.text_field :state, {:placeholder => 'state'}
+    24:   =f.text_field :country, {:placeholder => 'country'}
+  app/views/guiders/new.html.haml:21:in `block in _app_views_guiders_new_html_haml___123406464104011136_17301820'
+  app/views/guiders/new.html.haml:7:in `_app_views_guiders_new_html_haml___123406464104011136_17301820'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (89.1ms)
+
+
+Started GET "/guiders" for 165.91.12.100 at 2016-03-26 06:41:21 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.12.100 at 2016-03-26 06:41:21 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered sessions/_signin.html.haml (1.1ms)
+  Rendered guiders/new.html.haml within layouts/application (25.4ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `street_address' for #<Guider:0x007f32d9cdf1c8>
+Did you mean?  stree_address
+               stree_address?
+               stree_address=):
+    18:   =f.text_field :alter_number, {:placeholder => 'Alternate Contact Number'}
+    19:   %div{:style => "margin-bottom:10px"}
+    20:   =f.text_field :city, {:placeholder => 'city'}
+    21:   =f.text_field :street_address, {:placeholder => 'street address'}
+    22:   %div{:style => "margin-bottom:10px"}
+    23:   =f.text_field :state, {:placeholder => 'state'}
+    24:   =f.text_field :country, {:placeholder => 'country'}
+  app/views/guiders/new.html.haml:21:in `block in _app_views_guiders_new_html_haml___123406464104011136_69928190709200'
+  app/views/guiders/new.html.haml:7:in `_app_views_guiders_new_html_haml___123406464104011136_69928190709200'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (97.2ms)
+
+
+Started GET "/guiders" for 165.91.12.100 at 2016-03-26 06:41:30 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.12.100 at 2016-03-26 06:41:30 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered sessions/_signin.html.haml (1.1ms)
+  Rendered guiders/new.html.haml within layouts/application (19.7ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `street_address' for #<Guider:0x007f32d9f22f98>
+Did you mean?  stree_address
+               stree_address?
+               stree_address=):
+    18:   =f.text_field :alter_number, {:placeholder => 'Alternate Contact Number'}
+    19:   %div{:style => "margin-bottom:10px"}
+    20:   =f.text_field :city, {:placeholder => 'city'}
+    21:   =f.text_field :street_address, {:placeholder => 'street address'}
+    22:   %div{:style => "margin-bottom:10px"}
+    23:   =f.text_field :state, {:placeholder => 'state'}
+    24:   =f.text_field :country, {:placeholder => 'country'}
+  app/views/guiders/new.html.haml:21:in `block in _app_views_guiders_new_html_haml___123406464104011136_17301820'
+  app/views/guiders/new.html.haml:7:in `_app_views_guiders_new_html_haml___123406464104011136_17301820'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (82.5ms)
+
+
+Started GET "/guiders" for 165.91.12.100 at 2016-03-26 06:41:30 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.12.100 at 2016-03-26 06:41:30 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered sessions/_signin.html.haml (1.2ms)
+  Rendered guiders/new.html.haml within layouts/application (20.9ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `street_address' for #<Guider:0x007f32da327170>
+Did you mean?  stree_address
+               stree_address?
+               stree_address=):
+    18:   =f.text_field :alter_number, {:placeholder => 'Alternate Contact Number'}
+    19:   %div{:style => "margin-bottom:10px"}
+    20:   =f.text_field :city, {:placeholder => 'city'}
+    21:   =f.text_field :street_address, {:placeholder => 'street address'}
+    22:   %div{:style => "margin-bottom:10px"}
+    23:   =f.text_field :state, {:placeholder => 'state'}
+    24:   =f.text_field :country, {:placeholder => 'country'}
+  app/views/guiders/new.html.haml:21:in `block in _app_views_guiders_new_html_haml___123406464104011136_69928190709200'
+  app/views/guiders/new.html.haml:7:in `_app_views_guiders_new_html_haml___123406464104011136_69928190709200'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (97.9ms)
+
+
+Started GET "/" for 165.91.12.100 at 2016-03-26 06:42:55 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (2.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (4.9ms)
+Completed 200 OK in 363ms (Views: 348.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for 165.91.12.100 at 2016-03-26 06:42:59 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.12.100 at 2016-03-26 06:43:00 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered sessions/_signin.html.haml (38.0ms)
+  Rendered guiders/new.html.haml within layouts/application (108.3ms)
+Completed 500 Internal Server Error in 148ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined method `country' for #<Guider:0x007f034d3b7e58>):
+    21:   =f.text_field :stree_address, {:placeholder => 'street address'}
+    22:   %div{:style => "margin-bottom:10px"}
+    23:   =f.text_field :state, {:placeholder => 'state'}
+    24:   =f.text_field :country, {:placeholder => 'country'}
+    25:   %div{:style => "margin-bottom:10px"}
+    26:   =f.text_field :zip_code, {:placeholder => 'zip_code'}
+    27:   %p
+  app/views/guiders/new.html.haml:24:in `block in _app_views_guiders_new_html_haml__1877334804471961146_15291980'
+  app/views/guiders/new.html.haml:7:in `_app_views_guiders_new_html_haml__1877334804471961146_15291980'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (21.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (91.9ms)
+
+
+Started GET "/guiders" for 165.91.12.100 at 2016-03-26 06:43:00 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.12.100 at 2016-03-26 06:43:00 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered sessions/_signin.html.haml (2.5ms)
+  Rendered guiders/new.html.haml within layouts/application (17.7ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `country' for #<Guider:0x007f034e16ab18>):
+    21:   =f.text_field :stree_address, {:placeholder => 'street address'}
+    22:   %div{:style => "margin-bottom:10px"}
+    23:   =f.text_field :state, {:placeholder => 'state'}
+    24:   =f.text_field :country, {:placeholder => 'country'}
+    25:   %div{:style => "margin-bottom:10px"}
+    26:   =f.text_field :zip_code, {:placeholder => 'zip_code'}
+    27:   %p
+  app/views/guiders/new.html.haml:24:in `block in _app_views_guiders_new_html_haml__1877334804471961146_69826085856160'
+  app/views/guiders/new.html.haml:7:in `_app_views_guiders_new_html_haml__1877334804471961146_69826085856160'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (96.7ms)
+
+
+Started GET "/" for 165.91.12.100 at 2016-03-26 06:51:31 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddCountryToGuiders (20160326064816)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "guiders" ADD "country" varchar[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160326064816"]]
+  [1m[36m (10.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.4ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_catagories_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_catagories_on_trip_good_id' AND type='index'
 [0m
   [1m[35m (0.2ms)[0m              SELECT sql
             FROM sqlite_master
+            WHERE name='index_cities_on_state_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cities_on_state_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_languages_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_languages_on_guider_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_paying_methods_on_traveler_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_paying_methods_on_traveler_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_states_on_country_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_states_on_country_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+>>>>>>> guider
             WHERE name='index_trip_goods_on_guider_id' AND type='index'
             UNION ALL
             SELECT sql
@@ -2092,9 +3018,434 @@ Migrating to ChangeOrderedtripColumn (20160325234242)
 [0m
 
 
+<<<<<<< HEAD
 Started GET "/" for 50.24.142.158 at 2016-03-26 08:02:01 +0000
 Cannot render console from 50.24.142.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by NavigatorController#index as HTML
   Rendered navigator/index.haml within layouts/application (10.5ms)
 Completed 200 OK in 726ms (Views: 710.1ms | ActiveRecord: 0.0ms)
+=======
+Started GET "/" for 165.91.12.100 at 2016-03-26 06:53:07 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (4.6ms)
+Completed 200 OK in 326ms (Views: 309.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for 165.91.12.100 at 2016-03-26 06:53:11 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.12.100 at 2016-03-26 06:53:11 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered sessions/_signin.html.haml (28.1ms)
+  Rendered guiders/new.html.haml within layouts/application (92.1ms)
+Completed 500 Internal Server Error in 134ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined method `zip_code' for #<Guider:0x007f4d453338f0>):
+    23:   =f.text_field :state, {:placeholder => 'state'}
+    24:   =f.text_field :country, {:placeholder => 'country'}
+    25:   %div{:style => "margin-bottom:10px"}
+    26:   =f.text_field :zip_code, {:placeholder => 'zip_code'}
+    27:   %p
+    28:   =f.submit 'Join us now!'
+  app/views/guiders/new.html.haml:26:in `block in _app_views_guiders_new_html_haml__280258511133452004_18452320'
+  app/views/guiders/new.html.haml:7:in `_app_views_guiders_new_html_haml__280258511133452004_18452320'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (80.9ms)
+
+
+Started GET "/guiders" for 165.91.12.100 at 2016-03-26 06:53:11 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.12.100 at 2016-03-26 06:53:11 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered sessions/_signin.html.haml (2.7ms)
+  Rendered guiders/new.html.haml within layouts/application (19.4ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `zip_code' for #<Guider:0x007f4d45ef2010>):
+    23:   =f.text_field :state, {:placeholder => 'state'}
+    24:   =f.text_field :country, {:placeholder => 'country'}
+    25:   %div{:style => "margin-bottom:10px"}
+    26:   =f.text_field :zip_code, {:placeholder => 'zip_code'}
+    27:   %p
+    28:   =f.submit 'Join us now!'
+  app/views/guiders/new.html.haml:26:in `block in _app_views_guiders_new_html_haml__280258511133452004_69984931250840'
+  app/views/guiders/new.html.haml:7:in `_app_views_guiders_new_html_haml__280258511133452004_69984931250840'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (86.6ms)
+
+
+Started GET "/" for 165.91.12.100 at 2016-03-26 06:54:30 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (10.7ms)
+Completed 200 OK in 449ms (Views: 422.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for 165.91.12.100 at 2016-03-26 06:54:34 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.12.100 at 2016-03-26 06:54:34 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered sessions/_signin.html.haml (41.5ms)
+  Rendered guiders/new.html.haml within layouts/application (88.7ms)
+Completed 200 OK in 205ms (Views: 157.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/guiders" for 165.91.12.100 at 2016-03-26 06:54:44 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.12.100 at 2016-03-26 06:54:44 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered sessions/_signin.html.haml (1.3ms)
+  Rendered guiders/new.html.haml within layouts/application (5.7ms)
+Completed 200 OK in 48ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for 165.91.12.100 at 2016-03-26 06:54:52 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.12.100 at 2016-03-26 06:54:52 +0000
+Cannot render console from 165.91.12.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered sessions/_signin.html.haml (1.2ms)
+  Rendered guiders/new.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 40ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 50.24.142.158 at 2016-03-26 07:33:35 +0000
+Cannot render console from 50.24.142.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (4.9ms)
+Completed 200 OK in 552ms (Views: 537.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/guiders_sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 50.24.142.158 at 2016-03-26 07:33:36 +0000
+Cannot render console from 50.24.142.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders_sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 50.24.142.158 at 2016-03-26 07:33:36 +0000
+Cannot render console from 50.24.142.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/guiders" for 50.24.142.158 at 2016-03-26 07:33:39 +0000
+Cannot render console from 50.24.142.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 50.24.142.158 at 2016-03-26 07:33:40 +0000
+Cannot render console from 50.24.142.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered sessions/_signin.html.haml (13.7ms)
+  Rendered guiders/new.html.haml within layouts/application (39.0ms)
+Completed 200 OK in 132ms (Views: 75.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 50.24.142.158 at 2016-03-26 07:46:50 +0000
+Cannot render console from 50.24.142.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (5.1ms)
+Completed 200 OK in 324ms (Views: 308.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for 50.24.142.158 at 2016-03-26 07:46:59 +0000
+Cannot render console from 50.24.142.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 50.24.142.158 at 2016-03-26 07:46:59 +0000
+Cannot render console from 50.24.142.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered guiders/new.html.haml within layouts/application (19.1ms)
+Completed 500 Internal Server Error in 71ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (The line was indented 2 levels deeper than the previous line.):
+    31:   =f.text_field :introduction, {:placeholder => 'introduction'}
+    32:   =f.text_field :rating, {:placeholder => 'rating'}
+    33:   =f.text_field :comment, {:placeholder => 'comment'}
+    34:     %p
+    35:   =f.submit 'Join us now!'
+  app/views/guiders/new.html.haml:34
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (101.1ms)
+
+
+Started GET "/guiders" for 50.24.142.158 at 2016-03-26 07:47:00 +0000
+Cannot render console from 50.24.142.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 50.24.142.158 at 2016-03-26 07:47:00 +0000
+Cannot render console from 50.24.142.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered guiders/new.html.haml within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (The line was indented 2 levels deeper than the previous line.):
+    31:   =f.text_field :introduction, {:placeholder => 'introduction'}
+    32:   =f.text_field :rating, {:placeholder => 'rating'}
+    33:   =f.text_field :comment, {:placeholder => 'comment'}
+    34:     %p
+    35:   =f.submit 'Join us now!'
+  app/views/guiders/new.html.haml:34
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (85.5ms)
+
+
+Started GET "/" for 50.24.142.158 at 2016-03-26 07:47:57 +0000
+Cannot render console from 50.24.142.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (5.0ms)
+Completed 200 OK in 353ms (Views: 337.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers" for 50.24.142.158 at 2016-03-26 07:48:01 +0000
+Cannot render console from 50.24.142.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TravelersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/travelers/new
+Completed 302 Found in 24ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers/new" for 50.24.142.158 at 2016-03-26 07:48:01 +0000
+Cannot render console from 50.24.142.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TravelersController#new as HTML
+  Rendered sessions/_signin.html.haml (20.5ms)
+  Rendered travelers/new.html.haml within layouts/application (64.8ms)
+Completed 200 OK in 158ms (Views: 131.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/guiders" for 50.24.142.158 at 2016-03-26 07:48:05 +0000
+Cannot render console from 50.24.142.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://hackaway-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 50.24.142.158 at 2016-03-26 07:48:05 +0000
+Cannot render console from 50.24.142.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered sessions/_signin.html.haml (1.5ms)
+  Rendered guiders/new.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 72ms (Views: 49.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 50.24.142.158 at 2016-03-26 07:52:13 +0000
+Cannot render console from 50.24.142.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (97.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddZipCodeToGuiders (20160326075022)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "guiders" ADD "country" varchar[0m
+SQLite3::SQLException: duplicate column name: country: ALTER TABLE "guiders" ADD "country" varchar
+  [1m[35m (0.1ms)[0m  rollback transaction
+
+
+Started GET "/" for 50.24.142.158 at 2016-03-26 07:54:04 +0000
+Cannot render console from 50.24.142.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.5ms)
+
+
+Started GET "/" for 50.24.142.158 at 2016-03-26 07:59:21 +0000
+Cannot render console from 50.24.142.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (97.5ms)
+>>>>>>> guider

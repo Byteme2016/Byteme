@@ -1,0 +1,4 @@
+class ChangeColumnDate < ActiveRecord::Migration
+  def change
+  end
+end

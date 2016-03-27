@@ -26,13 +26,13 @@ class TripGoodsController < ApplicationController
 			end_date = end_year,end_month,end_day
 		end
 
-		if start_year != "" and start_month != "00" and start_day != "00"
+		if start_year != "" and start_month != "00" and start_day != "00" and start_date
 			@start_date = start_date.join('-').to_date
 		elsif session['beginning_date']
 			@start_date = YAML.load(session['beginning_date'])
 		end
 
-		if end_year != "" and end_month != "00" and end_day != "00" 
+		if end_year != "" and end_month != "00" and end_day != "00" and end_date
 			@end_date = end_date.join('-').to_date
 		elsif session['end_date']
 			@end_date = YAML.load(session['end_date'])

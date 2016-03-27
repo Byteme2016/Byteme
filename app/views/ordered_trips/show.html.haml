@@ -7,6 +7,6 @@
         - @orders.each do |e|
           .col-sm-6.col-md-4
             .thumbnail
-              = link_to "#{e.title}" new_ordered_trip_path
+              = link_to "#{e.title}" trip_good_path(:id=>e.trip_good_id)
               %span #{e.price}
               %p #{e.introduction}

@@ -1,4 +1,8 @@
 class TripGoodsController < ApplicationController
+  def index
+   redirect_to action: 'new' 
+  end
+  
   def new
     @trip_good = TripGood.new
   end
@@ -7,12 +11,11 @@ class TripGoodsController < ApplicationController
     @trip_good = TripGood.new(trip_good_params)
     if @trip_good.save
      redirect_to '/'
-    else  
-      flash.now[:danger] = 'Generation failed, some information is missing!'  
+    else
+      flash.now[:danger] = 'Generation Failed, Enter Valid Information!'  
       render 'new'
-    end  
+    end
   end
-  
   def show
     @trip_good = TripGood.new
   end

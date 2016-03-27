@@ -6099,3 +6099,724 @@ Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 12
 Processing by TripGoodsController#new as HTML
   Rendered trip_goods/new.html.haml within layouts/application (21.3ms)
 Completed 200 OK in 402ms (Views: 188.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 129.110.241.101 at 2016-03-27 02:34:50 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (6.0ms)
+Completed 200 OK in 502ms (Views: 482.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trip_goods/new" for 129.110.241.101 at 2016-03-27 02:34:53 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#new as HTML
+  Rendered trip_goods/new.html.haml within layouts/application (35.2ms)
+Completed 200 OK in 192ms (Views: 136.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/trip_goods" for 129.110.241.101 at 2016-03-27 02:34:59 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vTRm0hZpojdL8eEW8eod9/uwlUBUal4wgoJimpZjvWxNQ2xQMDgUkJ7xEfZ8+s8ymR5sONuJLSN8Nbz66J8KMA==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"", "end_date"=>"", "on_shelf"=>"", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered trip_goods/new.html.haml within layouts/application (22.8ms)
+Completed 200 OK in 119ms (Views: 83.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/trip_goods" for 129.110.241.101 at 2016-03-27 02:35:34 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zcOof/rmW5/KLf2daan9DqnKxUrO6XjUaulajHydxTg9tKL93LftOB8tDX3kuS/Ly2Q8MkEKC8eUXoTsAmFyZA==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"11/11/2001", "end_date"=>"", "on_shelf"=>"", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "trip_goods" ("beginning_date", "review", "title", "introduction", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["beginning_date", "2001-11-11"], ["review", ""], ["title", ""], ["introduction", ""], ["created_at", "2016-03-27 02:35:34.735508"], ["updated_at", "2016-03-27 02:35:34.735508"]]
+  [1m[35m (125.9ms)[0m  commit transaction
+Redirected to https://final-swetha3294.c9users.io/
+Completed 302 Found in 143ms (ActiveRecord: 126.9ms)
+
+
+Started GET "/" for 129.110.241.101 at 2016-03-27 02:35:34 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (0.7ms)
+Completed 200 OK in 52ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trip_goods/new" for 129.110.241.101 at 2016-03-27 02:35:50 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#new as HTML
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+ArgumentError (Unknown key: :presence. Valid keys are: :on, :if, :unless, :prepend. Perhaps you meant to call `validates` instead of `validate`?):
+  app/models/trip_good.rb:7:in `<class:TripGood>'
+  app/models/trip_good.rb:1:in `<top (required)>'
+  app/controllers/trip_goods_controller.rb:3:in `new'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (21.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (134.9ms)
+
+
+Started GET "/trip_goods/new" for 129.110.241.101 at 2016-03-27 02:35:51 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#new as HTML
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+ArgumentError (Unknown key: :presence. Valid keys are: :on, :if, :unless, :prepend. Perhaps you meant to call `validates` instead of `validate`?):
+  app/models/trip_good.rb:7:in `<class:TripGood>'
+  app/models/trip_good.rb:1:in `<top (required)>'
+  app/controllers/trip_goods_controller.rb:3:in `new'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (136.8ms)
+
+
+Started GET "/trip_goods/new" for 129.110.241.101 at 2016-03-27 02:36:06 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#new as HTML
+  Rendered trip_goods/new.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 76ms (Views: 53.9ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/trip_goods" for 129.110.241.101 at 2016-03-27 02:36:29 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7rPEglf0MziXZ63+paG37/wHUW0qrbFLmoiBxyc+8gkexM4AcaWFn0JnXR4osWUqnqmoFaVOwlhkP1+nWcJFVQ==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"03/02/1994", "end_date"=>"02/11/2004", "on_shelf"=>"", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "trip_goods" ("beginning_date", "end_date", "review", "title", "introduction", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["beginning_date", "1994-02-03"], ["end_date", "2004-11-02"], ["review", ""], ["title", ""], ["introduction", ""], ["created_at", "2016-03-27 02:36:29.200114"], ["updated_at", "2016-03-27 02:36:29.200114"]]
+  [1m[36m (12.4ms)[0m  [1mcommit transaction[0m
+Redirected to https://final-swetha3294.c9users.io/
+Completed 302 Found in 23ms (ActiveRecord: 13.6ms)
+
+
+Started GET "/" for 129.110.241.101 at 2016-03-27 02:36:29 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (0.7ms)
+Completed 200 OK in 46ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trip_goods/new" for 129.110.241.101 at 2016-03-27 02:36:31 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#new as HTML
+  Rendered trip_goods/new.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 58ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/trip_goods" for 129.110.241.101 at 2016-03-27 02:38:53 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qXQaELk/UAenw/4Am8IW/rqNtbA3YFHJhQ3x2Gc/KORZAxCSn27moHLDDuAW0sQ72CNMyLiDItp7ui+4GcOfuA==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"", "end_date"=>"", "on_shelf"=>"", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  Rendered trip_goods/new.html.haml within layouts/application (6.3ms)
+Completed 200 OK in 160ms (Views: 148.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/trip_goods" for 129.110.241.101 at 2016-03-27 02:50:07 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rwwzRvfKoO6zJbEfANIXVk7hQOeddMJ9DYZJRdRE6TpfeznE0ZsWSWYlQf+NwsWTLE+5nxKXsW7zMZclqrheZg==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"", "end_date"=>"", "on_shelf"=>"", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  Rendered trip_goods/new.html.haml within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 135ms (Views: 80.5ms | ActiveRecord: 2.7ms)
+
+NoMethodError (undefined method `valid?' for :end_date:Symbol):
+  app/controllers/trip_goods_controller.rb:14:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (14.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (173.5ms)
+
+
+Started GET "/trip_goods" for 129.110.241.101 at 2016-03-27 02:51:08 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+AbstractController::ActionNotFound (The action 'index' could not be found for TripGoodsController):
+  actionpack (4.2.1) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (1.1ms)
+
+
+Started GET "/trip_goods" for 129.110.241.101 at 2016-03-27 02:51:23 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+AbstractController::ActionNotFound (The action 'index' could not be found for TripGoodsController):
+  actionpack (4.2.1) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.8ms)
+
+
+Started GET "/trip_goods" for 129.110.241.101 at 2016-03-27 02:51:52 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+AbstractController::ActionNotFound (The action 'index' could not be found for TripGoodsController):
+  actionpack (4.2.1) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.7ms)
+
+
+Started GET "/trip_goods" for 129.110.241.101 at 2016-03-27 02:53:03 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#index as HTML
+Redirected to https://final-swetha3294.c9users.io/trip_goods/new
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/trip_goods/new" for 129.110.241.101 at 2016-03-27 02:53:03 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#new as HTML
+  Rendered trip_goods/new.html.haml within layouts/application (8.9ms)
+Completed 200 OK in 164ms (Views: 114.0ms | ActiveRecord: 3.9ms)
+
+
+Started POST "/trip_goods" for 129.110.241.101 at 2016-03-27 02:53:07 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"y9F4xIL+EiVvsNT+01q7DZE0RfR4IiF5xDj/qGruFwk7pnJGpK+kgrqwJB5eSmnI85q8jPfBUmo6jyHIFBKgVQ==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"", "end_date"=>"", "on_shelf"=>"", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered trip_goods/new.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 75ms (Views: 66.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/trip_goods" for 129.110.241.101 at 2016-03-27 02:53:56 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (undefined method `valid?' for nil:NilClass):
+  app/controllers/trip_goods_controller.rb:19:in `<class:TripGoodsController>'
+  app/controllers/trip_goods_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (178.0ms)
+
+
+Started GET "/trip_goods" for 129.110.241.101 at 2016-03-27 02:55:44 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (undefined local variable or method `end_date' for TripGoodsController:Class):
+  app/controllers/trip_goods_controller.rb:19:in `<class:TripGoodsController>'
+  app/controllers/trip_goods_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (166.1ms)
+
+
+Started GET "/trip_goods" for 129.110.241.101 at 2016-03-27 02:55:55 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (undefined method `valid?' for :end_date:Symbol):
+  app/controllers/trip_goods_controller.rb:19:in `<class:TripGoodsController>'
+  app/controllers/trip_goods_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (12.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (179.6ms)
+
+
+Started GET "/trip_goods" for 129.110.241.101 at 2016-03-27 02:56:40 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (undefined method `valid?' for :end_date:Symbol):
+  app/controllers/trip_goods_controller.rb:19:in `<class:TripGoodsController>'
+  app/controllers/trip_goods_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (157.2ms)
+
+
+Started GET "/trip_goods" for 129.110.241.101 at 2016-03-27 02:57:28 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (undefined method `valid?' for :end_date:Symbol):
+  app/controllers/trip_goods_controller.rb:19:in `<class:TripGoodsController>'
+  app/controllers/trip_goods_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (165.5ms)
+
+
+Started GET "/" for 129.110.241.101 at 2016-03-27 02:58:33 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (7.7ms)
+Completed 200 OK in 487ms (Views: 461.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trip_goods/new" for 129.110.241.101 at 2016-03-27 02:58:37 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (undefined method `valid?' for :end_date:Symbol):
+  app/controllers/trip_goods_controller.rb:19:in `<class:TripGoodsController>'
+  app/controllers/trip_goods_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (15.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (186.3ms)
+
+
+Started GET "/trip_goods/new" for 129.110.241.101 at 2016-03-27 02:58:38 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (undefined method `valid?' for :end_date:Symbol):
+  app/controllers/trip_goods_controller.rb:19:in `<class:TripGoodsController>'
+  app/controllers/trip_goods_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (157.1ms)
+
+
+Started GET "/" for 129.110.241.101 at 2016-03-27 03:02:11 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (11.1ms)
+Completed 200 OK in 454ms (Views: 437.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trip_goods/new" for 129.110.241.101 at 2016-03-27 03:02:14 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#new as HTML
+  Rendered trip_goods/new.html.haml within layouts/application (27.3ms)
+Completed 200 OK in 209ms (Views: 145.5ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/trip_goods" for 129.110.241.101 at 2016-03-27 03:02:17 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t02W41bAmD1HBXvCszpSsXcN91AoNVveu1pqOmih9kdHOpxhcJEumpIFiyI+KoB0FaMOKKfWKM1F7bRaFl1BGw==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"", "end_date"=>"", "on_shelf"=>"", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered trip_goods/new.html.haml within layouts/application (17.2ms)
+Completed 200 OK in 235ms (Views: 216.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trip_goods" for 129.110.241.101 at 2016-03-27 03:03:05 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#index as HTML
+Redirected to https://final-swetha3294.c9users.io/trip_goods/new
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/trip_goods/new" for 129.110.241.101 at 2016-03-27 03:03:06 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#new as HTML
+  Rendered trip_goods/new.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 176ms (Views: 146.6ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/trip_goods" for 129.110.241.101 at 2016-03-27 03:03:11 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lNH6oI5syTp/hMtNZaV8U8DYDHaUMZ7dRjVVzfx1gntkpvAiqD1/naqEO63ota6Wonb1DhvS7c64goutgok1Jw==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"", "end_date"=>"", "on_shelf"=>"", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered trip_goods/new.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 56ms (Views: 50.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trip_goods" for 129.110.241.101 at 2016-03-27 03:07:28 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#index as HTML
+Redirected to https://final-swetha3294.c9users.io/trip_goods/new
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/trip_goods/new" for 129.110.241.101 at 2016-03-27 03:07:28 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#new as HTML
+  Rendered trip_goods/new.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 72ms (Views: 50.1ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/trip_goods" for 129.110.241.101 at 2016-03-27 03:07:31 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Txtt7TiEOwL0H6JnvP+U7b4yEd9C1lizwRb8g/0wmUa/bGdvHtWNpSEfUocx70Yo3Jzop801K6A/oSLjg8wuGg==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"", "end_date"=>"", "on_shelf"=>"", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered trip_goods/new.html.haml within layouts/application (3.2ms)
+Completed 200 OK in 72ms (Views: 62.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/trip_goods" for 129.110.241.101 at 2016-03-27 03:07:50 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#index as HTML
+Redirected to https://final-swetha3294.c9users.io/trip_goods/new
+Completed 302 Found in 15ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/trip_goods/new" for 129.110.241.101 at 2016-03-27 03:07:50 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#new as HTML
+  Rendered trip_goods/new.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 77ms (Views: 58.8ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/trip_goods" for 129.110.241.101 at 2016-03-27 03:07:53 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WzCBkBqSJ+9s8JseR3FkRanjGaF9Nh6sEaT9N+skbc+rR4sSPMORSLnwa/7KYbaAy03g2fLVbb/vEyNXldjakw==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"", "end_date"=>"", "on_shelf"=>"", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered trip_goods/new.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 61ms (Views: 54.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/trip_goods" for 129.110.241.101 at 2016-03-27 03:07:59 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N+PpYLf/2I+X73YNl6t4UgapZgj3I83YSHQ4ZOdIwLjHlOPika5uKELvhu0au6qXZAefcHjAvsu2w+YEmbR35A==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"", "end_date"=>"1", "on_shelf"=>"", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[35m (0.7ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered trip_goods/new.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 80ms (Views: 63.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/trip_goods" for 129.110.241.101 at 2016-03-27 03:08:07 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/upBZUIUZdOAYP7r0wmtpCv7ettcliBH1LQSgR/l4KQOnUvnZEXTdFVgDgteGX9hSVWDo9N1U1QqA8zhYRlX+A==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"", "end_date"=>"111/22/1212", "on_shelf"=>"", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered trip_goods/new.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 209ms (Views: 202.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/trip_goods" for 129.110.241.101 at 2016-03-27 03:08:26 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I0wy0xv+Ase2m6cWsKcQdlvg+F3VTSXAcJ4ddTwrCPLTOzhRPa+0YGObV/Y9t8KzOU4BJVquVtOOKcMVQte/rg==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"11/11/2001", "end_date"=>"111/22/1212", "on_shelf"=>"", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered trip_goods/new.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 59ms (Views: 53.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/trip_goods" for 129.110.241.101 at 2016-03-27 03:08:28 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F5UsTx0/Z/cHtON6bQRG6Z+zsKYY6kNyrnfVB/3nOfDn4ibNO27RUNK0E5rgFJQs/R1J3pcJMGFQwAtngxuOrA==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"11/11/2001", "end_date"=>"111/22/1212", "on_shelf"=>"", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered trip_goods/new.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 108ms (Views: 98.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/trip_goods" for 129.110.241.101 at 2016-03-27 03:08:34 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6dHU16mmASRERqKK4D3wP8HQNjZFkrs/S3H0zCYtMpcZpt5Vj/e3g5FGUmptLSL6o37PTspxyCy1xiqsWNGFyw==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"11/11/2001", "end_date"=>"11/22/1212", "on_shelf"=>"", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered trip_goods/new.html.haml within layouts/application (3.2ms)
+Completed 200 OK in 196ms (Views: 63.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/trip_goods" for 129.110.241.101 at 2016-03-27 03:08:44 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k2Wikr9ZWTmXCPlGYNTour2O45T76PHbQkrp9l6BSsFjEqgQmQjvnkIICabtxDp/3yAa7HQLgsi8/TeWIH39nQ==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"11/11/2001", "end_date"=>"11/22/200", "on_shelf"=>"", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered trip_goods/new.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 62ms (Views: 53.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/trip_goods" for 129.110.241.101 at 2016-03-27 03:08:52 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"btcJszfHEotfuya6CtFwuiyUTRKmMlYOIy3/KZRILuaeoAMxEZakLIq71lqHwaJ/Tjq0ainRJR3dmiFJ6rSZug==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"11/11/2001", "end_date"=>"11/22/2015", "on_shelf"=>"", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered trip_goods/new.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 66ms (Views: 57.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/trip_goods" for 129.110.241.101 at 2016-03-27 03:08:58 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q2ROyBuVaMr22DpxE2sESAQbnlmpRR0/YPygpvPFgDSzE0RKPcTebSPYypGee9aNZrVnISambiyeS37GjTk3aA==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"11/11/2015", "end_date"=>"11/22/2015", "on_shelf"=>"", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered trip_goods/new.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 59ms (Views: 52.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trip_goods" for 129.110.241.101 at 2016-03-27 03:10:13 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#index as HTML
+Redirected to https://final-swetha3294.c9users.io/trip_goods/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/trip_goods/new" for 129.110.241.101 at 2016-03-27 03:10:13 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#new as HTML
+  Rendered trip_goods/new.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 65ms (Views: 63.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/trip_goods" for 129.110.241.101 at 2016-03-27 03:10:33 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LyDV0/0vqO6exc6JTSQEO7hfGhLdz/24llgaTmIz0B/fV99R234eSUvFPmnANNb+2vHjalIsjqto78QuHM9nQw==", "trip_good"=>{"guider_id"=>"123", "city_id"=>"121", "beginning_date"=>"03/02/2016", "end_date"=>"03/05/2016", "on_shelf"=>"", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "trip_goods" ("guider_id", "city_id", "beginning_date", "end_date", "review", "title", "introduction", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["guider_id", 123], ["city_id", 121], ["beginning_date", "2016-02-03"], ["end_date", "2016-05-03"], ["review", ""], ["title", ""], ["introduction", ""], ["created_at", "2016-03-27 03:10:33.679103"], ["updated_at", "2016-03-27 03:10:33.679103"]]
+  [1m[35m (13.2ms)[0m  commit transaction
+Redirected to https://final-swetha3294.c9users.io/
+Completed 302 Found in 36ms (ActiveRecord: 14.9ms)
+
+
+Started GET "/" for 129.110.241.101 at 2016-03-27 03:10:33 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (0.9ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trip_goods/new" for 129.110.241.101 at 2016-03-27 03:10:36 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#new as HTML
+  Rendered trip_goods/new.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 58ms (Views: 57.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/trip_goods" for 129.110.241.101 at 2016-03-27 03:10:49 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+TxgdGlV+ZsOdgWEjzXBVohm4zwV0a8Iou9AxT5y+B4JS2r2TwRPPNt29WQCJROT6sgaRJoy3BtcWJ6lQI5PQg==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"11/11/2001", "end_date"=>"", "on_shelf"=>"", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered trip_goods/new.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 54ms (Views: 48.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/trip_goods" for 129.110.241.101 at 2016-03-27 03:11:00 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NtsJFPRuMC/0jsFfV1WKG5DQjZd1O8zkmNa8mdLfltXGrAOW0j+GiCGOMb/aRVje8n507/rYv/dmYWL5rCMhiQ==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"11/11/2001", "end_date"=>"11/22/1212", "on_shelf"=>"", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered trip_goods/new.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 68ms (Views: 60.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/trip_goods" for 129.110.241.101 at 2016-03-27 03:11:21 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yTd7ghemfA6tDqIOy1iBOMtmL6HXV7y+Eo7jqxDyQ/85QHEAMffKqXgOUu5GSFP9qcjW2Vi0z63sOT3Lbg70ow==", "trip_good"=>{"guider_id"=>"123", "city_id"=>"1212", "beginning_date"=>"03/02/2016", "end_date"=>"03/05/2016", "on_shelf"=>"", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.6ms)[0m  INSERT INTO "trip_goods" ("guider_id", "city_id", "beginning_date", "end_date", "review", "title", "introduction", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["guider_id", 123], ["city_id", 1212], ["beginning_date", "2016-02-03"], ["end_date", "2016-05-03"], ["review", ""], ["title", ""], ["introduction", ""], ["created_at", "2016-03-27 03:11:21.475530"], ["updated_at", "2016-03-27 03:11:21.475530"]]
+  [1m[36m (16.4ms)[0m  [1mcommit transaction[0m
+Redirected to https://final-swetha3294.c9users.io/
+Completed 302 Found in 26ms (ActiveRecord: 19.1ms)
+
+
+Started GET "/" for 129.110.241.101 at 2016-03-27 03:11:21 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (0.6ms)
+Completed 200 OK in 46ms (Views: 45.5ms | ActiveRecord: 0.0ms)

@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
 
+=======
+  get 'guiders_sessions/new'
+  get 'sessions/index'
+>>>>>>> b235a0c4b9b222e15fa60438e2bfb5e60aa8b29a
   get 'navigator/index'
   post 'navigator/index'
   get 'guiders_login' => 'guiders_sessions#new'
@@ -7,22 +12,27 @@ Rails.application.routes.draw do
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   get    'workspace' => 'sessions#show'#this should be changed into the address of worksspace
+<<<<<<< HEAD
 
   post 'logout' => 'sessions#destroy'
   post 'guiders_logout' => 'guiders_sessions#destroy'
 
   resources :travelers 
+=======
+>>>>>>> b235a0c4b9b222e15fa60438e2bfb5e60aa8b29a
   resources :guiders
-
   resources :travelers do 
     resources :ordered_trips
   end
- 
-  get 'trip_goods/detail/:id' => 'trip_goods#detail'
-
-  resources :ordered_trips
   resources :trip_goods
+  get 'trip_goods/detail/:id' => 'trip_goods#detail'
+  resources :ordered_trips
+<<<<<<< HEAD
+  resources :trip_goods
+=======
+>>>>>>> b235a0c4b9b222e15fa60438e2bfb5e60aa8b29a
   post 'search_goods' => 'trip_goods#search'
+  get 'search_goods' => 'travelers#show'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

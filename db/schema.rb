@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160327053658) do
+ActiveRecord::Schema.define(version: 20160327105823) do
 
   create_table "catagories", force: :cascade do |t|
     t.integer  "trip_good_id"
@@ -46,7 +46,6 @@ ActiveRecord::Schema.define(version: 20160327053658) do
     t.string   "user_name"
     t.string   "gender"
     t.integer  "age"
-    t.binary   "photo"
     t.string   "contact_number"
     t.string   "alter_number"
     t.string   "driver_license"
@@ -63,6 +62,7 @@ ActiveRecord::Schema.define(version: 20160327053658) do
     t.string   "country"
     t.string   "zip_code"
     t.boolean  "qualified",       default: false, null: false
+    t.string   "attachment"
   end
 
   create_table "languages", force: :cascade do |t|
@@ -123,7 +123,6 @@ ActiveRecord::Schema.define(version: 20160327053658) do
     t.string   "username"
     t.string   "gender"
     t.integer  "age"
-    t.binary   "photo"
     t.string   "contact_number"
     t.string   "alter_number"
     t.string   "street_address"
@@ -133,6 +132,7 @@ ActiveRecord::Schema.define(version: 20160327053658) do
     t.string   "country"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.string   "attachment"
   end
 
   create_table "trip_goods", force: :cascade do |t|

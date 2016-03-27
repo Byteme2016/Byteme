@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .navbar.navbar-fixed-top.navbar-inverse
  .container
   %h1 Travel Uber
@@ -11,3 +12,19 @@
      =link_to "Profile", "#"
     %li
      =link_to "Logout","/logout",:method=>'post'
+=======
+%div{:class=>"Backsetup"}
+ .navbar.navbar-fixed-top.navbar-inverse
+  .container
+   %h1 Travel Uber
+   %nav
+    %ul{:class=>"nav navbar-nav navbar-right"} 
+     %li
+      =link_to "Home", traveler_path(session[:id])
+     %li
+      =link_to "Ordered goods","#"
+     %li
+      =link_to "Profile","#"
+     %li
+      =link_to "Logout","#" 
+>>>>>>> b235a0c4b9b222e15fa60438e2bfb5e60aa8b29a

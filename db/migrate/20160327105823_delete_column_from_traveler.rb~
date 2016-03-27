@@ -1,0 +1,4 @@
+class DeleteColumnFromTraveler < ActiveRecord::Migration
+  def change
+  end
+end

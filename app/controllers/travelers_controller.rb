@@ -32,9 +32,11 @@ class TravelersController < ApplicationController
   
   def show
     @traveler = Traveler.find_by(id: session[:id])
-    flash.now[:notice] = 'Welcome back! Dear '+ @traveler.first_name
+    if !flash[:danger]
+     flash.now[:notice] = 'Welcome back! Dear '+ @traveler.first_name
+    end
   end
   def traveler_params
-   params.require(:traveler).permit(:first_name,:middle_name,:last_name,:password,:password_confirmation,:email,:username,:gender,:age,:photo,:contact_number,:alter_number,:street_address,:city,:state,:zip_code,:country)
+   params.require(:traveler).permit(:attachment,:first_name,:middle_name,:last_name,:password,:password_confirmation,:email,:username,:gender,:age,:photo,:contact_number,:alter_number,:street_address,:city,:state,:zip_code,:country)
   end
 end

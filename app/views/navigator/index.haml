@@ -1,6 +1,6 @@
-%h1
- Welcome to App Navigator
-%h4 Use the links below to navigate
-=link_to "Traveler Signup page", travelers_path
-=link_to "Guider Signup page", guiders_path
-%br
+%div{:class => "center jumbotron wells myedit"}
+    %h1 Welcome to TravelUber
+    %h2 Your guide to your dream Destination
+    %br
+    =link_to "Travellers Login Here", travelers_path,:class => "btn btn-lg btn-default"
+    =link_to "Guiders Login Here", guiders_path, :class => "btn btn-lg btn-default"

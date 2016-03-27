@@ -27434,3 +27434,207 @@ Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 12
 >>>>>>> 5124946556d61c30fc80d2838e8efe91e7c6fa23
 =======
 >>>>>>> master
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_catagories_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_catagories_on_trip_good_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cities_on_state_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cities_on_state_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_languages_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_languages_on_guider_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+[0m
+  [1m[35m (0.8ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_paying_methods_on_traveler_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_paying_methods_on_traveler_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_states_on_country_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_states_on_country_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+[0m
+
+
+Started GET "/" for ::1 at 2016-03-27 06:43:23 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (5.8ms)
+Completed 200 OK in 2565ms (Views: 2550.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-78047bdaf27f29c6b4fcc1ce02ac68dcd863d6bccaa0a8a16b285df8787306b8.css?body=1" for ::1 at 2016-03-27 06:43:26 -0500
+
+
+Started GET "/assets/trip_good.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 06:43:26 -0500
+
+
+Started GET "/assets/trip_good.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 06:43:26 -0500
+
+
+Started GET "/assets/travel-the-world.jpeg" for ::1 at 2016-03-27 06:43:26 -0500
+
+
+Started GET "/travelers" for ::1 at 2016-03-27 06:43:30 -0500
+Processing by TravelersController#index as HTML
+Redirected to http://localhost:3000/travelers/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers/new" for ::1 at 2016-03-27 06:43:30 -0500
+Processing by TravelersController#new as HTML
+  Rendered guiders/_signup_bar.html.haml (1.2ms)
+  Rendered sessions/_signin.html.haml (10.2ms)
+  Rendered travelers/new.html.haml within layouts/application (31.9ms)
+Completed 200 OK in 103ms (Views: 74.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/login" for ::1 at 2016-03-27 06:43:37 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n4cK5AZAflu2CsGnbzlSCvDX4RkoANb5Mly0fjoQJuXOGLKxS40+A/zRfcUyPQAVZFo2NI+U8LWX711Lr2Byeg==", "session"=>{"email"=>"zhangsikai123@tamu.edu", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mTraveler Load (0.6ms)[0m  SELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1  [["email", "zhangsikai123@tamu.edu"]]
+Redirected to http://localhost:3000/travelers/2
+Completed 302 Found in 109ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/travelers/2" for ::1 at 2016-03-27 06:43:37 -0500
+Processing by TravelersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTraveler Load (0.2ms)[0m  [1mSELECT  "travelers".* FROM "travelers" WHERE "travelers"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered travelers/_navigation_bar.html.haml (5.5ms)
+  Rendered travelers/show.html.haml within layouts/application (9.1ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
+    1: %div :class=>"Backsetup"
+    2:  .navbar.navbar-fixed-top.navbar-inverse
+    3:   .container
+    4:    %h1 Travel Uber
+    5:    %nav
+  app/views/travelers/_navigation_bar.html.haml:2
+  app/views/travelers/show.html.haml:2:in `_app_views_travelers_show_html_haml__1057425208050969191_70223744010460'
+
+
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (89.2ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (87.7ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (175.5ms)
+
+
+Started GET "/travelers/2" for ::1 at 2016-03-27 06:46:32 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TravelersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTraveler Load (0.7ms)[0m  SELECT  "travelers".* FROM "travelers" WHERE "travelers"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered travelers/_navigation_bar.html.haml (4.4ms)
+  Rendered travelers/_basic_info.html.haml (7.0ms)
+  Rendered travelers/_update_profile.html.haml (37.1ms)
+  Rendered travelers/show.html.haml within layouts/application (66.3ms)
+Completed 200 OK in 574ms (Views: 502.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/travel-the-world.jpeg" for ::1 at 2016-03-27 06:46:34 -0500
+
+
+Started PATCH "/travelers/2" for ::1 at 2016-03-27 06:47:17 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TravelersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X/LivwDiVlEkwDMuk0nWZh74TJUSEUHu7Q0tnpsEXeEObVrqTS8WCW4bj0zOTYR5inWbuLWFZ6JIvsSrDnQJfg==", "traveler"=>{"first_name"=>"sikaia", "middle_name"=>"", "last_name"=>"zhang", "contact_number"=>"6502859769", "alter_number"=>"", "age"=>"24", "gender"=>"male", "street_address"=>"1113 S.Dexter Drive", "city"=>"College Station", "state"=>"Texas", "country"=>"US", "zip_code"=>"77841"}, "commit"=>"Update my profile", "id"=>"2"}
+  [1m[35mTraveler Load (0.8ms)[0m  SELECT  "travelers".* FROM "travelers" WHERE "travelers"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "travelers" SET "first_name" = ?, "updated_at" = ? WHERE "travelers"."id" = ?  [["first_name", "sikaia"], ["updated_at", "2016-03-27 11:47:17.963925"], ["id", 2]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/travelers/2
+Completed 302 Found in 105ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/travelers/2" for ::1 at 2016-03-27 06:47:17 -0500
+Processing by TravelersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTraveler Load (0.1ms)[0m  SELECT  "travelers".* FROM "travelers" WHERE "travelers"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered travelers/_navigation_bar.html.haml (3.3ms)
+  Rendered travelers/_basic_info.html.haml (3.5ms)
+  Rendered travelers/_update_profile.html.haml (27.8ms)
+  Rendered travelers/show.html.haml within layouts/application (48.0ms)
+Completed 200 OK in 480ms (Views: 479.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/travel-the-world.jpeg" for ::1 at 2016-03-27 06:47:18 -0500

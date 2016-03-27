@@ -11,15 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20160327031837) do
-=======
-ActiveRecord::Schema.define(version: 20160327053658) do
->>>>>>> 5124946556d61c30fc80d2838e8efe91e7c6fa23
-=======
 ActiveRecord::Schema.define(version: 20160327105823) do
->>>>>>> master
 
   create_table "catagories", force: :cascade do |t|
     t.integer  "trip_good_id"
@@ -69,16 +61,8 @@ ActiveRecord::Schema.define(version: 20160327105823) do
     t.datetime "updated_at",                      null: false
     t.string   "country"
     t.string   "zip_code"
-<<<<<<< HEAD
-<<<<<<< HEAD
-    t.boolean  "qualified"
-=======
-    t.boolean  "qualified",       default: false, null: false
->>>>>>> 5124946556d61c30fc80d2838e8efe91e7c6fa23
-=======
     t.boolean  "qualified",       default: false, null: false
     t.string   "attachment"
->>>>>>> master
   end
 
   create_table "languages", force: :cascade do |t|

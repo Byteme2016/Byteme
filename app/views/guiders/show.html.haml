@@ -1,83 +1,9 @@
 %h1 Travel Uber
+=render 'navigation_bar'
+.container1.container
 %flash
  =flash[:notice]
  =flash[:danger]
-%fieldset
- %h3 Profile
- %div{:id=>'@guider',:class=>'basic_info'}
-  %strong
-   Photo
-  %br 
-  %img{:src=>"http://i2.hdslb.com/video/31/31fd26b6842ef1fe811c020324d80a1e.jpg",:alt=>"HTML5 Icon",:style=>"width:300px;height:222px;"}
-  %br
-  %strong 
-   Name:
-  = @guider.first_name
-  = @guider.middle_name
-  = @guider.last_name
-  %br
-  %strong
-   Age: 
-  = @guider.age
-  %br
-  %strong
-   Gender:
-  = @guider.gender 
-  %br
-  %strong 
-   My Current Street
-  %br 
-  %strong
-   street:
-  = @guider.street_address
-  %strong
-   city:
-  = @guider.city
-  %strong
-   state:
-  = @guider.state
-  %strong
-   country:
-  = @guider.country
-  %strong
-   zip_code:
-  = @guider.zip_code
-%fieldset  
- %h3 Update my profile
- =form_for @guider do |f|
-  =f.text_field :first_name, {:placeholder => 'Firstname'}
-  =f.text_field :middle_name, {:placeholder => 'Middlename'}
-  =f.text_field :last_name,  {:placeholder => 'Lastname'}
-  %div{:style => "margin-bottom:10px"}
-  =f.text_field :email, {:placeholder => 'E-mail'}
-  %div{:style => "margin-bottom:10px"}
-  =f.text_field :contact_number, {:placeholder => 'Primary Contact Number'}
-  =f.text_field :alter_number, {:placeholder => 'Alternate Contact Number'}
-  %div{:style => "margin-bottom:10px"}
-  =f.text_field :age, {:placeholder => 'age'}
-  =f.text_field :gender, {:placeholder => 'gender'}
-  %div{:style => "margin-bottom:10px"}
-  %div{:style => "margin-bottom:10px"}
-  =f.text_field :street_address, {:placeholder => 'street_address'}
-  =f.text_field :city, {:placeholder => 'city'}
-  %div{:style => "margin-bottom:10px"}
-  =f.text_field :state, {:placeholder => 'state'}
-  =f.text_field :country, {:placeholder => 'country'}
-  %div{:style => "margin-bottom:10px"}
-  =f.text_field :zip_code, {:placeholder => 'zip_code'}
-  %p
-  =f.submit 'Update my profile'
-%fieldset
- %h3 My qualification
- =form_for @guider do |f|
-  =f.text_field :driver_license, {:placeholder => 'driver_license'}
-  =f.text_field :passport_number, {:placeholder => 'passport_number'}
-  =f.text_field :SSN, {:placeholder => 'SSN '}
-  %div{:style => "margin-bottom:10px"}
-  =f.text_field :introduction, {:placeholder => 'introduction'}
-  =f.text_field :rating, {:placeholder => 'rating'}
-  =f.text_field :comment, {:placeholder => 'comment'}
-  %p
-  =f.submit 'Submit my qualification form'
-
-  
+ =render'basic_info'
+ =render'update_profile'
+ =render'qualification'

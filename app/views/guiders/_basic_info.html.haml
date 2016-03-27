@@ -1,0 +1,40 @@
+%fieldset
+ %h3 Profile
+ %div{:id=>'@guider',:class=>'basic_info'}
+  %strong
+   Photo
+  %br 
+  %img{:src=>"http://i2.hdslb.com/video/31/31fd26b6842ef1fe811c020324d80a1e.jpg",:alt=>"HTML5 Icon",:style=>"width:300px;height:222px;"}
+  %br
+  %strong 
+   Name:
+  = @guider.first_name
+  = @guider.middle_name
+  = @guider.last_name
+  %br
+  %strong
+   Age: 
+  = @guider.age
+  %br
+  %strong
+   Gender:
+  = @guider.gender 
+  %br
+  %strong 
+   My Current Street
+  %br 
+  %strong
+   street:
+  = @guider.street_address
+  %strong
+   city:
+  = @guider.city
+  %strong
+   state:
+  = @guider.state
+  %strong
+   country:
+  = @guider.country
+  %strong
+   zip_code:
+  = @guider.zip_code

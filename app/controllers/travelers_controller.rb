@@ -1,5 +1,5 @@
 class TravelersController < ApplicationController
-    def index
+  def index
    redirect_to action: 'new' 
   end
   

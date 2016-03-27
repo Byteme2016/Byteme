@@ -1,0 +1,13 @@
+%h1 TripGood
+#trip_good.container
+ -if @trip_good == nil || @trip_good.size == 0
+  %h2 No Goods
+ -else
+   .container
+    .row
+     @trip_good.each do |t|
+     .col-sm-6.col-md-4
+      .thumbnail
+       =link_to :back
+     
+ 

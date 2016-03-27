@@ -21005,3 +21005,2375 @@ ActionView::Template::Error (undefined method `middle_name' for nil:NilClass):
   Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
   Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
   Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (176.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_catagories_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_catagories_on_trip_good_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cities_on_state_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cities_on_state_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_languages_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_languages_on_guider_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_paying_methods_on_traveler_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_paying_methods_on_traveler_id' AND type='index'
+
+  [1m[36m (0.4ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_states_on_country_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_states_on_country_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 129.110.241.101 at 2016-03-27 13:00:23 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (10.9ms)
+Completed 200 OK in 3976ms (Views: 3963.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-4aeff8a857dd9ad6fe47c7d8ff4a5f64190819f3f8195f4d300c55433529b141.css?body=1" for 129.110.241.101 at 2016-03-27 13:00:27 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders_sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.241.101 at 2016-03-27 13:00:27 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders.self-ac1edc5d29aae46468b78373c225e8811b381950a07bd48e5c14489eff558e1f.css?body=1" for 129.110.241.101 at 2016-03-27 13:00:27 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/navigator.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.241.101 at 2016-03-27 13:00:27 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/travelers.self-2f8a0215a8eba7b72aacfcf6eb8a7e29f18d378b09f25bb095a2dc86d15d8629.css?body=1" for 129.110.241.101 at 2016-03-27 13:00:27 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.241.101 at 2016-03-27 13:00:27 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/trip_good.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.241.101 at 2016-03-27 13:00:27 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.110.241.101 at 2016-03-27 13:00:27 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 129.110.241.101 at 2016-03-27 13:00:27 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 129.110.241.101 at 2016-03-27 13:00:27 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.110.241.101 at 2016-03-27 13:00:27 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.241.101 at 2016-03-27 13:00:27 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders_sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.241.101 at 2016-03-27 13:00:27 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/navigator.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.241.101 at 2016-03-27 13:00:27 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.241.101 at 2016-03-27 13:00:27 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/travelers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.241.101 at 2016-03-27 13:00:28 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/trip_good.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.241.101 at 2016-03-27 13:00:28 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.110.241.101 at 2016-03-27 13:00:28 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/guiders" for 129.110.241.101 at 2016-03-27 13:00:30 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://recent-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 129.110.241.101 at 2016-03-27 13:00:30 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered guiders/_signup_bar.html.haml (0.7ms)
+  Rendered guiders_sessions/_signin.html.haml (16.0ms)
+  Rendered guiders/new.html.haml within layouts/application (35.1ms)
+Completed 200 OK in 120ms (Views: 88.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/guiders_login" for 129.110.241.101 at 2016-03-27 13:00:36 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DAQWvPgRBpWYa9WyWAt69bnF+lfgn4tDl0Bsdky93yCUeHlPnaOz5NdNDeoMQQwl9qSDXz7G9UorWlsYzdTQDg==", "session"=>{"email"=>"s@gmail.com", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mGuider Load (0.3ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."email" = ? LIMIT 1  [["email", "s@gmail.com"]]
+  Rendered guiders_sessions/_signin.html.haml (2.3ms)
+  Rendered guiders_sessions/new.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 78ms (Views: 58.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/guiders_login" for 129.110.241.101 at 2016-03-27 13:00:46 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ofme8H4tW2zzfp+yjNQu+JY3UX35Ao74ziBn/I8o5AGhhfEDG5/uHbxYR+rYnlgo2VYodSdb8PFyOlCSDkHrLw==", "session"=>{"email"=>"s@gmail.com", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[36mGuider Load (0.2ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."email" = ? LIMIT 1[0m  [["email", "s@gmail.com"]]
+  Rendered guiders_sessions/_signin.html.haml (1.0ms)
+  Rendered guiders_sessions/new.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 128ms (Views: 126.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/guiders_login" for 129.110.241.101 at 2016-03-27 13:00:59 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Enmu27kxfGZynP1ux4RgnUIf3i9lfk8NgdTLh2HTaIGKBcEo3IPJFz26JTaTzhZNDX6nJ7snMQQ9zvzp4Lpnrw==", "session"=>{"email"=>"s@gmail.com", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mGuider Load (0.2ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."email" = ? LIMIT 1  [["email", "s@gmail.com"]]
+  Rendered guiders_sessions/_signin.html.haml (0.9ms)
+  Rendered guiders_sessions/new.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 44ms (Views: 42.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 129.110.241.101 at 2016-03-27 13:01:08 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (0.4ms)
+Completed 200 OK in 43ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for 129.110.241.101 at 2016-03-27 13:01:10 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://recent-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 129.110.241.101 at 2016-03-27 13:01:10 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered guiders/_signup_bar.html.haml (0.1ms)
+  Rendered guiders_sessions/_signin.html.haml (1.0ms)
+  Rendered guiders/new.html.haml within layouts/application (6.1ms)
+Completed 200 OK in 122ms (Views: 121.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/guiders" for 129.110.241.101 at 2016-03-27 13:01:33 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X8crxAwY0AfHmmIfYUDKPZTKRAqjZOkwRK8IEZHk4yzHu0Q3aapldoi8ukc1Crzt26s9An09lzn4tT9/EI3sAg==", "guider"=>{"first_name"=>"Swe", "middle_name"=>"", "last_name"=>"S", "age"=>"21", "email"=>"a@gmail.com", "password"=>"[FILTERED]", "contact_number"=>"123456789", "alter_number"=>"123456789"}, "commit"=>"Join us now!"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mGuider Exists (0.3ms)[0m  SELECT  1 AS one FROM "guiders" WHERE LOWER("guiders"."email") = LOWER('a@gmail.com') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "guiders" ("first_name", "middle_name", "last_name", "password_digest", "email", "age", "contact_number", "alter_number", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Swe"], ["middle_name", ""], ["last_name", "S"], ["password_digest", "$2a$10$eiw7SRbs5nSRwZjX0Y4M..Jy4G6ZJex1JM7mbyHkfvr4bpQMPZXBa"], ["email", "a@gmail.com"], ["age", 21], ["contact_number", "123456789"], ["alter_number", "123456789"], ["created_at", "2016-03-27 13:01:33.518987"], ["updated_at", "2016-03-27 13:01:33.518987"]]
+  [1m[35m (13.0ms)[0m  commit transaction
+Redirected to https://recent-swetha3294.c9users.io/guiders_login
+Completed 302 Found in 118ms (ActiveRecord: 13.9ms)
+
+
+Started GET "/guiders_login" for 129.110.241.101 at 2016-03-27 13:01:33 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersSessionsController#new as HTML
+  Rendered guiders_sessions/_signin.html.haml (1.0ms)
+  Rendered guiders_sessions/new.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 54ms (Views: 53.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/guiders_login" for 129.110.241.101 at 2016-03-27 13:01:44 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b03H4Nb+vCD6sJ+BM4sJqZOkk90pbw01g8Znxpj+7FP3MagTs0wJUbWWR9lnwX953MXq1fc2czw/3FCoGZfjfQ==", "session"=>{"email"=>"a@gmail.com", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[36mGuider Load (0.2ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."email" = ? LIMIT 1[0m  [["email", "a@gmail.com"]]
+Redirected to https://recent-swetha3294.c9users.io/guiders/1
+Completed 302 Found in 75ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/guiders/1" for 129.110.241.101 at 2016-03-27 13:01:44 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGuider Load (0.3ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (3.1ms)
+  Rendered guiders/_basic_info.html.haml (4.6ms)
+  Rendered guiders/_update_profile.html.haml (25.1ms)
+  Rendered guiders/_qualification.html.haml (6.4ms)
+  Rendered guiders/show.html.haml within layouts/application (48.0ms)
+Completed 200 OK in 108ms (Views: 106.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/guiders/1" for 129.110.241.101 at 2016-03-27 13:05:37 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGuider Load (0.2ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (2.8ms)
+  Rendered guiders/_basic_info.html.haml (0.2ms)
+  Rendered guiders/_update_profile.html.haml (3.4ms)
+  Rendered guiders/_qualification.html.haml (1.0ms)
+  Rendered guiders/show.html.haml within layouts/application (13.6ms)
+Completed 200 OK in 136ms (Views: 134.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/guiders/new_trip_good_path" for 129.110.241.101 at 2016-03-27 13:05:45 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"new_trip_good_path"}
+  [1m[35mGuider Load (0.2ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (2.4ms)
+  Rendered guiders/_basic_info.html.haml (5.0ms)
+  Rendered guiders/_update_profile.html.haml (7.0ms)
+  Rendered guiders/_qualification.html.haml (2.3ms)
+  Rendered guiders/show.html.haml within layouts/application (25.4ms)
+Completed 200 OK in 205ms (Views: 203.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/guiders/new_trip_good_path" for 129.110.241.101 at 2016-03-27 13:05:46 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"new_trip_good_path"}
+  [1m[36mGuider Load (0.2ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (0.2ms)
+  Rendered guiders/_basic_info.html.haml (0.2ms)
+  Rendered guiders/_update_profile.html.haml (3.8ms)
+  Rendered guiders/_qualification.html.haml (1.0ms)
+  Rendered guiders/show.html.haml within layouts/application (13.0ms)
+Completed 200 OK in 158ms (Views: 156.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/guiders/new_trip_good_path" for 129.110.241.101 at 2016-03-27 13:05:46 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"new_trip_good_path"}
+  [1m[35mGuider Load (0.2ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (0.2ms)
+  Rendered guiders/_basic_info.html.haml (0.2ms)
+  Rendered guiders/_update_profile.html.haml (3.7ms)
+  Rendered guiders/_qualification.html.haml (1.4ms)
+  Rendered guiders/show.html.haml within layouts/application (13.3ms)
+Completed 200 OK in 75ms (Views: 73.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/guiders/new_trip_good_path" for 129.110.241.101 at 2016-03-27 13:05:47 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"new_trip_good_path"}
+  [1m[36mGuider Load (0.2ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (0.2ms)
+  Rendered guiders/_basic_info.html.haml (0.3ms)
+  Rendered guiders/_update_profile.html.haml (2.6ms)
+  Rendered guiders/_qualification.html.haml (2.9ms)
+  Rendered guiders/show.html.haml within layouts/application (13.7ms)
+Completed 200 OK in 127ms (Views: 125.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/guiders/new_trip_good_path" for 129.110.241.101 at 2016-03-27 13:05:47 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"new_trip_good_path"}
+  [1m[35mGuider Load (0.2ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (0.2ms)
+  Rendered guiders/_basic_info.html.haml (0.2ms)
+  Rendered guiders/_update_profile.html.haml (1.9ms)
+  Rendered guiders/_qualification.html.haml (0.9ms)
+  Rendered guiders/show.html.haml within layouts/application (14.7ms)
+Completed 200 OK in 69ms (Views: 67.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/guiders/new_trip_good_path" for 129.110.241.101 at 2016-03-27 13:07:38 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"new_trip_good_path"}
+  [1m[36mGuider Load (0.2ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (1.8ms)
+  Rendered guiders/_basic_info.html.haml (0.1ms)
+  Rendered guiders/_update_profile.html.haml (1.8ms)
+  Rendered guiders/_qualification.html.haml (0.8ms)
+  Rendered guiders/show.html.haml within layouts/application (9.9ms)
+Completed 200 OK in 67ms (Views: 65.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trip_goods/new" for 129.110.241.101 at 2016-03-27 13:07:45 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#new as HTML
+  Rendered trip_goods/new.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 86ms (Views: 65.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/trip_goods" for 129.110.241.101 at 2016-03-27 13:08:35 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pNWNz9PlAakWxznwugtt59WTdDE9ShQa0l9SsQ7hPhQ8qeI8tle02Fnh4ajuQRs3mvINOeMTahNuRWXfj4gxOg==", "trip_good"=>{"guider_id"=>"123", "city_id"=>"123", "beginning_date"=>"03/02/2016", "end_date"=>"03/05/2016", "on_shelf"=>"true", "title"=>"Barcelona", "review"=>"Great", "introduction"=>"Awesome Place", "capacity"=>"10", "price"=>"1000"}, "commit"=>"Generate Trip Good"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "trip_goods" ("guider_id", "city_id", "beginning_date", "end_date", "price", "review", "title", "introduction", "capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["guider_id", 123], ["city_id", 123], ["beginning_date", "2016-02-03"], ["end_date", "2016-05-03"], ["price", 1000], ["review", "Great"], ["title", "Barcelona"], ["introduction", "Awesome Place"], ["capacity", 10], ["created_at", "2016-03-27 13:08:35.758525"], ["updated_at", "2016-03-27 13:08:35.758525"]]
+  [1m[35m (95.7ms)[0m  commit transaction
+Redirected to https://recent-swetha3294.c9users.io/
+Completed 302 Found in 101ms (ActiveRecord: 96.2ms)
+
+
+Started GET "/" for 129.110.241.101 at 2016-03-27 13:08:35 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (0.4ms)
+Completed 200 OK in 55ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for 129.110.241.101 at 2016-03-27 13:09:48 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://recent-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 129.110.241.101 at 2016-03-27 13:09:48 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered guiders/_signup_bar.html.haml (0.1ms)
+  Rendered guiders_sessions/_signin.html.haml (0.8ms)
+  Rendered guiders/new.html.haml within layouts/application (6.3ms)
+Completed 200 OK in 73ms (Views: 54.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/guiders_login" for 129.110.241.101 at 2016-03-27 13:09:56 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VocHLDIB41Ctpsyv44ZLUh+o5eos6liUIk1i2k4T2n7O+2jfV7NWIeKAFPe3zD2CUMmc4vKzJp2eV1W0z3rVUA==", "session"=>{"email"=>"a@gmail.com", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[36mGuider Load (0.3ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."email" = ? LIMIT 1[0m  [["email", "a@gmail.com"]]
+  Rendered guiders_sessions/_signin.html.haml (1.1ms)
+  Rendered guiders_sessions/new.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 129ms (Views: 51.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/guiders_login" for 129.110.241.101 at 2016-03-27 13:10:03 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OvUDap4c8ROsjmoRGmj0Tn1S5R7bImC64YL84rAhmHaiiWyZ+65EYuOosklOIoKeMjOcFgV7HrNdmMuMMUiXWA==", "session"=>{"email"=>"a@gmail.com", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mGuider Load (0.2ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."email" = ? LIMIT 1  [["email", "a@gmail.com"]]
+Redirected to https://recent-swetha3294.c9users.io/guiders/1
+Completed 302 Found in 73ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/guiders/1" for 129.110.241.101 at 2016-03-27 13:10:03 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGuider Load (0.4ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (2.1ms)
+  Rendered guiders/_basic_info.html.haml (0.3ms)
+  Rendered guiders/_update_profile.html.haml (3.1ms)
+  Rendered guiders/_qualification.html.haml (0.9ms)
+  Rendered guiders/show.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 68ms (Views: 65.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/trip_goods/new" for 129.110.241.101 at 2016-03-27 13:10:06 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#new as HTML
+  Rendered trip_goods/new.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 60ms (Views: 49.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/trip_goods" for 129.110.241.101 at 2016-03-27 13:10:29 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZWKv2MKUmnn4uiAijm/0s6WJSiPwrkNuZ10ay3zypLv9HsArpyYvCLec+HraJYJj6ugzKy73PWfbRy2l/ZurlQ==", "trip_good"=>{"guider_id"=>"123", "city_id"=>"123", "beginning_date"=>"03/02/2016", "end_date"=>"03/05/2016", "on_shelf"=>"true", "title"=>"Barcelona", "review"=>"Great", "introduction"=>"Awesome Place", "capacity"=>"10", "price"=>"1000"}, "commit"=>"Generate Trip Good"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "trip_goods" ("guider_id", "city_id", "beginning_date", "end_date", "price", "review", "title", "introduction", "capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["guider_id", 123], ["city_id", 123], ["beginning_date", "2016-02-03"], ["end_date", "2016-05-03"], ["price", 1000], ["review", "Great"], ["title", "Barcelona"], ["introduction", "Awesome Place"], ["capacity", 10], ["created_at", "2016-03-27 13:10:29.416436"], ["updated_at", "2016-03-27 13:10:29.416436"]]
+  [1m[35m (10.7ms)[0m  commit transaction
+Redirected to https://recent-swetha3294.c9users.io/guiders_login
+Completed 302 Found in 32ms (ActiveRecord: 11.3ms)
+
+
+Started GET "/guiders_login" for 129.110.241.101 at 2016-03-27 13:10:29 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersSessionsController#new as HTML
+  Rendered guiders_sessions/_signin.html.haml (0.9ms)
+  Rendered guiders_sessions/new.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 129.110.241.101 at 2016-03-27 13:10:39 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (1.9ms)
+Completed 200 OK in 56ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for 129.110.241.101 at 2016-03-27 13:10:41 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://recent-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 129.110.241.101 at 2016-03-27 13:10:41 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered guiders/_signup_bar.html.haml (0.1ms)
+  Rendered guiders_sessions/_signin.html.haml (1.2ms)
+  Rendered guiders/new.html.haml within layouts/application (6.4ms)
+Completed 200 OK in 199ms (Views: 198.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/guiders_login" for 129.110.241.101 at 2016-03-27 13:10:49 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nyP6zkYOYM8XqMeodVDqsnJQ82jte0bSOxTOBcAw9uAHX5U9I7zVvliOH/AhGpxiPTGKYDMiONuHDvlrQVn5zg==", "session"=>{"email"=>"a@gmail.com", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[36mGuider Load (0.2ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."email" = ? LIMIT 1[0m  [["email", "a@gmail.com"]]
+Redirected to https://recent-swetha3294.c9users.io/guiders/1
+Completed 302 Found in 141ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/guiders/1" for 129.110.241.101 at 2016-03-27 13:10:50 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGuider Load (0.2ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (0.3ms)
+  Rendered guiders/_basic_info.html.haml (0.2ms)
+  Rendered guiders/_update_profile.html.haml (2.2ms)
+  Rendered guiders/_qualification.html.haml (0.9ms)
+  Rendered guiders/show.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 59ms (Views: 57.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trip_goods/new" for 129.110.241.101 at 2016-03-27 13:11:32 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#new as HTML
+  Rendered trip_goods/new.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 60ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trip_goods/new" for 129.110.241.101 at 2016-03-27 13:11:48 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#new as HTML
+  Rendered trip_goods/new.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 55ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trip_goods/new" for 129.110.241.101 at 2016-03-27 13:21:30 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#new as HTML
+  Rendered trip_goods/new.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 65ms (Views: 52.4ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/trip_goods" for 129.110.241.101 at 2016-03-27 13:21:54 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UnVVC+WBTKzB/+XkS6+Ez4srawbGXkLIHaVNjWnFw6PKCTr4gDP53Y7ZPbwf5fIfxEoSDhgHPMGhv3rj6KzMjQ==", "trip_good"=>{"guider_id"=>"123", "city_id"=>"123", "beginning_date"=>"03/02/2016", "end_date"=>"03/05/2016", "on_shelf"=>"true", "title"=>"nm", "review"=>"nm", "introduction"=>"nm", "capacity"=>"10", "price"=>"1000"}, "commit"=>"Generate Trip Good"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "trip_goods" ("guider_id", "city_id", "beginning_date", "end_date", "price", "review", "title", "introduction", "capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["guider_id", 123], ["city_id", 123], ["beginning_date", "2016-02-03"], ["end_date", "2016-05-03"], ["price", 1000], ["review", "nm"], ["title", "nm"], ["introduction", "nm"], ["capacity", 10], ["created_at", "2016-03-27 13:21:54.406729"], ["updated_at", "2016-03-27 13:21:54.406729"]]
+  [1m[36m (11.5ms)[0m  [1mcommit transaction[0m
+Redirected to https://recent-swetha3294.c9users.io/guiders_login
+Completed 302 Found in 17ms (ActiveRecord: 12.2ms)
+
+
+Started GET "/guiders_login" for 129.110.241.101 at 2016-03-27 13:21:54 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersSessionsController#new as HTML
+  Rendered guiders_sessions/_signin.html.haml (0.9ms)
+  Rendered guiders_sessions/new.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 65ms (Views: 48.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/guiders" for 129.110.241.101 at 2016-03-27 13:28:42 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://recent-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 129.110.241.101 at 2016-03-27 13:28:42 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered guiders/_signup_bar.html.haml (0.8ms)
+  Rendered guiders_sessions/_signin.html.haml (0.9ms)
+  Rendered guiders/new.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 78ms (Views: 59.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/guiders_login" for 129.110.241.101 at 2016-03-27 13:28:52 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FR0VzSKw7LFMciG43ahxMDao6psMncyaq5Y4bXeiT8eNYXo+RwJZwANU+eCJ4gfgecmTk9LEspMXjA8D9stA6Q==", "session"=>{"email"=>"a@gmail.com", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mGuider Load (0.3ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."email" = ? LIMIT 1  [["email", "a@gmail.com"]]
+  Rendered guiders_sessions/_signin.html.haml (0.9ms)
+  Rendered guiders_sessions/new.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 126ms (Views: 52.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/guiders_login" for 129.110.241.101 at 2016-03-27 13:29:07 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FR0VzSKw7LFMciG43ahxMDao6psMncyaq5Y4bXeiT8eNYXo+RwJZwANU+eCJ4gfgecmTk9LEspMXjA8D9stA6Q==", "session"=>{"email"=>"a@gmail.com", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[36mGuider Load (0.2ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."email" = ? LIMIT 1[0m  [["email", "a@gmail.com"]]
+Redirected to https://recent-swetha3294.c9users.io/guiders/1
+Completed 302 Found in 71ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/guiders/1" for 129.110.241.101 at 2016-03-27 13:29:07 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGuider Load (0.3ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (49.2ms)
+  Rendered guiders/show.html.haml within layouts/application (50.6ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `new_trip_good_path' for #<#<Class:0x007f3c3c265398>:0x007f3c422b7750>
+Did you mean?  new_guider_trip_good_path):
+     7:      %li
+     8:       =link_to "Home", "#show"
+     9:      %li
+    10:       =link_to "Trip Goods",new_trip_good_path
+    11:      %li
+    12:       =link_to "Profile","#"
+    13:      %li
+  app/views/guiders/_navigation_bar.html.haml:10:in `_app_views_guiders__navigation_bar_html_haml__2339001845502977460_69948341942660'
+  app/views/guiders/show.html.haml:2:in `_app_views_guiders_show_html_haml__2909996607855624167_69948393256500'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (88.7ms)
+
+
+Started GET "/guiders/1" for 129.110.241.101 at 2016-03-27 13:30:13 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGuider Load (0.2ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (39.3ms)
+  Rendered guiders/show.html.haml within layouts/application (40.7ms)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 1.2ms)
+
+ActionView::Template::Error (undefined local variable or method `new_trip_good_path' for #<#<Class:0x007f3c3c2a7298>:0x007f3c3c2a6460>
+Did you mean?  new_guider_trip_good_path):
+     7:      %li
+     8:       =link_to "Home", "#show"
+     9:      %li
+    10:       =link_to "Trip Goods",new_trip_good_path
+    11:      %li
+    12:       =link_to "Profile","#"
+    13:      %li
+  app/views/guiders/_navigation_bar.html.haml:10:in `_app_views_guiders__navigation_bar_html_haml__2339001845502977460_69948341942660'
+  app/views/guiders/show.html.haml:2:in `_app_views_guiders_show_html_haml__2909996607855624167_69948393256500'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (93.7ms)
+
+
+Started GET "/" for 129.110.241.101 at 2016-03-27 13:32:38 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (5.0ms)
+Completed 200 OK in 389ms (Views: 341.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for 129.110.241.101 at 2016-03-27 13:32:54 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://recent-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 129.110.241.101 at 2016-03-27 13:32:55 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered guiders/_signup_bar.html.haml (0.7ms)
+  Rendered guiders_sessions/_signin.html.haml (12.4ms)
+  Rendered guiders/new.html.haml within layouts/application (28.8ms)
+Completed 200 OK in 139ms (Views: 110.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/guiders_login" for 129.110.241.101 at 2016-03-27 13:33:06 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EZkGXZRUqpCZLozkfcWEc6wg59pT+rTGyJttoUkxQ3+J5Wmu8eYf4dYIVLwpj/Kj40Ge0o2jys90gVrPyFhMUQ==", "session"=>{"email"=>"a@gmail.com", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mGuider Load (0.3ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."email" = ? LIMIT 1  [["email", "a@gmail.com"]]
+Redirected to https://recent-swetha3294.c9users.io/guiders/1
+Completed 302 Found in 99ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/guiders/1" for 129.110.241.101 at 2016-03-27 13:33:07 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGuider Load (0.3ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (47.1ms)
+  Rendered guiders/show.html.haml within layouts/application (50.2ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `new_trip_good_path' for #<#<Class:0x007f1b6aa55488>:0x007f1b6a569730>
+Did you mean?  new_guider_trip_good_path):
+     7:      %li
+     8:       =link_to "Home", "#show"
+     9:      %li
+    10:       =link_to "Trip Goods",new_trip_good_path
+    11:      %li
+    12:       =link_to "Profile","#"
+    13:      %li
+  app/views/guiders/_navigation_bar.html.haml:10:in `_app_views_guiders__navigation_bar_html_haml__3113830067004084256_69877862124220'
+  app/views/guiders/show.html.haml:2:in `_app_views_guiders_show_html_haml___3773115188910530790_69877862449700'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (95.0ms)
+
+
+Started GET "/guiders/1" for 129.110.241.101 at 2016-03-27 13:33:54 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGuider Load (0.2ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (4.7ms)
+  Rendered guiders/show.html.haml within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (No route matches {:action=>"new", :controller=>"trip_goods", :id=>"1"} missing required keys: [:guider_id]):
+     7:      %li
+     8:       =link_to "Home", "#show"
+     9:      %li
+    10:       =link_to "Trip Goods",new_guider_trip_good_path
+    11:      %li
+    12:       =link_to "Profile","#"
+    13:      %li
+  app/views/guiders/_navigation_bar.html.haml:10:in `_app_views_guiders__navigation_bar_html_haml__3113830067004084256_69877864998760'
+  app/views/guiders/show.html.haml:2:in `_app_views_guiders_show_html_haml___3773115188910530790_69877862449700'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (95.1ms)
+
+
+Started GET "/guiders/1" for 129.110.241.101 at 2016-03-27 13:35:11 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGuider Load (0.2ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (4.4ms)
+  Rendered guiders/show.html.haml within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"trip_goods", :id=>"1"} missing required keys: [:guider_id]):
+     7:      %li
+     8:       =link_to "Home", "#show"
+     9:      %li
+    10:       =link_to "Trip Goods",guider_trip_good_path
+    11:      %li
+    12:       =link_to "Profile","#"
+    13:      %li
+  app/views/guiders/_navigation_bar.html.haml:10:in `_app_views_guiders__navigation_bar_html_haml__3113830067004084256_69877870473240'
+  app/views/guiders/show.html.haml:2:in `_app_views_guiders_show_html_haml___3773115188910530790_69877862449700'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (86.3ms)
+
+
+Started GET "/guiders/1" for 129.110.241.101 at 2016-03-27 13:35:21 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGuider Load (0.2ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (4.1ms)
+  Rendered guiders/show.html.haml within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"trip_goods", :id=>"1"} missing required keys: [:guider_id]):
+     7:      %li
+     8:       =link_to "Home", "#show"
+     9:      %li
+    10:       =link_to "Trip Goods",guider_trip_goods_path
+    11:      %li
+    12:       =link_to "Profile","#"
+    13:      %li
+  app/views/guiders/_navigation_bar.html.haml:10:in `_app_views_guiders__navigation_bar_html_haml__3113830067004084256_69877848582560'
+  app/views/guiders/show.html.haml:2:in `_app_views_guiders_show_html_haml___3773115188910530790_69877862449700'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (100.9ms)
+
+
+Started GET "/guiders/1" for 129.110.241.101 at 2016-03-27 13:36:18 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGuider Load (0.2ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (4.2ms)
+  Rendered guiders/show.html.haml within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"trip_goods", :id=>"1"} missing required keys: [:guider_id]):
+     7:      %li
+     8:       =link_to "Home", "#show"
+     9:      %li
+    10:       =link_to "Trip Goods",guider_trip_goods_path,1
+    11:      %li
+    12:       =link_to "Profile","#"
+    13:      %li
+  app/views/guiders/_navigation_bar.html.haml:10:in `_app_views_guiders__navigation_bar_html_haml__3113830067004084256_36025740'
+  app/views/guiders/show.html.haml:2:in `_app_views_guiders_show_html_haml___3773115188910530790_69877862449700'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (93.1ms)
+
+
+Started GET "/guiders/1" for 129.110.241.101 at 2016-03-27 13:37:04 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGuider Load (0.2ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (7.8ms)
+  Rendered guiders/show.html.haml within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"trip_goods", :id=>"1"} missing required keys: [:guider_id]):
+     7:      %li
+     8:       =link_to "Home", "#show"
+     9:      %li
+    10:       =link_to "Trip Goods",guider_trip_goods_path,:guider_id => 1
+    11:      %li
+    12:       =link_to "Profile","#"
+    13:      %li
+  app/views/guiders/_navigation_bar.html.haml:10:in `_app_views_guiders__navigation_bar_html_haml__3113830067004084256_69877873317560'
+  app/views/guiders/show.html.haml:2:in `_app_views_guiders_show_html_haml___3773115188910530790_69877862449700'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (92.1ms)
+
+
+Started GET "/" for 129.110.241.101 at 2016-03-27 13:50:10 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (0.4ms)
+Completed 200 OK in 54ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for 129.110.241.101 at 2016-03-27 13:50:13 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://recent-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 129.110.241.101 at 2016-03-27 13:50:13 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered guiders/_signup_bar.html.haml (0.1ms)
+  Rendered guiders_sessions/_signin.html.haml (0.9ms)
+  Rendered guiders/new.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 76ms (Views: 60.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/guiders_login" for 129.110.241.101 at 2016-03-27 13:50:31 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RC61JZ88xx9eAVg1JJzg7eLHsrVmQygGVFxZumTUG3zcUtrW+o5ybhEngG1w1pY9rabLvbgaVg/oRm7U5b0UUg==", "session"=>{"email"=>"a@gmail.com", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[36mGuider Load (0.4ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."email" = ? LIMIT 1[0m  [["email", "a@gmail.com"]]
+Redirected to https://recent-swetha3294.c9users.io/guiders/1
+Completed 302 Found in 79ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/guiders/1" for 129.110.241.101 at 2016-03-27 13:50:31 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGuider Load (0.3ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (2.8ms)
+  Rendered guiders/show.html.haml within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"trip_goods", :id=>"1"} missing required keys: [:guider_id]):
+     7:      %li
+     8:       =link_to "Home", "#show"
+     9:      %li
+    10:       =link_to "Trip Goods",guider_trip_goods_path,:guider_id => 1
+    11:      %li
+    12:       =link_to "Profile","#"
+    13:      %li
+  app/views/guiders/_navigation_bar.html.haml:10:in `_app_views_guiders__navigation_bar_html_haml__3113830067004084256_69877873317560'
+  app/views/guiders/show.html.haml:2:in `_app_views_guiders_show_html_haml___3773115188910530790_69877862449700'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (95.4ms)
+
+
+Started GET "/" for 129.110.241.101 at 2016-03-27 13:55:26 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (0.4ms)
+Completed 200 OK in 52ms (Views: 51.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for 129.110.241.101 at 2016-03-27 13:55:28 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://recent-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 85ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 129.110.241.101 at 2016-03-27 13:55:28 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered guiders/_signup_bar.html.haml (0.1ms)
+  Rendered guiders_sessions/_signin.html.haml (1.0ms)
+  Rendered guiders/new.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 61ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/guiders_login" for 129.110.241.101 at 2016-03-27 13:55:39 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hZ0CzhSSoe6HL2Crvr9fHBQ1gmcg/vZx5CdxxW28qKwd4W09cSAUn8gJuPPq9SnMW1T7b/6niHhYPUar7NWngg==", "session"=>{"email"=>"a@gmail.com", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[36mGuider Load (0.2ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."email" = ? LIMIT 1[0m  [["email", "a@gmail.com"]]
+Redirected to https://recent-swetha3294.c9users.io/guiders/1
+Completed 302 Found in 118ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/guiders/1" for 129.110.241.101 at 2016-03-27 13:55:39 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGuider Load (0.2ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (4.5ms)
+  Rendered guiders/show.html.haml within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (No route matches {:action=>"new", :controller=>"trip_goods", :id=>"1"} missing required keys: [:guider_id]):
+     7:      %li
+     8:       =link_to "Home", "#show"
+     9:      %li
+    10:       =link_to "Trip Goods",new_guider_trip_good_path
+    11:      %li
+    12:       =link_to "Profile","#"
+    13:      %li
+  app/views/guiders/_navigation_bar.html.haml:10:in `_app_views_guiders__navigation_bar_html_haml__3113830067004084256_69877870446280'
+  app/views/guiders/show.html.haml:2:in `_app_views_guiders_show_html_haml___3773115188910530790_69877862449700'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (26.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (98.4ms)
+
+
+Started GET "/" for 129.110.241.101 at 2016-03-27 14:07:04 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (0.4ms)
+Completed 200 OK in 54ms (Views: 53.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 129.110.241.101 at 2016-03-27 14:07:05 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (0.4ms)
+Completed 200 OK in 57ms (Views: 56.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for 129.110.241.101 at 2016-03-27 14:07:07 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://recent-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 129.110.241.101 at 2016-03-27 14:07:07 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered guiders/_signup_bar.html.haml (0.1ms)
+  Rendered guiders_sessions/_signin.html.haml (0.8ms)
+  Rendered guiders/new.html.haml within layouts/application (6.6ms)
+Completed 200 OK in 75ms (Views: 57.5ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/guiders_login" for 129.110.241.101 at 2016-03-27 14:07:17 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zgu3RjDLcQ+CcJ0B8qr/IxLqHrHHIuEDePDc8622bqxWd9i1VXnEfs1WRVmm4InzXYtnuRl7nwrE6uudLN9hgg==", "session"=>{"email"=>"a@gmail.com", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[36mGuider Load (0.3ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."email" = ? LIMIT 1[0m  [["email", "a@gmail.com"]]
+Redirected to https://recent-swetha3294.c9users.io/guiders/1
+Completed 302 Found in 79ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/guiders/1" for 129.110.241.101 at 2016-03-27 14:07:17 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGuider Load (0.3ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (2.6ms)
+  Rendered guiders/show.html.haml within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (No route matches {:action=>"new", :controller=>"trip_goods", :id=>"1"} missing required keys: [:guider_id]):
+     7:      %li
+     8:       =link_to "Home", "#show"
+     9:      %li
+    10:       =link_to "Trip Goods",new_guider_trip_good_path
+    11:      %li
+    12:       =link_to "Profile","#"
+    13:      %li
+  app/views/guiders/_navigation_bar.html.haml:10:in `_app_views_guiders__navigation_bar_html_haml__3113830067004084256_69877870446280'
+  app/views/guiders/show.html.haml:2:in `_app_views_guiders_show_html_haml___3773115188910530790_69877862449700'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (94.6ms)
+
+
+Started GET "/" for 129.110.241.101 at 2016-03-27 14:09:14 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (5.7ms)
+Completed 200 OK in 445ms (Views: 427.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for 129.110.241.101 at 2016-03-27 14:09:17 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://recent-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 129.110.241.101 at 2016-03-27 14:09:17 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered guiders/_signup_bar.html.haml (1.0ms)
+  Rendered guiders_sessions/_signin.html.haml (18.1ms)
+  Rendered guiders/new.html.haml within layouts/application (39.9ms)
+Completed 200 OK in 133ms (Views: 100.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/guiders" for 129.110.241.101 at 2016-03-27 14:09:36 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4Jnazdsw8PXaKmrl+gbn1OVyMPlFWKl6gJLLAoDurNt45bU+voJFhJUMsr2uTJEEqhNJ8ZsB13M8iPxsAYej9Q==", "guider"=>{"first_name"=>"", "middle_name"=>"", "last_name"=>"", "age"=>"", "email"=>"e@gmail.com", "password"=>"[FILTERED]", "contact_number"=>"", "alter_number"=>""}, "commit"=>"Join us now!"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mGuider Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "guiders" WHERE LOWER("guiders"."email") = LOWER('e@gmail.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered guiders/_signup_bar.html.haml (1.3ms)
+  Rendered guiders_sessions/_signin.html.haml (3.1ms)
+  Rendered guiders/new.html.haml within layouts/application (17.9ms)
+Completed 200 OK in 274ms (Views: 83.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/guiders" for 129.110.241.101 at 2016-03-27 14:09:53 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tjJiQ8MOvdSph7zygdBRlfMWKI5DR3BSPjLD0I4jIScuTg2wprwIpeahZKrVmidFvHdRhp0eDluCKPS+D0ouCQ==", "guider"=>{"first_name"=>"Swetha", "middle_name"=>"", "last_name"=>"Sridharan", "age"=>"11", "email"=>"e@gmail.com", "password"=>"[FILTERED]", "contact_number"=>"111111111", "alter_number"=>"111111111"}, "commit"=>"Join us now!"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mGuider Exists (0.3ms)[0m  SELECT  1 AS one FROM "guiders" WHERE LOWER("guiders"."email") = LOWER('e@gmail.com') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "guiders" ("first_name", "middle_name", "last_name", "password_digest", "email", "age", "contact_number", "alter_number", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Swetha"], ["middle_name", ""], ["last_name", "Sridharan"], ["password_digest", "$2a$10$bmboUCtiMZlGHa6gBnbbR.1CFxJAjx1E3j4T./KkAVe9vQXOWLAIm"], ["email", "e@gmail.com"], ["age", 11], ["contact_number", "111111111"], ["alter_number", "111111111"], ["created_at", "2016-03-27 14:09:53.300780"], ["updated_at", "2016-03-27 14:09:53.300780"]]
+  [1m[35m (11.8ms)[0m  commit transaction
+Redirected to https://recent-swetha3294.c9users.io/guiders_login
+Completed 302 Found in 182ms (ActiveRecord: 12.9ms)
+
+
+Started GET "/guiders_login" for 129.110.241.101 at 2016-03-27 14:09:53 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersSessionsController#new as HTML
+  Rendered guiders_sessions/_signin.html.haml (1.7ms)
+  Rendered guiders_sessions/new.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 132ms (Views: 131.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/guiders_login" for 129.110.241.101 at 2016-03-27 14:10:02 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zWRMPqEslQz43gT8i34IU7GKzIcDMjxMvtEdRbd0hGhVGCPNxJ4gfbf43KTfNH6D/uu1j91rQkUCyyorNh2LRg==", "session"=>{"email"=>"e@gmail.com", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[36mGuider Load (0.9ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."email" = ? LIMIT 1[0m  [["email", "e@gmail.com"]]
+Redirected to https://recent-swetha3294.c9users.io/guiders/2
+Completed 302 Found in 204ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/guiders/2" for 129.110.241.101 at 2016-03-27 14:10:02 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mGuider Load (0.4ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered guiders/_navigation_bar.html.haml (19.6ms)
+  Rendered guiders/show.html.haml within layouts/application (26.4ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (No route matches {:action=>"new", :controller=>"trip_goods", :id=>"2"} missing required keys: [:guider_id]):
+     7:      %li
+     8:       =link_to "Home", "#show"
+     9:      %li
+    10:       =link_to "Trip Goods",new_guider_trip_good_path
+    11:      %li
+    12:       =link_to "Profile","#"
+    13:      %li
+  app/views/guiders/_navigation_bar.html.haml:10:in `_app_views_guiders__navigation_bar_html_haml__1941817747147040271_70221218215520'
+  app/views/guiders/show.html.haml:2:in `_app_views_guiders_show_html_haml__3165390275805373671_70221217583540'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (131.0ms)
+
+
+Started GET "/guiders/2" for 129.110.241.101 at 2016-03-27 14:10:57 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mGuider Load (0.3ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered guiders/_navigation_bar.html.haml (48.5ms)
+  Rendered guiders/show.html.haml within layouts/application (51.0ms)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `trip_goods_path' for #<#<Class:0x007fbb4d08b708>:0x007fbb4e439bd8>):
+     7:      %li
+     8:       =link_to "Home", "#show"
+     9:      %li
+    10:       =link_to "Trip Good",trip_goods_path
+    11:      %li
+    12:       =link_to "Profile","#"
+    13:      %li
+  app/views/guiders/_navigation_bar.html.haml:10:in `_app_views_guiders__navigation_bar_html_haml__1941817747147040271_70221224182640'
+  app/views/guiders/show.html.haml:2:in `_app_views_guiders_show_html_haml__3165390275805373671_70221217583540'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (120.7ms)
+
+
+Started GET "/guiders" for 129.110.241.101 at 2016-03-27 14:11:03 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://recent-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 129.110.241.101 at 2016-03-27 14:11:04 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered guiders/_signup_bar.html.haml (0.1ms)
+  Rendered guiders_sessions/_signin.html.haml (1.1ms)
+  Rendered guiders/new.html.haml within layouts/application (5.6ms)
+Completed 200 OK in 65ms (Views: 64.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/guiders_login" for 129.110.241.101 at 2016-03-27 14:11:13 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z63pCpLOrbk0NDICekD1JffZv/BFyG+y3sjYElDmPdNX0Yb593wYyHsS6louCoP1uLjG+JuREbti0u980Y8y/Q==", "session"=>{"email"=>"e@gmail.com", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mGuider Load (0.2ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."email" = ? LIMIT 1  [["email", "e@gmail.com"]]
+Redirected to https://recent-swetha3294.c9users.io/guiders/2
+Completed 302 Found in 79ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/guiders/2" for 129.110.241.101 at 2016-03-27 14:11:14 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mGuider Load (0.2ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered guiders/_navigation_bar.html.haml (47.5ms)
+  Rendered guiders/show.html.haml within layouts/application (49.0ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined local variable or method `trip_goods_path' for #<#<Class:0x007fbb4d08b708>:0x007fbb4fe88458>):
+     7:      %li
+     8:       =link_to "Home", "#show"
+     9:      %li
+    10:       =link_to "Trip Good",trip_goods_path
+    11:      %li
+    12:       =link_to "Profile","#"
+    13:      %li
+  app/views/guiders/_navigation_bar.html.haml:10:in `_app_views_guiders__navigation_bar_html_haml__1941817747147040271_70221224182640'
+  app/views/guiders/show.html.haml:2:in `_app_views_guiders_show_html_haml__3165390275805373671_70221217583540'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (97.9ms)
+
+
+Started GET "/guiders/2" for 129.110.241.101 at 2016-03-27 14:12:03 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mGuider Load (0.3ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered guiders/_navigation_bar.html.haml (2.2ms)
+  Rendered guiders/_basic_info.html.haml (4.7ms)
+  Rendered guiders/_update_profile.html.haml (30.7ms)
+  Rendered guiders/_qualification.html.haml (3.7ms)
+  Rendered guiders/show.html.haml within layouts/application (47.9ms)
+Completed 200 OK in 120ms (Views: 118.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/guiders/2" for 129.110.241.101 at 2016-03-27 14:14:34 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mGuider Load (0.2ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered guiders/_navigation_bar.html.haml (5.2ms)
+  Rendered guiders/show.html.haml within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"trip_goods", :id=>"2"} missing required keys: [:guider_id]):
+     7:      %li
+     8:       =link_to "Home", "#show"
+     9:      %li
+    10:       =link_to "Trip Good",guider_trip_good_path
+    11:      %li
+    12:       =link_to "Profile","#"
+    13:      %li
+  app/views/guiders/_navigation_bar.html.haml:10:in `_app_views_guiders__navigation_bar_html_haml__1941817747147040271_70221224345260'
+  app/views/guiders/show.html.haml:2:in `_app_views_guiders_show_html_haml__3165390275805373671_70221217583540'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (90.0ms)
+
+
+Started GET "/guiders/2" for 129.110.241.101 at 2016-03-27 14:17:58 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mGuider Load (0.2ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered guiders/_navigation_bar.html.haml (3.2ms)
+  Rendered guiders/show.html.haml within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:10: unknown type of %string
+/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:10: syntax error, unexpected end-of-input):
+  app/views/guiders/_navigation_bar.html.haml:10: unknown type of %string
+  app/views/guiders/_navigation_bar.html.haml:10: syntax error, unexpected end-of-input
+  app/views/guiders/show.html.haml:2:in `_app_views_guiders_show_html_haml__3165390275805373671_70221217583540'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.0ms)
+
+
+Started GET "/guiders/2" for 129.110.241.101 at 2016-03-27 14:18:34 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mGuider Load (0.2ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered guiders/_navigation_bar.html.haml (6.9ms)
+  Rendered guiders/show.html.haml within layouts/application (8.8ms)
+Completed 500 Internal Server Error in 105ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+     7:      %li
+     8:       =link_to "Home", "#show"
+     9:      %li
+    10:       =link_to "Trip Good",guider_trip_good_path(:id => @trip_good.id)
+    11:      %li
+    12:       =link_to "Profile","#"
+    13:      %li
+  app/views/guiders/_navigation_bar.html.haml:10:in `_app_views_guiders__navigation_bar_html_haml__1941817747147040271_70221230585280'
+  app/views/guiders/show.html.haml:2:in `_app_views_guiders_show_html_haml__3165390275805373671_70221217583540'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (88.6ms)
+
+
+Started GET "/guiders/2" for 129.110.241.101 at 2016-03-27 14:19:58 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mGuider Load (0.2ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered guiders/_navigation_bar.html.haml (10.2ms)
+  Rendered guiders/show.html.haml within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+     7:      %li
+     8:       =link_to "Home", "#show"
+     9:      %li
+    10:       =link_to "Trip Good",guider_trip_good_path(:id => @guider_good.id)
+    11:      %li
+    12:       =link_to "Profile","#"
+    13:      %li
+  app/views/guiders/_navigation_bar.html.haml:10:in `_app_views_guiders__navigation_bar_html_haml__1941817747147040271_70221213869040'
+  app/views/guiders/show.html.haml:2:in `_app_views_guiders_show_html_haml__3165390275805373671_70221217583540'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (149.7ms)
+
+
+Started GET "/guiders/2" for 129.110.241.101 at 2016-03-27 14:20:42 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mGuider Load (0.3ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered guiders/_navigation_bar.html.haml (2.3ms)
+  Rendered guiders/_basic_info.html.haml (0.3ms)
+  Rendered guiders/_update_profile.html.haml (3.3ms)
+  Rendered guiders/_qualification.html.haml (1.0ms)
+  Rendered guiders/show.html.haml within layouts/application (78.2ms)
+Completed 200 OK in 132ms (Views: 130.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/guiders/2" for 129.110.241.101 at 2016-03-27 14:23:13 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mGuider Load (0.2ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered guiders/_navigation_bar.html.haml (4.2ms)
+  Rendered guiders/show.html.haml within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"trip_goods", :id=>"2"} missing required keys: [:guider_id]):
+     7:      %li
+     8:       =link_to "Home", "#show"
+     9:      %li
+    10:       =link_to "Trip Good",guider_trip_goods_path
+    11:      %li
+    12:       =link_to "Profile","#"
+    13:      %li
+  app/views/guiders/_navigation_bar.html.haml:10:in `_app_views_guiders__navigation_bar_html_haml__1941817747147040271_70221234975180'
+  app/views/guiders/show.html.haml:2:in `_app_views_guiders_show_html_haml__3165390275805373671_70221217583540'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (87.4ms)
+
+
+Started GET "/guiders/2" for 129.110.241.101 at 2016-03-27 14:24:25 +0000
+Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mGuider Load (0.2ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered guiders/_navigation_bar.html.haml (2.6ms)
+  Rendered guiders/_basic_info.html.haml (0.2ms)
+  Rendered guiders/_update_profile.html.haml (4.0ms)
+  Rendered guiders/_qualification.html.haml (3.5ms)
+  Rendered guiders/show.html.haml within layouts/application (15.8ms)
+Completed 200 OK in 204ms (Views: 202.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/guiders/2" for 165.91.49.230 at 2016-03-27 15:40:12 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mGuider Load (0.3ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered guiders/_navigation_bar.html.haml (6.7ms)
+  Rendered guiders/show.html.haml within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:11: syntax error, unexpected ')'
+));}\n          </li>\n          <li>\n            #{
+ ^
+/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:13: unknown regexp option - l
+/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:13: syntax error, unexpected $undefined
+));}\n          </li>\n          <li>\n            #{
+                      ^
+/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:13: syntax error, unexpected $undefined
+));}\n          </li>\n          <li>\n            #{
+                                      ^
+/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:15: syntax error, unexpected '}', expecting ')'
+));}\n          </li>\n        </...
+    ^
+/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:15: unknown regexp option - l
+/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:15: syntax error, unexpected $undefined
+...          </li>\n        </ul>\n      </nav>\n    </div>\n  ...
+...                               ^
+/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:15: unknown regexp options - dv
+/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:15: syntax error, unexpected $undefined
+.../ul>\n      </nav>\n    </div>\n  </div>\n</div>\n", -6, fal...
+...                               ^
+/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:15: unknown regexp options - dv
+/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:15: syntax error, unexpected $undefined
+...\n    </div>\n  </div>\n</div>\n", -6, false);::Haml::Util.h...
+...                               ^
+/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:15: unterminated string meets end of file
+/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:15: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/guiders/_navigation_bar.html.haml:11: syntax error, unexpected ')'
+  app/views/guiders/_navigation_bar.html.haml:13: unknown regexp option - l
+  app/views/guiders/_navigation_bar.html.haml:13: syntax error, unexpected $undefined
+  app/views/guiders/_navigation_bar.html.haml:13: syntax error, unexpected $undefined
+  app/views/guiders/_navigation_bar.html.haml:15: syntax error, unexpected '}', expecting ')'
+  app/views/guiders/_navigation_bar.html.haml:15: unknown regexp option - l
+  app/views/guiders/_navigation_bar.html.haml:15: syntax error, unexpected $undefined
+  app/views/guiders/_navigation_bar.html.haml:15: unknown regexp options - dv
+  app/views/guiders/_navigation_bar.html.haml:15: syntax error, unexpected $undefined
+  app/views/guiders/_navigation_bar.html.haml:15: unknown regexp options - dv
+  app/views/guiders/_navigation_bar.html.haml:15: syntax error, unexpected $undefined
+  app/views/guiders/_navigation_bar.html.haml:15: unterminated string meets end of file
+  app/views/guiders/_navigation_bar.html.haml:15: syntax error, unexpected end-of-input, expecting ')'
+  app/views/guiders/show.html.haml:2:in `_app_views_guiders_show_html_haml__3165390275805373671_70221217583540'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (90.3ms)
+
+
+Started GET "/" for 165.91.49.230 at 2016-03-27 16:00:28 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (0.4ms)
+Completed 200 OK in 61ms (Views: 60.5ms | ActiveRecord: 0.0ms)
+  [1m[36mTripGood Load (6.7ms)[0m  [1mSELECT "trip_goods".* FROM "trip_goods"[0m
+  [1m[35mTripGood Load (0.3ms)[0m  SELECT  "trip_goods".* FROM "trip_goods" WHERE "trip_goods"."id" = ? LIMIT 1  [["id", nil]]
+  [1m[36mTripGood Load (0.3ms)[0m  [1mSELECT  "trip_goods".* FROM "trip_goods" WHERE "trip_goods"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mGuider Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "guiders" WHERE "guiders"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mGuider Exists (0.2ms)[0m  SELECT  1 AS one FROM "guiders" WHERE "guiders"."email" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35mGuider Load (0.3ms)[0m  SELECT "guiders".* FROM "guiders"
+  [1m[36mGuider Load (0.4ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTripGood Load (0.3ms)[0m  SELECT  "trip_goods".* FROM "trip_goods" WHERE "trip_goods"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to DeleteColumnFromTraveler (20160327105823)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to DeleteColumnFromTraveler (20160327105823)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+
+
+Started GET "/" for 165.91.49.230 at 2016-03-27 16:22:48 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (8.0ms)
+Completed 200 OK in 370ms (Views: 352.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for 165.91.49.230 at 2016-03-27 16:22:53 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://recent-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.49.230 at 2016-03-27 16:22:53 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered guiders/_signup_bar.html.haml (0.9ms)
+  Rendered guiders_sessions/_signin.html.haml (18.9ms)
+  Rendered guiders/new.html.haml within layouts/application (42.8ms)
+Completed 200 OK in 125ms (Views: 95.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/guiders_login" for 165.91.49.230 at 2016-03-27 16:23:18 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DLjDwcW2DJqPayYNFslM4JACBhUgkkglABmcHrAbHreUxKwyoAS568BN/lVCgzow32N/Hf7LNiy8A6twMXIRmQ==", "session"=>{"email"=>"a@gmail.com", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mGuider Load (0.6ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."email" = ? LIMIT 1  [["email", "a@gmail.com"]]
+  Rendered guiders_sessions/_signin.html.haml (2.8ms)
+  Rendered guiders_sessions/new.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 208ms (Views: 98.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/guiders_login" for 165.91.49.230 at 2016-03-27 16:23:28 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Bs36Wvgmkpp596AP4TmnZDFh8BbMpbVMx6Owuvee4cCesZWpnZQn6zbReFe1c9G0fgCJHhL8y0V7uYfUdvfu7g==", "session"=>{"email"=>"a@gmail.com", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[36mGuider Load (0.2ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."email" = ? LIMIT 1[0m  [["email", "a@gmail.com"]]
+Redirected to https://recent-swetha3294.c9users.io/guiders/1
+Completed 302 Found in 194ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/guiders/1" for 165.91.49.230 at 2016-03-27 16:23:28 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGuider Load (0.4ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (3.8ms)
+  Rendered guiders/show.html.haml within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.4ms)
+
+SyntaxError (/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:11: syntax error, unexpected ')'
+));}\n          </li>\n          <li>\n            #{
+ ^
+/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:13: unknown regexp option - l
+/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:13: syntax error, unexpected $undefined
+));}\n          </li>\n          <li>\n            #{
+                      ^
+/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:13: syntax error, unexpected $undefined
+));}\n          </li>\n          <li>\n            #{
+                                      ^
+/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:15: syntax error, unexpected '}', expecting ')'
+));}\n          </li>\n        </...
+    ^
+/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:15: unknown regexp option - l
+/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:15: syntax error, unexpected $undefined
+...          </li>\n        </ul>\n      </nav>\n    </div>\n  ...
+...                               ^
+/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:15: unknown regexp options - dv
+/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:15: syntax error, unexpected $undefined
+.../ul>\n      </nav>\n    </div>\n  </div>\n</div>\n", -6, fal...
+...                               ^
+/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:15: unknown regexp options - dv
+/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:15: syntax error, unexpected $undefined
+...\n    </div>\n  </div>\n</div>\n", -6, false);::Haml::Util.h...
+...                               ^
+/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:15: unterminated string meets end of file
+/home/ubuntu/workspace/Byteme/app/views/guiders/_navigation_bar.html.haml:15: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/guiders/_navigation_bar.html.haml:11: syntax error, unexpected ')'
+  app/views/guiders/_navigation_bar.html.haml:13: unknown regexp option - l
+  app/views/guiders/_navigation_bar.html.haml:13: syntax error, unexpected $undefined
+  app/views/guiders/_navigation_bar.html.haml:13: syntax error, unexpected $undefined
+  app/views/guiders/_navigation_bar.html.haml:15: syntax error, unexpected '}', expecting ')'
+  app/views/guiders/_navigation_bar.html.haml:15: unknown regexp option - l
+  app/views/guiders/_navigation_bar.html.haml:15: syntax error, unexpected $undefined
+  app/views/guiders/_navigation_bar.html.haml:15: unknown regexp options - dv
+  app/views/guiders/_navigation_bar.html.haml:15: syntax error, unexpected $undefined
+  app/views/guiders/_navigation_bar.html.haml:15: unknown regexp options - dv
+  app/views/guiders/_navigation_bar.html.haml:15: syntax error, unexpected $undefined
+  app/views/guiders/_navigation_bar.html.haml:15: unterminated string meets end of file
+  app/views/guiders/_navigation_bar.html.haml:15: syntax error, unexpected end-of-input, expecting ')'
+  app/views/guiders/show.html.haml:2:in `_app_views_guiders_show_html_haml___3405212281400983961_70187999075540'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (98.3ms)
+
+
+Started GET "/guiders/1" for 165.91.49.230 at 2016-03-27 16:24:14 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGuider Load (0.2ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (2.3ms)
+  Rendered guiders/_basic_info.html.haml (4.3ms)
+  Rendered guiders/_update_profile.html.haml (25.3ms)
+  Rendered guiders/_qualification.html.haml (2.9ms)
+  Rendered guiders/show.html.haml within layouts/application (40.7ms)
+Completed 200 OK in 96ms (Views: 95.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.self-4aeff8a857dd9ad6fe47c7d8ff4a5f64190819f3f8195f4d300c55433529b141.css?body=1" for 165.91.49.230 at 2016-03-27 16:24:15 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders.self-ac1edc5d29aae46468b78373c225e8811b381950a07bd48e5c14489eff558e1f.css?body=1" for 165.91.49.230 at 2016-03-27 16:24:15 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/navigator.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 165.91.49.230 at 2016-03-27 16:24:15 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 165.91.49.230 at 2016-03-27 16:24:15 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders_sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 165.91.49.230 at 2016-03-27 16:24:15 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/travelers.self-2f8a0215a8eba7b72aacfcf6eb8a7e29f18d378b09f25bb095a2dc86d15d8629.css?body=1" for 165.91.49.230 at 2016-03-27 16:24:15 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/trip_good.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 165.91.49.230 at 2016-03-27 16:24:15 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 165.91.49.230 at 2016-03-27 16:24:15 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 165.91.49.230 at 2016-03-27 16:24:15 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 165.91.49.230 at 2016-03-27 16:24:15 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 165.91.49.230 at 2016-03-27 16:24:15 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 165.91.49.230 at 2016-03-27 16:24:15 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders_sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 165.91.49.230 at 2016-03-27 16:24:15 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/navigator.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 165.91.49.230 at 2016-03-27 16:24:15 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 165.91.49.230 at 2016-03-27 16:24:15 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/travelers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 165.91.49.230 at 2016-03-27 16:24:15 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/trip_good.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 165.91.49.230 at 2016-03-27 16:24:15 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 165.91.49.230 at 2016-03-27 16:24:15 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/guiders/1" for 165.91.49.230 at 2016-03-27 16:27:03 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGuider Load (0.2ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (5.0ms)
+  Rendered guiders/show.html.haml within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (No route matches {:action=>"new", :controller=>"trip_goods", :id=>"1"} missing required keys: [:guider_id]):
+     7:      %li
+     8:       =link_to "Home", "#show"
+     9:      %li
+    10:       =link_to "Trip Good",new_guider_trip_good_path
+    11:      %li
+    12:       =link_to "Profile","#"
+    13:      %li
+  app/views/guiders/_navigation_bar.html.haml:10:in `_app_views_guiders__navigation_bar_html_haml___3883412530730791191_70187887485680'
+  app/views/guiders/show.html.haml:2:in `_app_views_guiders_show_html_haml___3405212281400983961_70187999075540'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (86.2ms)
+
+
+Started GET "/guiders/1" for 165.91.49.230 at 2016-03-27 16:28:38 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGuider Load (0.3ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (2.9ms)
+  Rendered guiders/_basic_info.html.haml (0.4ms)
+  Rendered guiders/_update_profile.html.haml (4.0ms)
+  Rendered guiders/_qualification.html.haml (1.8ms)
+  Rendered guiders/show.html.haml within layouts/application (18.2ms)
+Completed 200 OK in 74ms (Views: 71.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/guiders/1" for 165.91.49.230 at 2016-03-27 16:30:34 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGuider Load (0.2ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (2.2ms)
+  Rendered guiders/_basic_info.html.haml (0.2ms)
+  Rendered guiders/_update_profile.html.haml (3.6ms)
+  Rendered guiders/_qualification.html.haml (1.0ms)
+  Rendered guiders/show.html.haml within layouts/application (13.1ms)
+Completed 200 OK in 77ms (Views: 75.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/guiders/1" for 165.91.49.230 at 2016-03-27 16:33:26 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGuider Load (0.5ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (55.8ms)
+  Rendered guiders/show.html.haml within layouts/application (58.0ms)
+Completed 500 Internal Server Error in 71ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined local variable or method `guider_tripgoods' for #<#<Class:0x007fabd695a8b0>:0x007fabc90ce5c8>
+Did you mean?  guider_trip_goods_url):
+     7:      %li
+     8:       =link_to "Home", "#show"
+     9:      %li
+    10:       =link_to "Trip Good",guider_tripgoods
+    11:      %li
+    12:       =link_to "Profile","#"
+    13:      %li
+  app/views/guiders/_navigation_bar.html.haml:10:in `_app_views_guiders__navigation_bar_html_haml___3883412530730791191_70187894770460'
+  app/views/guiders/show.html.haml:2:in `_app_views_guiders_show_html_haml___3405212281400983961_70187999075540'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (102.7ms)
+
+
+Started GET "/guiders/1" for 165.91.49.230 at 2016-03-27 16:34:44 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGuider Load (0.2ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (4.4ms)
+  Rendered guiders/_basic_info.html.haml (0.2ms)
+  Rendered guiders/_update_profile.html.haml (2.1ms)
+  Rendered guiders/_qualification.html.haml (1.0ms)
+  Rendered guiders/show.html.haml within layouts/application (15.0ms)
+Completed 200 OK in 71ms (Views: 69.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/guiders/new" for 165.91.49.230 at 2016-03-27 16:34:47 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered guiders/_signup_bar.html.haml (0.1ms)
+  Rendered guiders_sessions/_signin.html.haml (1.0ms)
+  Rendered guiders/new.html.haml within layouts/application (6.1ms)
+Completed 200 OK in 152ms (Views: 151.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.49.230 at 2016-03-27 16:34:56 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered guiders/_signup_bar.html.haml (0.1ms)
+  Rendered guiders_sessions/_signin.html.haml (0.9ms)
+  Rendered guiders/new.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 65ms (Views: 64.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/1" for 165.91.49.230 at 2016-03-27 16:35:36 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGuider Load (0.3ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (153.2ms)
+  Rendered guiders/show.html.haml within layouts/application (155.1ms)
+Completed 500 Internal Server Error in 161ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `new_guider__trip_good_path' for #<#<Class:0x007fabd695a8b0>:0x007fabd57f2870>
+Did you mean?  new_guider_trip_good_path
+               new_guider_path
+               new_guider_trip_good_url):
+     7:      %li
+     8:       =link_to "Home", "#show"
+     9:      %li
+    10:       =link_to "Trip Good",new_guider__trip_good_path
+    11:      %li
+    12:       =link_to "Profile","#"
+    13:      %li
+  app/views/guiders/_navigation_bar.html.haml:10:in `_app_views_guiders__navigation_bar_html_haml___3883412530730791191_70187998906080'
+  app/views/guiders/show.html.haml:2:in `_app_views_guiders_show_html_haml___3405212281400983961_70187999075540'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (136.1ms)
+
+
+Started GET "/guiders/1" for 165.91.49.230 at 2016-03-27 16:35:57 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGuider Load (0.2ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (4.5ms)
+  Rendered guiders/show.html.haml within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (No route matches {:action=>"new", :controller=>"trip_goods", :id=>"1"} missing required keys: [:guider_id]):
+     7:      %li
+     8:       =link_to "Home", "#show"
+     9:      %li
+    10:       =link_to "Trip Good",new_guider_trip_good_path
+    11:      %li
+    12:       =link_to "Profile","#"
+    13:      %li
+  app/views/guiders/_navigation_bar.html.haml:10:in `_app_views_guiders__navigation_bar_html_haml___3883412530730791191_70187891746220'
+  app/views/guiders/show.html.haml:2:in `_app_views_guiders_show_html_haml___3405212281400983961_70187999075540'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (22.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (92.5ms)
+
+
+Started GET "/guiders/1" for 165.91.49.230 at 2016-03-27 16:36:21 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGuider Load (0.7ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (6.8ms)
+  Rendered guiders/show.html.haml within layouts/application (9.4ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"trip_goods", :id=>"1"} missing required keys: [:guider_id]):
+     7:      %li
+     8:       =link_to "Home", "#show"
+     9:      %li
+    10:       =link_to "Trip Good",guider_trip_good_path
+    11:      %li
+    12:       =link_to "Profile","#"
+    13:      %li
+  app/views/guiders/_navigation_bar.html.haml:10:in `_app_views_guiders__navigation_bar_html_haml___3883412530730791191_70188007520420'
+  app/views/guiders/show.html.haml:2:in `_app_views_guiders_show_html_haml___3405212281400983961_70187999075540'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.0ms)
+
+
+Started GET "/guiders/1" for 165.91.49.230 at 2016-03-27 16:37:21 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGuider Load (0.3ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (1.9ms)
+  Rendered guiders/_basic_info.html.haml (0.2ms)
+  Rendered guiders/_update_profile.html.haml (3.3ms)
+  Rendered guiders/_qualification.html.haml (1.6ms)
+  Rendered guiders/show.html.haml within layouts/application (19.0ms)
+Completed 200 OK in 88ms (Views: 69.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/guiders/1" for 165.91.49.230 at 2016-03-27 16:39:04 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGuider Load (0.3ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (2.3ms)
+  Rendered guiders/_basic_info.html.haml (0.3ms)
+  Rendered guiders/_update_profile.html.haml (3.0ms)
+  Rendered guiders/_qualification.html.haml (1.4ms)
+  Rendered guiders/show.html.haml within layouts/application (12.9ms)
+Completed 200 OK in 96ms (Views: 64.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/trip_goods/new" for 165.91.49.230 at 2016-03-27 16:39:06 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#new as HTML
+  Rendered trip_goods/new.html.haml within layouts/application (5.7ms)
+Completed 200 OK in 95ms (Views: 66.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/trip_goods" for 165.91.49.230 at 2016-03-27 16:39:09 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5Zq84cp6gVqEZZVSxpWXuiTBIUSvVb8m/RJLd0RodZ195tMSr8g0K8tDTQqS3+Fqa6BYTHEMwS9BCHwZxQF6sw==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"", "end_date"=>"", "on_shelf"=>"true", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered trip_goods/new.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 67ms (Views: 62.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/trip_goods" for 165.91.49.230 at 2016-03-27 16:39:19 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dS8d1sik8MuNc01nUoDNhX+7DNaGLzdAY8R/26W+WFLtU3IlrRZFusJVlT8GyrtVMNp13lh2SUnf3ki1JNdXfA==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"03/02/2016", "end_date"=>"03/05/2016", "on_shelf"=>"true", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "trip_goods" ("beginning_date", "end_date", "review", "title", "introduction", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["beginning_date", "2016-02-03"], ["end_date", "2016-05-03"], ["review", ""], ["title", ""], ["introduction", ""], ["created_at", "2016-03-27 16:39:19.374890"], ["updated_at", "2016-03-27 16:39:19.374890"]]
+  [1m[35m (12.4ms)[0m  commit transaction
+Redirected to 
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 13.2ms)
+
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  app/controllers/trip_goods_controller.rb:13:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (99.5ms)
+
+
+Started GET "/trip_goods" for 165.91.49.230 at 2016-03-27 16:42:56 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#index as HTML
+Redirected to https://recent-swetha3294.c9users.io/trip_goods/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/trip_goods/new" for 165.91.49.230 at 2016-03-27 16:42:56 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#new as HTML
+  Rendered trip_goods/new.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 109ms (Views: 86.0ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/trip_goods" for 165.91.49.230 at 2016-03-27 16:43:06 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bAB2jgEkGF30TmpkcUUaalaDE4UsDq2kAoGiKXf/Vjb0fBl9ZJatLLtosjwlD2y6GeJqjfJX062+m5VH9pZZGA==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"03/02/2016", "end_date"=>"03/05/2016", "on_shelf"=>"true", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "trip_goods" ("beginning_date", "end_date", "review", "title", "introduction", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["beginning_date", "2016-02-03"], ["end_date", "2016-05-03"], ["review", ""], ["title", ""], ["introduction", ""], ["created_at", "2016-03-27 16:43:06.090450"], ["updated_at", "2016-03-27 16:43:06.090450"]]
+  [1m[36m (195.9ms)[0m  [1mcommit transaction[0m
+Redirected to https://recent-swetha3294.c9users.io/trip_goods/new
+Completed 302 Found in 203ms (ActiveRecord: 196.6ms)
+
+
+Started GET "/trip_goods/new" for 165.91.49.230 at 2016-03-27 16:43:06 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#new as HTML
+  Rendered trip_goods/new.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 62ms (Views: 60.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 165.91.49.230 at 2016-03-27 16:43:15 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (0.3ms)
+Completed 200 OK in 64ms (Views: 63.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for 165.91.49.230 at 2016-03-27 16:43:17 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://recent-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.49.230 at 2016-03-27 16:43:17 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered guiders/_signup_bar.html.haml (0.1ms)
+  Rendered guiders_sessions/_signin.html.haml (1.3ms)
+  Rendered guiders/new.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 120ms (Views: 94.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/guiders_login" for 165.91.49.230 at 2016-03-27 16:43:25 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AF9u0fl25PckyYPafXH+0IokplFRQOQVH1Q5co9ixPyYIwEinMRRhmvvW4IpO4gAxUXfWY8ZmhyjTg4cDgvL0g==", "session"=>{"email"=>"a@gmail.com", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mGuider Load (0.5ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."email" = ? LIMIT 1  [["email", "a@gmail.com"]]
+Redirected to https://recent-swetha3294.c9users.io/guiders/1
+Completed 302 Found in 81ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/guiders/1" for 165.91.49.230 at 2016-03-27 16:43:25 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGuider Load (0.5ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (0.6ms)
+  Rendered guiders/_basic_info.html.haml (0.3ms)
+  Rendered guiders/_update_profile.html.haml (3.5ms)
+  Rendered guiders/_qualification.html.haml (1.2ms)
+  Rendered guiders/show.html.haml within layouts/application (13.6ms)
+Completed 200 OK in 86ms (Views: 83.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/trip_goods/new" for 165.91.49.230 at 2016-03-27 16:43:28 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#new as HTML
+  Rendered trip_goods/new.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 55ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trip_goods/new" for 165.91.49.230 at 2016-03-27 16:44:35 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#new as HTML
+  Rendered trip_goods/new.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 65ms (Views: 64.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/trip_goods" for 165.91.49.230 at 2016-03-27 16:44:37 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2buGHu+T8lZPTQrCd630xZ36Cn4pCeGoNjCrObyYklxBx+ntiiFHJwBr0poj54IV0ptzdvdQn6GKKpxXPfGdcg==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"", "end_date"=>"", "on_shelf"=>"true", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered trip_goods/new.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 72ms (Views: 66.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/guiders/1" for 165.91.49.230 at 2016-03-27 16:44:42 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGuider Load (0.3ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (2.7ms)
+  Rendered guiders/_basic_info.html.haml (3.9ms)
+  Rendered guiders/_update_profile.html.haml (5.9ms)
+  Rendered guiders/_qualification.html.haml (3.5ms)
+  Rendered guiders/show.html.haml within layouts/application (26.4ms)
+Completed 200 OK in 86ms (Views: 83.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/guiders/1" for 165.91.49.230 at 2016-03-27 16:46:23 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGuider Load (0.2ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (0.4ms)
+  Rendered guiders/_basic_info.html.haml (0.3ms)
+  Rendered guiders/_update_profile.html.haml (2.4ms)
+  Rendered guiders/_qualification.html.haml (2.5ms)
+  Rendered guiders/show.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 72ms (Views: 70.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trip_goods/new" for 165.91.49.230 at 2016-03-27 16:46:25 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#new as HTML
+  Rendered trip_goods/new.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 72ms (Views: 70.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/trip_goods" for 165.91.49.230 at 2016-03-27 16:46:29 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cHrGKhReVFtz9+tXqDIcMbotk3Ct5r9kjrTo2ZotUPToBqnZcezhKjzRMw/8eGrh9UzqeHO/wW0yrt+3G0Rf2g==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"", "end_date"=>"", "on_shelf"=>"true", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered trip_goods/new.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 76ms (Views: 71.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/guiders/1" for 165.91.49.230 at 2016-03-27 16:46:32 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGuider Load (0.5ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (2.4ms)
+  Rendered guiders/_basic_info.html.haml (0.3ms)
+  Rendered guiders/_update_profile.html.haml (5.1ms)
+  Rendered guiders/_qualification.html.haml (1.5ms)
+  Rendered guiders/show.html.haml within layouts/application (21.2ms)
+Completed 200 OK in 101ms (Views: 98.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/guiders/1" for 165.91.49.230 at 2016-03-27 16:47:09 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGuider Load (0.3ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (0.3ms)
+  Rendered guiders/_basic_info.html.haml (0.2ms)
+  Rendered guiders/_update_profile.html.haml (2.7ms)
+  Rendered guiders/_qualification.html.haml (1.3ms)
+  Rendered guiders/show.html.haml within layouts/application (12.9ms)
+Completed 200 OK in 162ms (Views: 78.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/trip_goods/new" for 165.91.49.230 at 2016-03-27 16:47:11 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#new as HTML
+  Rendered trip_goods/new.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 83ms (Views: 69.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/trip_goods" for 165.91.49.230 at 2016-03-27 16:47:18 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vTE93QQzh9ukr8KIWMMbFPOZHaU2I9Tkwb2SGKQPCuclTVIuYYEyquuJGtAMiW3EvPhkreh6qu19p6V2JWYFyQ==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"03/02/2016", "end_date"=>"03/05/2016", "on_shelf"=>"true", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "trip_goods" ("beginning_date", "end_date", "review", "title", "introduction", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["beginning_date", "2016-02-03"], ["end_date", "2016-05-03"], ["review", ""], ["title", ""], ["introduction", ""], ["created_at", "2016-03-27 16:47:18.249609"], ["updated_at", "2016-03-27 16:47:18.249609"]]
+  [1m[35m (13.5ms)[0m  commit transaction
+Redirected to https://recent-swetha3294.c9users.io/guiders/1
+Completed 302 Found in 19ms (ActiveRecord: 14.1ms)
+
+
+Started GET "/guiders/1" for 165.91.49.230 at 2016-03-27 16:47:18 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGuider Load (0.2ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (0.3ms)
+  Rendered guiders/_basic_info.html.haml (0.3ms)
+  Rendered guiders/_update_profile.html.haml (3.0ms)
+  Rendered guiders/_qualification.html.haml (1.0ms)
+  Rendered guiders/show.html.haml within layouts/application (11.0ms)
+Completed 200 OK in 77ms (Views: 75.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trip_goods/new" for 165.91.49.230 at 2016-03-27 16:47:33 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#new as HTML
+  Rendered trip_goods/new.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 62ms (Views: 60.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/trip_goods" for 165.91.49.230 at 2016-03-27 16:48:03 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GigHHq5fcz/qOiNTC8WvIdvj2UcjQNjiuN1Y9qKUfX+CVGjty+3GTqUc+wtfj9nxlIKgT/0ZpusEx2+YI/1yUQ==", "trip_good"=>{"guider_id"=>"", "city_id"=>"", "beginning_date"=>"03/02/2016", "end_date"=>"03/05/2016", "on_shelf"=>"true", "title"=>"", "review"=>"", "introduction"=>"", "capacity"=>"", "price"=>""}, "commit"=>"Generate Trip Good"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "trip_goods" ("beginning_date", "end_date", "review", "title", "introduction", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["beginning_date", "2016-02-03"], ["end_date", "2016-05-03"], ["review", ""], ["title", ""], ["introduction", ""], ["created_at", "2016-03-27 16:48:03.407904"], ["updated_at", "2016-03-27 16:48:03.407904"]]
+  [1m[35m (11.7ms)[0m  commit transaction
+Redirected to https://recent-swetha3294.c9users.io/guiders/1
+Completed 302 Found in 17ms (ActiveRecord: 12.3ms)
+
+
+Started GET "/guiders/1" for 165.91.49.230 at 2016-03-27 16:48:03 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGuider Load (0.2ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (0.5ms)
+  Rendered guiders/_basic_info.html.haml (0.4ms)
+  Rendered guiders/_update_profile.html.haml (6.0ms)
+  Rendered guiders/_qualification.html.haml (1.3ms)
+  Rendered guiders/show.html.haml within layouts/application (16.3ms)
+Completed 200 OK in 85ms (Views: 83.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/guiders/1" for 165.91.49.230 at 2016-03-27 16:50:38 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGuider Load (0.2ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (0.4ms)
+  Rendered guiders/_basic_info.html.haml (0.3ms)
+  Rendered guiders/_update_profile.html.haml (3.6ms)
+  Rendered guiders/_qualification.html.haml (1.1ms)
+  Rendered guiders/show.html.haml within layouts/application (93.0ms)
+Completed 200 OK in 142ms (Views: 141.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/guiders/1" for 165.91.49.230 at 2016-03-27 16:50:42 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGuider Load (0.2ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered guiders/_navigation_bar.html.haml (0.5ms)
+  Rendered guiders/_basic_info.html.haml (0.2ms)
+  Rendered guiders/_update_profile.html.haml (4.1ms)
+  Rendered guiders/_qualification.html.haml (1.7ms)
+  Rendered guiders/show.html.haml within layouts/application (14.4ms)
+Completed 200 OK in 74ms (Views: 72.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 165.91.49.230 at 2016-03-27 16:50:47 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (0.5ms)
+Completed 200 OK in 57ms (Views: 56.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 165.91.49.230 at 2016-03-27 16:50:48 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (0.4ms)
+Completed 200 OK in 57ms (Views: 56.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for 165.91.49.230 at 2016-03-27 16:50:50 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://recent-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.49.230 at 2016-03-27 16:50:50 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered guiders/_signup_bar.html.haml (0.1ms)
+  Rendered guiders_sessions/_signin.html.haml (1.1ms)
+  Rendered guiders/new.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 61ms (Views: 60.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/guiders" for 165.91.49.230 at 2016-03-27 16:51:38 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9PbFMkkHYwJglVhKeHBPuixVcGa3bqLOfKTvquc5dppsiqrBLLXWcy+zgBIsOjlqYzQJbmk33MfAvtjEZlB5tA==", "guider"=>{"first_name"=>"Swetha", "middle_name"=>"M", "last_name"=>"Sree", "age"=>"22", "email"=>"swethasridharan1236@gmail.com", "password"=>"[FILTERED]", "contact_number"=>"9799526632", "alter_number"=>"9879659988"}, "commit"=>"Join us now!"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mGuider Exists (5.2ms)[0m  [1mSELECT  1 AS one FROM "guiders" WHERE LOWER("guiders"."email") = LOWER('swethasridharan1236@gmail.com') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "guiders" ("first_name", "middle_name", "last_name", "password_digest", "email", "age", "contact_number", "alter_number", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["first_name", "Swetha"], ["middle_name", "M"], ["last_name", "Sree"], ["password_digest", "$2a$10$QJecNRH3SXa.NIoo3A7D1u1UtGpvOrdwNfiYVRb5fU3BuUaXGpjtm"], ["email", "swethasridharan1236@gmail.com"], ["age", 22], ["contact_number", "9799526632"], ["alter_number", "9879659988"], ["created_at", "2016-03-27 16:51:38.566919"], ["updated_at", "2016-03-27 16:51:38.566919"]]
+  [1m[36m (11.7ms)[0m  [1mcommit transaction[0m
+Redirected to https://recent-swetha3294.c9users.io/guiders_login
+Completed 302 Found in 128ms (ActiveRecord: 17.6ms)
+
+
+Started GET "/guiders_login" for 165.91.49.230 at 2016-03-27 16:51:38 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersSessionsController#new as HTML
+  Rendered guiders_sessions/_signin.html.haml (0.8ms)
+  Rendered guiders_sessions/new.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 64ms (Views: 63.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/guiders" for 165.91.49.230 at 2016-03-27 16:52:24 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pZ1aFau2wtWZzSEbI9tvEuBpdiYty6BzlU3bdZN+I/I94TXmzgR3pNbr+UN3kRnCrwgPLvOS3nopV+wbEhcs3A==", "guider"=>{"first_name"=>"Swetha", "middle_name"=>"M", "last_name"=>"Sree", "age"=>"22", "email"=>"swethasridharan1236@gmail.com", "password"=>"[FILTERED]", "contact_number"=>"9799526632", "alter_number"=>"9879659988"}, "commit"=>"Join us now!"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mGuider Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "guiders" WHERE LOWER("guiders"."email") = LOWER('swethasridharan1236@gmail.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered guiders/_signup_bar.html.haml (1.5ms)
+  Rendered guiders_sessions/_signin.html.haml (1.4ms)
+  Rendered guiders/new.html.haml within layouts/application (14.0ms)
+Completed 200 OK in 152ms (Views: 65.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 165.91.49.230 at 2016-03-27 16:52:38 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (0.4ms)
+Completed 200 OK in 60ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 165.91.49.230 at 2016-03-27 16:52:38 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (0.3ms)
+Completed 200 OK in 61ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers" for 165.91.49.230 at 2016-03-27 16:52:41 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TravelersController#index as HTML
+Redirected to https://recent-swetha3294.c9users.io/travelers/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers/new" for 165.91.49.230 at 2016-03-27 16:52:41 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TravelersController#new as HTML
+  Rendered guiders/_signup_bar.html.haml (0.2ms)
+  Rendered sessions/_signin.html.haml (3.6ms)
+  Rendered travelers/new.html.haml within layouts/application (19.4ms)
+Completed 200 OK in 112ms (Views: 87.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/guiders" for 165.91.49.230 at 2016-03-27 16:52:43 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://recent-swetha3294.c9users.io/guiders/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 165.91.49.230 at 2016-03-27 16:52:43 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered guiders/_signup_bar.html.haml (0.1ms)
+  Rendered guiders_sessions/_signin.html.haml (1.1ms)
+  Rendered guiders/new.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 74ms (Views: 73.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/guiders_login" for 165.91.49.230 at 2016-03-27 16:53:13 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LqozC6JPzuyKXqb7RpagXd+kO+vqCx2bJQZtl2znZdK21lz4x/17ncV4fqMS3NaNkMVC4zRSY5KZHFr57Y5q/A==", "session"=>{"email"=>"swethasridharan1236@gmail.com", "password"=>"[FILTERED]", "keep_me_logged_in"=>"1"}, "commit"=>"I am already a member!"}
+  [1m[36mGuider Load (0.7ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."email" = ? LIMIT 1[0m  [["email", "swethasridharan1236@gmail.com"]]
+Redirected to https://recent-swetha3294.c9users.io/guiders/3
+Completed 302 Found in 93ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/guiders/3" for 165.91.49.230 at 2016-03-27 16:53:13 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGuider Load (0.2ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered guiders/_navigation_bar.html.haml (0.3ms)
+  Rendered guiders/_basic_info.html.haml (0.2ms)
+  Rendered guiders/_update_profile.html.haml (2.5ms)
+  Rendered guiders/_qualification.html.haml (1.1ms)
+  Rendered guiders/show.html.haml within layouts/application (10.2ms)
+Completed 200 OK in 75ms (Views: 73.5ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/guiders/3" for 165.91.49.230 at 2016-03-27 16:53:31 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"onUBW8uhpEqOPdGv1GNTStB1uG6WFFXU4MsnvlSPYPM6CW6orhMRO8EbCfeAKSWanxTBZkhNK91c0RDQ1eZv3Q==", "guider"=>{"first_name"=>"Swetha", "middle_name"=>"M", "last_name"=>"Sree", "contact_number"=>"9799526632", "alter_number"=>"9879659988", "age"=>"22", "gender"=>"Female", "street_address"=>"", "city"=>"", "state"=>"", "country"=>"", "zip_code"=>""}, "commit"=>"Update my profile", "id"=>"3"}
+  [1m[36mGuider Load (0.2ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.3ms)[0m  [1mUPDATE "guiders" SET "gender" = ?, "street_address" = ?, "country" = ?, "city" = ?, "state" = ?, "zip_code" = ?, "updated_at" = ? WHERE "guiders"."id" = ?[0m  [["gender", "Female"], ["street_address", ""], ["country", ""], ["city", ""], ["state", ""], ["zip_code", ""], ["updated_at", "2016-03-27 16:53:31.199038"], ["id", 3]]
+  [1m[35m (12.2ms)[0m  commit transaction
+Redirected to https://recent-swetha3294.c9users.io/guiders/3
+Completed 302 Found in 25ms (ActiveRecord: 14.9ms)
+
+
+Started GET "/guiders/3" for 165.91.49.230 at 2016-03-27 16:53:31 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGuider Load (0.3ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered guiders/_navigation_bar.html.haml (0.4ms)
+  Rendered guiders/_basic_info.html.haml (0.4ms)
+  Rendered guiders/_update_profile.html.haml (3.0ms)
+  Rendered guiders/_qualification.html.haml (1.4ms)
+  Rendered guiders/show.html.haml within layouts/application (15.3ms)
+Completed 200 OK in 83ms (Views: 80.9ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/guiders/3" for 165.91.49.230 at 2016-03-27 16:54:28 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i9KUlLQoXMJBQ0Om1Pyvp3p+ON3CKhv7khHl7XOVnucTrvtn0Zrpsw5lm/6Attl3NR9B1RxzZfIuC9KD8vyRyQ==", "guider"=>{"first_name"=>"Swetha", "middle_name"=>"M", "last_name"=>"Sree", "contact_number"=>"9799526632", "alter_number"=>"9879659988", "age"=>"22", "gender"=>"Female", "street_address"=>"Stasney Street,", "city"=>"College Station", "state"=>"Texas", "country"=>"USA", "zip_code"=>"77840"}, "commit"=>"Update my profile", "id"=>"3"}
+  [1m[35mGuider Load (0.2ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "guiders" SET "street_address" = ?, "country" = ?, "city" = ?, "state" = ?, "zip_code" = ?, "updated_at" = ? WHERE "guiders"."id" = ?  [["street_address", "Stasney Street,"], ["country", "USA"], ["city", "College Station"], ["state", "Texas"], ["zip_code", "77840"], ["updated_at", "2016-03-27 16:54:28.108430"], ["id", 3]]
+  [1m[36m (14.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://recent-swetha3294.c9users.io/guiders/3
+Completed 302 Found in 158ms (ActiveRecord: 14.7ms)
+
+
+Started GET "/guiders/3" for 165.91.49.230 at 2016-03-27 16:54:28 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGuider Load (0.3ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered guiders/_navigation_bar.html.haml (0.5ms)
+  Rendered guiders/_basic_info.html.haml (0.3ms)
+  Rendered guiders/_update_profile.html.haml (2.9ms)
+  Rendered guiders/_qualification.html.haml (1.1ms)
+  Rendered guiders/show.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 70ms (Views: 68.1ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/guiders/3" for 165.91.49.230 at 2016-03-27 16:54:55 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2XWZiW2e1ggxnxhibkrTZXlR/dZXL1So5XVg0k4+OOlBCfZ6CCxjeX65wDo6AKW1NjCE3ol2KqFZb1e8z1c3xw==", "guider"=>{"driver_license"=>"123456862", "passport_number"=>"L225898352", "SSN"=>"123456896", "introduction"=>"Hello", "rating"=>"5/5", "comment"=>"Great!"}, "commit"=>"Submit my qualification form", "id"=>"3"}
+  [1m[36mGuider Load (0.2ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "guiders" SET "passport_number" = ?, "driver_license" = ?, "SSN" = ?, "rating" = ?, "introduction" = ?, "comment" = ?, "updated_at" = ? WHERE "guiders"."id" = ?[0m  [["passport_number", "L225898352"], ["driver_license", "123456862"], ["SSN", "123456896"], ["rating", 5], ["introduction", "Hello"], ["comment", "Great!"], ["updated_at", "2016-03-27 16:54:55.346685"], ["id", 3]]
+  [1m[35m (11.2ms)[0m  commit transaction
+Redirected to https://recent-swetha3294.c9users.io/guiders/3
+Completed 302 Found in 19ms (ActiveRecord: 12.2ms)
+
+
+Started GET "/guiders/3" for 165.91.49.230 at 2016-03-27 16:54:55 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGuider Load (0.2ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered guiders/_navigation_bar.html.haml (0.3ms)
+  Rendered guiders/_basic_info.html.haml (0.2ms)
+  Rendered guiders/_update_profile.html.haml (2.6ms)
+  Rendered guiders/_qualification.html.haml (3.2ms)
+  Rendered guiders/show.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 77ms (Views: 76.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trip_goods/new" for 165.91.49.230 at 2016-03-27 16:55:24 +0000
+Cannot render console from 165.91.49.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TripGoodsController#new as HTML
+  Rendered trip_goods/new.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 55ms (Views: 54.4ms | ActiveRecord: 0.0ms)

@@ -9,8 +9,9 @@ Rails.application.routes.draw do
   post   'login'   => 'sessions#create'
   get    'workspace' => 'sessions#show'#this should be changed into the address of worksspace
   resources :travelers 
-  resources :guiders
+  resources :guiders 
   resources :trip_goods
+  
   
  
   # The priority is based upon order of creation: first created -> highest priority.

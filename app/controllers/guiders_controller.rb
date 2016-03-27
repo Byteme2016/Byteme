@@ -36,8 +36,13 @@ class GuidersController < ApplicationController
      if !flash[:danger]
       flash.now[:notice] = 'Welcome back! Dear '+ @guider.first_name
      end
-    
   end
+  
+   def guider_tripgoods
+     @guider = Guider.find_by(id: session[:id])
+     @trip_goods= @guider.trip_goods;
+   end
+   
   def guider_params
    params.require(:guider).permit(:attachment,:first_name,:middle_name,:last_name,:password,:password_confirmation,:email,:username,:gender,:age,:photo,:contact_number,:alter_number,:street_address,:country,:city,:state,:zip_code, :passport_number, :driver_license, :SSN, :rating, :introduction, :comment)
   end

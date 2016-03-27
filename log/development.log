@@ -18993,4 +18993,8 @@ Processing by TravelersController#new as HTML
   Rendered sessions/_signin.html.haml (1.4ms)
   Rendered travelers/new.html.haml within layouts/application (7.7ms)
 Completed 200 OK in 73ms (Views: 72.5ms | ActiveRecord: 0.0ms)
+<<<<<<< HEAD
 >>>>>>> 869bfbd7b0f71e0a0814c77e2b6f8ee0faf7b025
+=======
+>>>>>>> master
+>>>>>>> master

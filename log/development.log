@@ -18272,4 +18272,253 @@ Processing by TravelersController#new as HTML
   Rendered sessions/_signin.html.haml (1.4ms)
   Rendered travelers/new.html.haml within layouts/application (7.7ms)
 Completed 200 OK in 73ms (Views: 72.5ms | ActiveRecord: 0.0ms)
+<<<<<<< HEAD
+>>>>>>> master
+=======
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeColumn (20160327034911)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160327034911"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Migrating to ChangeQualifiedColumn (20160327035132)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeQualifiedColumn (20160327035132)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TEMPORARY TABLE "aguiders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "middle_name" varchar, "last_name" varchar, "password_digest" varchar, "email" varchar, "user_name" varchar, "gender" varchar, "age" integer, "photo" blob, "contact_number" varchar, "alter_number" varchar, "driver_license" varchar, "passport_number" varchar, "SSN" varchar, "rating" integer, "comment" varchar, "introduction" varchar, "street_address" varchar, "city" varchar, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "country" varchar, "zip_code" varchar) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "guiders"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (1, '123', '123', '123', '$2a$10$XT9.PBpWFBY93ueuM1FVnelAqrwrqh2FH6jCD4F5ebjaXQ4tJkcle', '123', NULL, '123', 123, NULL, '123', '123', '123', '123', '4', 123, '123', '123', '123', '123', '123', '2016-03-26 22:38:11.724611', '2016-03-26 23:20:26.734939', NULL, '123')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (2, 'sikai', '', 'zhang', '$2a$10$VOW1ZmOgx2C3hStVpQOcReh0lalXNZqnJh5c.Bu6zgVhgRZtSW1vi', 'zhang@yahoo.com', NULL, '123', 12, NULL, '123', '', '123', '123', '123', 22, '2323', '2323', '3r34', '123', '123', '2016-03-26 23:47:38.929150', '2016-03-26 23:49:26.296828', NULL, '123')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (3, 'sika', '', 'zhan', '$2a$10$Ruh5bMwL.ViqMesuECvlz.330XbYB4.ZBwr2//FSjXQAwGu78aOHa', 'zhangs@yahoo.com', NULL, '123', 12, NULL, '123', '123', NULL, NULL, NULL, NULL, NULL, NULL, '123', '123', '123', '2016-03-27 01:22:41.738578', '2016-03-27 01:23:55.293428', '123', '123')[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "guiders"
+  [1m[36m (8.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeQualifiedColumn (20160327035132)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TEMPORARY TABLE "aguiders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "middle_name" varchar, "last_name" varchar, "password_digest" varchar, "email" varchar, "user_name" varchar, "gender" varchar, "age" integer, "photo" blob, "contact_number" varchar, "alter_number" varchar, "driver_license" varchar, "passport_number" varchar, "SSN" varchar, "rating" integer, "comment" varchar, "introduction" varchar, "street_address" varchar, "city" varchar, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "country" varchar, "zip_code" varchar) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "guiders"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (1, '123', '123', '123', '$2a$10$XT9.PBpWFBY93ueuM1FVnelAqrwrqh2FH6jCD4F5ebjaXQ4tJkcle', '123', NULL, '123', 123, NULL, '123', '123', '123', '123', '4', 123, '123', '123', '123', '123', '123', '2016-03-26 22:38:11.724611', '2016-03-26 23:20:26.734939', NULL, '123')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (2, 'sikai', '', 'zhang', '$2a$10$VOW1ZmOgx2C3hStVpQOcReh0lalXNZqnJh5c.Bu6zgVhgRZtSW1vi', 'zhang@yahoo.com', NULL, '123', 12, NULL, '123', '', '123', '123', '123', 22, '2323', '2323', '3r34', '123', '123', '2016-03-26 23:47:38.929150', '2016-03-26 23:49:26.296828', NULL, '123')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (3, 'sika', '', 'zhan', '$2a$10$Ruh5bMwL.ViqMesuECvlz.330XbYB4.ZBwr2//FSjXQAwGu78aOHa', 'zhangs@yahoo.com', NULL, '123', 12, NULL, '123', '123', NULL, NULL, NULL, NULL, NULL, NULL, '123', '123', '123', '2016-03-27 01:22:41.738578', '2016-03-27 01:23:55.293428', '123', '123')[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "guiders"
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeQualifiedColumn (20160327035132)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TEMPORARY TABLE "aguiders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "middle_name" varchar, "last_name" varchar, "password_digest" varchar, "email" varchar, "user_name" varchar, "gender" varchar, "age" integer, "photo" blob, "contact_number" varchar, "alter_number" varchar, "driver_license" varchar, "passport_number" varchar, "SSN" varchar, "rating" integer, "comment" varchar, "introduction" varchar, "street_address" varchar, "city" varchar, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "country" varchar, "zip_code" varchar) [0m
+  [1m[35m (0.5ms)[0m  SELECT * FROM "guiders"
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (1, '123', '123', '123', '$2a$10$XT9.PBpWFBY93ueuM1FVnelAqrwrqh2FH6jCD4F5ebjaXQ4tJkcle', '123', NULL, '123', 123, NULL, '123', '123', '123', '123', '4', 123, '123', '123', '123', '123', '123', '2016-03-26 22:38:11.724611', '2016-03-26 23:20:26.734939', NULL, '123')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (2, 'sikai', '', 'zhang', '$2a$10$VOW1ZmOgx2C3hStVpQOcReh0lalXNZqnJh5c.Bu6zgVhgRZtSW1vi', 'zhang@yahoo.com', NULL, '123', 12, NULL, '123', '', '123', '123', '123', 22, '2323', '2323', '3r34', '123', '123', '2016-03-26 23:47:38.929150', '2016-03-26 23:49:26.296828', NULL, '123')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (3, 'sika', '', 'zhan', '$2a$10$Ruh5bMwL.ViqMesuECvlz.330XbYB4.ZBwr2//FSjXQAwGu78aOHa', 'zhangs@yahoo.com', NULL, '123', 12, NULL, '123', '123', NULL, NULL, NULL, NULL, NULL, NULL, '123', '123', '123', '2016-03-27 01:22:41.738578', '2016-03-27 01:23:55.293428', '123', '123')[0m
+  [1m[35m (0.8ms)[0m  DROP TABLE "guiders"
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeQualifiedColumn (20160327035132)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TEMPORARY TABLE "aguiders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "middle_name" varchar, "last_name" varchar, "password_digest" varchar, "email" varchar, "user_name" varchar, "gender" varchar, "age" integer, "photo" blob, "contact_number" varchar, "alter_number" varchar, "driver_license" varchar, "passport_number" varchar, "SSN" varchar, "rating" integer, "comment" varchar, "introduction" varchar, "street_address" varchar, "city" varchar, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "country" varchar, "zip_code" varchar) [0m
+  [1m[35m (0.4ms)[0m  SELECT * FROM "guiders"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (1, '123', '123', '123', '$2a$10$XT9.PBpWFBY93ueuM1FVnelAqrwrqh2FH6jCD4F5ebjaXQ4tJkcle', '123', NULL, '123', 123, NULL, '123', '123', '123', '123', '4', 123, '123', '123', '123', '123', '123', '2016-03-26 22:38:11.724611', '2016-03-26 23:20:26.734939', NULL, '123')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (2, 'sikai', '', 'zhang', '$2a$10$VOW1ZmOgx2C3hStVpQOcReh0lalXNZqnJh5c.Bu6zgVhgRZtSW1vi', 'zhang@yahoo.com', NULL, '123', 12, NULL, '123', '', '123', '123', '123', 22, '2323', '2323', '3r34', '123', '123', '2016-03-26 23:47:38.929150', '2016-03-26 23:49:26.296828', NULL, '123')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (3, 'sika', '', 'zhan', '$2a$10$Ruh5bMwL.ViqMesuECvlz.330XbYB4.ZBwr2//FSjXQAwGu78aOHa', 'zhangs@yahoo.com', NULL, '123', 12, NULL, '123', '123', NULL, NULL, NULL, NULL, NULL, NULL, '123', '123', '123', '2016-03-27 01:22:41.738578', '2016-03-27 01:23:55.293428', '123', '123')[0m
+  [1m[35m (0.7ms)[0m  DROP TABLE "guiders"
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeQualifiedColumn (20160327035132)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TEMPORARY TABLE "aguiders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "middle_name" varchar, "last_name" varchar, "password_digest" varchar, "email" varchar, "user_name" varchar, "gender" varchar, "age" integer, "photo" blob, "contact_number" varchar, "alter_number" varchar, "driver_license" varchar, "passport_number" varchar, "SSN" varchar, "rating" integer, "comment" varchar, "introduction" varchar, "street_address" varchar, "city" varchar, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "country" varchar, "zip_code" varchar) [0m
+  [1m[35m (0.5ms)[0m  SELECT * FROM "guiders"
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (1, '123', '123', '123', '$2a$10$XT9.PBpWFBY93ueuM1FVnelAqrwrqh2FH6jCD4F5ebjaXQ4tJkcle', '123', NULL, '123', 123, NULL, '123', '123', '123', '123', '4', 123, '123', '123', '123', '123', '123', '2016-03-26 22:38:11.724611', '2016-03-26 23:20:26.734939', NULL, '123')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (2, 'sikai', '', 'zhang', '$2a$10$VOW1ZmOgx2C3hStVpQOcReh0lalXNZqnJh5c.Bu6zgVhgRZtSW1vi', 'zhang@yahoo.com', NULL, '123', 12, NULL, '123', '', '123', '123', '123', 22, '2323', '2323', '3r34', '123', '123', '2016-03-26 23:47:38.929150', '2016-03-26 23:49:26.296828', NULL, '123')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (3, 'sika', '', 'zhan', '$2a$10$Ruh5bMwL.ViqMesuECvlz.330XbYB4.ZBwr2//FSjXQAwGu78aOHa', 'zhangs@yahoo.com', NULL, '123', 12, NULL, '123', '123', NULL, NULL, NULL, NULL, NULL, NULL, '123', '123', '123', '2016-03-27 01:22:41.738578', '2016-03-27 01:23:55.293428', '123', '123')[0m
+  [1m[35m (0.8ms)[0m  DROP TABLE "guiders"
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to ChangeColumn (20160327034911)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?  [["version", "20160327034911"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_catagories_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_catagories_on_trip_good_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cities_on_state_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cities_on_state_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_languages_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_languages_on_guider_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_paying_methods_on_traveler_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_paying_methods_on_traveler_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_states_on_country_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_states_on_country_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeColumn (20160327034911)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "guiders" ADD "qualified" boolean DEFAULT 'f' NOT NULL[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160327034911"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_catagories_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_catagories_on_trip_good_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cities_on_state_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cities_on_state_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_languages_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_languages_on_guider_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_paying_methods_on_traveler_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_paying_methods_on_traveler_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_states_on_country_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_states_on_country_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+[0m
 >>>>>>> master

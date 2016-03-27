@@ -1,5 +1,5 @@
 class OrderedTripsController < ApplicationController
-	def show
+	def index
 		@orders = []
 		traveler_id = session[:id]
 		tmp_orders = OrderedTrip.find_by_traveler_id(traveler_id)
@@ -12,9 +12,11 @@ class OrderedTripsController < ApplicationController
 			end
 		end
 
-		tmp_orders.each do |order|
-			if valid_goods_id.contains order.trip_good_id
-				@orders << order
+		if tmp_orders
+			tmp_orders.each do |order|
+				if valid_goods_id.contains order.trip_good_id
+					@orders << order
+				end
 			end
 		end
 	end

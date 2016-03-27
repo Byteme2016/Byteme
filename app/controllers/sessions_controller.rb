@@ -14,4 +14,12 @@ class SessionsController < ApplicationController
       render 'new'
     end
   end
+
+  def destroy
+    if session[:id]
+      session[:id]=nil
+    end
+    redirect_to '/navigator/index' 
+  end
+  
 end

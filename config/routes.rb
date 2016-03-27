@@ -1,13 +1,16 @@
 Rails.application.routes.draw do
-  get 'guiders_sessions/new'
-  get 'sessions/index'
 
   get 'navigator/index'
+  post 'navigator/index'
   get 'guiders_login' => 'guiders_sessions#new'
   post 'guiders_login' => 'guiders_sessions#create'
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   get    'workspace' => 'sessions#show'#this should be changed into the address of worksspace
+
+  post 'logout' => 'sessions#destroy'
+  post 'guiders_logout' => 'guiders_sessions#destroy'
+
   resources :travelers 
   resources :guiders
 
@@ -18,7 +21,7 @@ Rails.application.routes.draw do
   get 'trip_goods/detail/:id' => 'trip_goods#detail'
 
   resources :ordered_trips
-
+  resources :trip_goods
   post 'search_goods' => 'trip_goods#search'
   
   # The priority is based upon order of creation: first created -> highest priority.

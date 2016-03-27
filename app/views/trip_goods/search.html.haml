@@ -4,7 +4,7 @@
       %h1 Trip Goods
 
 #search-box.container-fluid
-= form_tag '/search_goods', :method => :get do
+= form_tag '/search_goods', :method => :post do
   .container
     .row.col-sm-offset-1(style="padding-top: 15px")
       = label :trip_good, :city, 'City*'

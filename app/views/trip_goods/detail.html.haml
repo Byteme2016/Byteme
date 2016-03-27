@@ -8,4 +8,4 @@
 
     .row.col-sm-offset-9
       =link_to "Order Now!", ordered_trips_path(:id=>@trip_good.id), :method=>'post', :confirm=>"Are you sure to order this trip?", :class=>"btn btn-default"
-      =link_to "Go Back", '/search_goods', :method=>'get', :class=>"btn btn-default"
+      =link_to "Go Back", '/search_goods', :method=>'post', :class=>"btn btn-default"

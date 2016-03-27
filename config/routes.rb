@@ -28,7 +28,6 @@ Rails.application.routes.draw do
   get 'trip_goods/detail/:id' => 'trip_goods#detail'
   resources :ordered_trips
 <<<<<<< HEAD
-  resources :trip_goods
 =======
 >>>>>>> b235a0c4b9b222e15fa60438e2bfb5e60aa8b29a
   post 'search_goods' => 'trip_goods#search'

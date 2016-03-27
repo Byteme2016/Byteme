@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20160327031837) do
+=======
+ActiveRecord::Schema.define(version: 20160327053658) do
+>>>>>>> 5124946556d61c30fc80d2838e8efe91e7c6fa23
 
   create_table "catagories", force: :cascade do |t|
     t.integer  "trip_good_id"
@@ -58,11 +62,15 @@ ActiveRecord::Schema.define(version: 20160327031837) do
     t.string   "street_address"
     t.string   "city"
     t.string   "state"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
     t.string   "country"
     t.string   "zip_code"
+<<<<<<< HEAD
     t.boolean  "qualified"
+=======
+    t.boolean  "qualified",       default: false, null: false
+>>>>>>> 5124946556d61c30fc80d2838e8efe91e7c6fa23
   end
 
   create_table "languages", force: :cascade do |t|
@@ -143,7 +151,7 @@ ActiveRecord::Schema.define(version: 20160327031837) do
     t.integer  "price"
     t.integer  "rating"
     t.string   "review"
-    t.boolean  "on_shelf"
+    t.boolean  "on_shelf",       default: true
     t.string   "introduction"
     t.string   "title"
     t.integer  "capacity"

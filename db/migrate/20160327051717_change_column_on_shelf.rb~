@@ -1,0 +1,4 @@
+class ChangeColumnOnShelf < ActiveRecord::Migration
+  def change
+  end
+end

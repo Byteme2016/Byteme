@@ -23,5 +23,9 @@ tmp/pids/server.pid
 ehthumbs.db
 Thumbs.db
 server.pid
+<<<<<<< HEAD
 *.cache
 >>>>>>> 387105f392ffdf26c92563c790840f3df7bf7cf2
+=======
+>>>>>>> master
+>>>>>>> 5124946556d61c30fc80d2838e8efe91e7c6fa23

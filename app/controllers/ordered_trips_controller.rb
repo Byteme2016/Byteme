@@ -24,10 +24,8 @@ class OrderedTripsController < ApplicationController
 
 	def create
 		@trip_good = TripGood.find(params[:id])
-		traveler_id = session[:id]
-		
 		@order = OrderedTrip.new()
-		@order.traveler_id = traveler_id
+		@order.traveler_id = session[:id]
 		@order.trip_good_id = @trip_good.id
 		@order.ordered_time = DateTime.now
 

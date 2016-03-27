@@ -2,8 +2,14 @@
  Travel Uber
 =render 'guiders_sessions/signin'
 %fieldset
- %flash
-  =flash[:danger] 
+ -if @guider.errors.any?
+  %div{:id=>"error_explanations"}
+   =pluralize(@guider.errors.count, "error") #count the amount of errors(error)
+   has been found!
+   %ul
+    -@guider.errors.full_messages.each do |msg|
+     %li
+      =msg
  =form_for @guider do |f|
   =f.text_field :first_name, {:placeholder => 'Firstname'}
   =f.text_field :middle_name, {:placeholder => 'Middlename'}

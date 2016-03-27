@@ -11917,3 +11917,730 @@ haml_temp = form_for(:session, url: ) do |f|
   Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
   Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (124.5ms)
 >>>>>>> master
+
+
+Started GET "/guiders/new" for ::1 at 2016-03-26 18:17:44 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/zhangsikai/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/zhangsikai/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/zhangsikai/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (88.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (75.7ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (167.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangedColumnAddress (20160326231230)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TEMPORARY TABLE "aguiders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "middle_name" varchar, "last_name" varchar, "password_digest" varchar, "email" varchar, "user_name" varchar, "gender" varchar, "age" integer, "photo" blob, "contact_number" varchar, "alter_number" varchar, "driver_license" varchar, "passport_number" varchar, "SSN" varchar, "rating" integer, "comment" varchar, "introduction" varchar, "street_address" varchar, "city" varchar, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "country" varchar, "zip_code" varchar) [0m
+  [1m[35m (0.6ms)[0m  SELECT * FROM "guiders"
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (1, '123', '123', '123', '$2a$10$XT9.PBpWFBY93ueuM1FVnelAqrwrqh2FH6jCD4F5ebjaXQ4tJkcle', '123', NULL, NULL, 123, NULL, '123', '123', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2016-03-26 22:38:11.724611', '2016-03-26 22:38:11.724611', NULL, NULL)[0m
+  [1m[35m (1.1ms)[0m  DROP TABLE "guiders"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "guiders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "middle_name" varchar, "last_name" varchar, "password_digest" varchar, "email" varchar, "user_name" varchar, "gender" varchar, "age" integer, "photo" blob, "contact_number" varchar, "alter_number" varchar, "driver_license" varchar, "passport_number" varchar, "SSN" varchar, "rating" integer, "comment" varchar, "introduction" varchar, "street_address" varchar, "city" varchar, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "country" varchar, "zip_code" varchar) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "aguiders"
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "guiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (1, '123', '123', '123', '$2a$10$XT9.PBpWFBY93ueuM1FVnelAqrwrqh2FH6jCD4F5ebjaXQ4tJkcle', '123', NULL, NULL, 123, NULL, '123', '123', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2016-03-26 22:38:11.724611', '2016-03-26 22:38:11.724611', NULL, NULL)[0m
+  [1m[35m (0.7ms)[0m  DROP TABLE "aguiders"
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160326231230"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_catagories_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_catagories_on_trip_good_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cities_on_state_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cities_on_state_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_languages_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_languages_on_guider_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_paying_methods_on_traveler_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_paying_methods_on_traveler_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_states_on_country_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_states_on_country_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+
+
+
+Started GET "/guiders/new" for ::1 at 2016-03-26 18:18:21 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuidersController#new as HTML
+  Rendered guiders_sessions/_signin.html.haml (8.5ms)
+  Rendered guiders/new.html.haml within layouts/application (22.1ms)
+Completed 200 OK in 355ms (Views: 321.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/guiders_login" for ::1 at 2016-03-26 18:18:26 -0500
+Processing by GuidersSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6KjGFoyQSJQlY7DIpm94APhlyQZi7irIA6M3oThBLd97XiKE+IYosy267KWTvqWJ4Q6zjGSOqj2UYuqx9CGTHg==", "session"=>{"email"=>"123", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mGuider Load (0.7ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."email" = ? LIMIT 1  [["email", "123"]]
+Redirected to http://localhost:3000/guiders/1
+Completed 302 Found in 115ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/guiders/1" for ::1 at 2016-03-26 18:18:26 -0500
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGuider Load (0.4ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered guiders/show.html.haml within layouts/application (16.5ms)
+Completed 200 OK in 45ms (Views: 42.9ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/guiders/1" for ::1 at 2016-03-26 18:18:38 -0500
+
+AbstractController::ActionNotFound (The action 'update' could not be found for GuidersController):
+  actionpack (4.2.1) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/zhangsikai/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/zhangsikai/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/zhangsikai/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (87.9ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/zhangsikai/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (168.5ms)
+
+
+Started GET "/guiders/1" for ::1 at 2016-03-26 18:19:54 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGuider Load (0.3ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered guiders/show.html.haml within layouts/application (24.5ms)
+Completed 200 OK in 364ms (Views: 321.6ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/guiders/1" for ::1 at 2016-03-26 18:19:58 -0500
+Processing by GuidersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B3ahstpqUOW1V9OtgnrC/uKWtv7o26YgJjHajDCEZYCUgEUgrnwwwr2Oj8C3qx93+/3MdO67JtWx8Aec/OTbQQ==", "guider"=>{"first_name"=>"123", "middle_name"=>"123", "last_name"=>"123", "email"=>"123", "contact_number"=>"123", "alter_number"=>"123", "age"=>"123", "gender"=>"", "street_address"=>"", "city"=>"", "state"=>"", "country"=>"", "zip_code"=>""}, "commit"=>"Update my profile", "id"=>"1"}
+  [1m[36mGuider Load (0.1ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: country
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "guiders" SET "gender" = ?, "street_address" = ?, "city" = ?, "state" = ?, "zip_code" = ?, "updated_at" = ? WHERE "guiders"."id" = ?[0m  [["gender", ""], ["street_address", ""], ["city", ""], ["state", ""], ["zip_code", ""], ["updated_at", "2016-03-26 23:19:58.189287"], ["id", 1]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/guiders/1
+Completed 302 Found in 10ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/guiders/1" for ::1 at 2016-03-26 18:19:58 -0500
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGuider Load (0.1ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered guiders/show.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/guiders/1" for ::1 at 2016-03-26 18:20:08 -0500
+Processing by GuidersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Is4Ff8Ad61+x4zM6BFlKUvQ0+5maTsBVN7q1uaKFL8mxOOHttAuLeLk6b1cxiJfb7V+BE5wuQKCge2ipbuWRCA==", "guider"=>{"first_name"=>"123", "middle_name"=>"123", "last_name"=>"123", "email"=>"123", "contact_number"=>"123", "alter_number"=>"123", "age"=>"123", "gender"=>"123", "street_address"=>"123", "city"=>"123", "state"=>"123", "country"=>"123", "zip_code"=>"123"}, "commit"=>"Update my profile", "id"=>"1"}
+  [1m[35mGuider Load (0.1ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 1]]
+Unpermitted parameter: country
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "guiders" SET "gender" = ?, "street_address" = ?, "city" = ?, "state" = ?, "zip_code" = ?, "updated_at" = ? WHERE "guiders"."id" = ?  [["gender", "123"], ["street_address", "123"], ["city", "123"], ["state", "123"], ["zip_code", "123"], ["updated_at", "2016-03-26 23:20:08.082933"], ["id", 1]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/guiders/1
+Completed 302 Found in 6ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/guiders/1" for ::1 at 2016-03-26 18:20:08 -0500
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGuider Load (0.2ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered guiders/show.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/guiders/1" for ::1 at 2016-03-26 18:20:21 -0500
+Processing by GuidersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xisx3vXLghjsdcmCGLruRZyn2pCvwnzHmt2HsVpbQFjN3dVMgd3iP+Ssle8tazPMhcygGqmi/DINHFqhljv+mQ==", "guider"=>{"driver_license"=>"123", "passport_number"=>"123", "SSN"=>"123", "introduction"=>"123", "rating"=>"123", "comment"=>"123"}, "commit"=>"Submit my qualification form", "id"=>"1"}
+  [1m[36mGuider Load (0.2ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "guiders" SET "passport_number" = ?, "driver_license" = ?, "SSN" = ?, "rating" = ?, "introduction" = ?, "comment" = ?, "updated_at" = ? WHERE "guiders"."id" = ?[0m  [["passport_number", "123"], ["driver_license", "123"], ["SSN", "123"], ["rating", 123], ["introduction", "123"], ["comment", "123"], ["updated_at", "2016-03-26 23:20:21.033341"], ["id", 1]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/guiders/1
+Completed 302 Found in 7ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/guiders/1" for ::1 at 2016-03-26 18:20:21 -0500
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGuider Load (0.1ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered guiders/show.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/guiders/1" for ::1 at 2016-03-26 18:20:26 -0500
+Processing by GuidersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3YUog6rxGFpzHvMrHryZI0s4BbKbTMCOydl/OW2Vjl5Oc8wR3ud4fXvHr0YrbUSqUlN/OJ0sQHteGKIpofUwnw==", "guider"=>{"driver_license"=>"123", "passport_number"=>"123", "SSN"=>"4", "introduction"=>"123", "rating"=>"123", "comment"=>"123"}, "commit"=>"Submit my qualification form", "id"=>"1"}
+  [1m[35mGuider Load (0.1ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "guiders" SET "SSN" = ?, "updated_at" = ? WHERE "guiders"."id" = ?  [["SSN", "4"], ["updated_at", "2016-03-26 23:20:26.734939"], ["id", 1]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/guiders/1
+Completed 302 Found in 6ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/guiders/1" for ::1 at 2016-03-26 18:20:26 -0500
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGuider Load (0.2ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered guiders/show.html.haml within layouts/application (29.2ms)
+Completed 200 OK in 59ms (Views: 57.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-03-26 18:24:39 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (4.9ms)
+Completed 200 OK in 294ms (Views: 281.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers" for ::1 at 2016-03-26 18:24:41 -0500
+Processing by TravelersController#index as HTML
+Redirected to http://localhost:3000/travelers/new
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers/new" for ::1 at 2016-03-26 18:24:41 -0500
+Processing by TravelersController#new as HTML
+  Rendered sessions/_signin.html.haml (7.4ms)
+  Rendered travelers/new.html.haml within layouts/application (21.8ms)
+Completed 200 OK in 93ms (Views: 56.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/guiders" for ::1 at 2016-03-26 18:24:44 -0500
+Processing by GuidersController#index as HTML
+Redirected to http://localhost:3000/guiders/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for ::1 at 2016-03-26 18:24:44 -0500
+Processing by GuidersController#new as HTML
+  Rendered guiders_sessions/_signin.html.haml (3.4ms)
+  Rendered guiders/new.html.haml within layouts/application (11.2ms)
+Completed 200 OK in 66ms (Views: 40.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/guiders" for ::1 at 2016-03-26 18:24:45 -0500
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ao1bSkYWigyBa7quJgIqxZ9V+YMNJVnQFrexiJAwHO+Re7/YMgDqK4my5sMT0/dMhj6DCQtF2SWBdmyYXFCiLg==", "guider"=>{"first_name"=>"", "middle_name"=>"", "last_name"=>"", "age"=>"", "email"=>"", "password"=>"[FILTERED]", "contact_number"=>"", "alter_number"=>""}, "commit"=>"Join us now!"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mGuider Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "guiders" WHERE LOWER("guiders"."email") = LOWER('') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered guiders_sessions/_signin.html.haml (2.6ms)
+  Rendered guiders/new.html.haml within layouts/application (8.6ms)
+Completed 200 OK in 121ms (Views: 48.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/guiders" for ::1 at 2016-03-26 18:24:52 -0500
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LA8tzB3DOZZ8adJ3NzY+rJbSjBui1UKlMg4mesBTnN+/+cleadVZsXSwjhoC5+Mlj7n2kaS1wlClz/tqDDMiHg==", "guider"=>{"first_name"=>"", "middle_name"=>"", "last_name"=>"", "age"=>"", "email"=>"", "password"=>"[FILTERED]", "contact_number"=>"", "alter_number"=>""}, "commit"=>"Join us now!"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mGuider Exists (0.2ms)[0m  SELECT  1 AS one FROM "guiders" WHERE LOWER("guiders"."email") = LOWER('') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered guiders_sessions/_signin.html.haml (0.9ms)
+  Rendered guiders/new.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 55ms (Views: 44.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/guiders" for ::1 at 2016-03-26 18:24:53 -0500
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cZkibcKJ8ebFWbZ3GEM899UlM7h//qnRpeQX9CvyLYXib8b/tp+Rwc2A6hotkuF+zE5JMnmeKSQyJcrk55KTRA==", "guider"=>{"first_name"=>"", "middle_name"=>"", "last_name"=>"", "age"=>"", "email"=>"", "password"=>"[FILTERED]", "contact_number"=>"", "alter_number"=>""}, "commit"=>"Join us now!"}
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mGuider Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "guiders" WHERE LOWER("guiders"."email") = LOWER('') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered guiders_sessions/_signin.html.haml (1.7ms)
+  Rendered guiders/new.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 89ms (Views: 74.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/guiders" for ::1 at 2016-03-26 18:24:55 -0500
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PgyyMlKKn18mzr7lZwkTHWlkZiy5Zce2bGI7Wye4Zt6t+lagJpz/eC4X4ohS2M6UcA8cpr8FR0P7o+ZL69jYHw==", "guider"=>{"first_name"=>"", "middle_name"=>"", "last_name"=>"", "age"=>"", "email"=>"", "password"=>"[FILTERED]", "contact_number"=>"", "alter_number"=>""}, "commit"=>"Join us now!"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mGuider Exists (0.3ms)[0m  SELECT  1 AS one FROM "guiders" WHERE LOWER("guiders"."email") = LOWER('') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered guiders_sessions/_signin.html.haml (1.1ms)
+  Rendered guiders/new.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 62ms (Views: 52.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/guiders" for ::1 at 2016-03-26 18:24:56 -0500
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Yc1eCInbDuLB/JyZumbQKMAXseMGOc/r3CTc0QIPsq3yO7qa/c1uxcklwPSPtw2h2XzLaQBZTx5L5QHBzm8MbA==", "guider"=>{"first_name"=>"", "middle_name"=>"", "last_name"=>"", "age"=>"", "email"=>"", "password"=>"[FILTERED]", "contact_number"=>"", "alter_number"=>""}, "commit"=>"Join us now!"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mGuider Exists (0.8ms)[0m  [1mSELECT  1 AS one FROM "guiders" WHERE LOWER("guiders"."email") = LOWER('') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered guiders_sessions/_signin.html.haml (1.3ms)
+  Rendered guiders/new.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 77ms (Views: 64.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/guiders" for ::1 at 2016-03-26 18:28:25 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuidersController#index as HTML
+Redirected to http://localhost:3000/guiders/new
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for ::1 at 2016-03-26 18:28:25 -0500
+Processing by GuidersController#new as HTML
+  Rendered guiders_sessions/_signin.html.haml (22.2ms)
+  Rendered guiders/new.html.haml within layouts/application (49.9ms)
+Completed 200 OK in 462ms (Views: 403.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/guiders" for ::1 at 2016-03-26 18:28:27 -0500
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z2qY260oMliOX8QBLhETJe6hRAoijjwoDUAEkmrb2az0nHxJ2T5Sf4aGmGwbwM6s98o+gCTuvN2agdmCprtnbQ==", "guider"=>{"first_name"=>"", "middle_name"=>"", "last_name"=>"", "age"=>"", "email"=>"", "password"=>"[FILTERED]", "contact_number"=>"", "alter_number"=>""}, "commit"=>"Join us now!"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mGuider Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "guiders" WHERE LOWER("guiders"."email") = LOWER('') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered guiders_sessions/_signin.html.haml (1.4ms)
+  Rendered guiders/new.html.haml within layouts/application (7.6ms)
+Completed 200 OK in 77ms (Views: 37.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-03-26 18:43:33 -0500
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (9.7ms)
+Completed 200 OK in 102ms (Views: 91.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for ::1 at 2016-03-26 18:43:35 -0500
+Processing by GuidersController#index as HTML
+Redirected to http://localhost:3000/guiders/new
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for ::1 at 2016-03-26 18:43:35 -0500
+Processing by GuidersController#new as HTML
+  Rendered guiders_sessions/_signin.html.haml (7.6ms)
+  Rendered guiders/new.html.haml within layouts/application (19.6ms)
+Completed 200 OK in 83ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/guiders" for ::1 at 2016-03-26 18:43:44 -0500
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qrjHZ6TrguaegxlavfLfdqZOOosuzSCjR73+vkVjiCU5TiP10P3iwZZaRTeIIwL/vyVAASitoFbQfCOuiQM25A==", "guider"=>{"first_name"=>"", "middle_name"=>"", "last_name"=>"", "age"=>"", "email"=>"", "password"=>"[FILTERED]", "contact_number"=>"", "alter_number"=>""}, "commit"=>"Join us now!"}
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mGuider Exists (0.6ms)[0m  SELECT  1 AS one FROM "guiders" WHERE LOWER("guiders"."email") = LOWER('') LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  Rendered guiders_sessions/_signin.html.haml (1.0ms)
+  Rendered guiders/new.html.haml within layouts/application (6.7ms)
+Completed 200 OK in 103ms (Views: 39.1ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/guiders" for ::1 at 2016-03-26 18:44:16 -0500
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dyW/axUlzVr7LpcWdzGhE9B7xphgs+D5NpjsATVKumbk01v5YTOtffP3y3tC4HyayRC8EmbTYAyhWTER+SoEpw==", "guider"=>{"first_name"=>"sikai", "middle_name"=>"", "last_name"=>"", "age"=>"", "email"=>"", "password"=>"[FILTERED]", "contact_number"=>"", "alter_number"=>""}, "commit"=>"Join us now!"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mGuider Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "guiders" WHERE LOWER("guiders"."email") = LOWER('') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered guiders_sessions/_signin.html.haml (1.6ms)
+  Rendered guiders/new.html.haml within layouts/application (8.5ms)
+Completed 200 OK in 78ms (Views: 67.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/guiders" for ::1 at 2016-03-26 18:44:20 -0500
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"akFmeCVOYVmAWzkIjre/ReuwpqkhKdSCjbUad5hT/uT5t4LqUVgBfoiCZWW7ZmLM8tvcIydJVHcadMdnVDNAJQ==", "guider"=>{"first_name"=>"sikai1", "middle_name"=>"", "last_name"=>"", "age"=>"", "email"=>"", "password"=>"[FILTERED]", "contact_number"=>"", "alter_number"=>""}, "commit"=>"Join us now!"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mGuider Exists (0.2ms)[0m  SELECT  1 AS one FROM "guiders" WHERE LOWER("guiders"."email") = LOWER('') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered guiders_sessions/_signin.html.haml (1.0ms)
+  Rendered guiders/new.html.haml within layouts/application (8.9ms)
+Completed 200 OK in 67ms (Views: 56.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/guiders" for ::1 at 2016-03-26 18:44:33 -0500
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2qA6P7nL2LT4k3V3DPy0mo9/FasAurxpeYvpvkHwZmpJVt6tzd24k/BKKRo5LWkTlhRvIQbaPJzuSjSujZDYqw==", "guider"=>{"first_name"=>"sikai@!#", "middle_name"=>"", "last_name"=>"", "age"=>"", "email"=>"", "password"=>"[FILTERED]", "contact_number"=>"", "alter_number"=>""}, "commit"=>"Join us now!"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mGuider Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "guiders" WHERE LOWER("guiders"."email") = LOWER('') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered guiders_sessions/_signin.html.haml (1.4ms)
+  Rendered guiders/new.html.haml within layouts/application (9.6ms)
+Completed 200 OK in 47ms (Views: 35.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/guiders" for ::1 at 2016-03-26 18:44:54 -0500
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hEYnxeA9ZIwb2w2CJQvPPErpmFG+bfUu7yJPV17zNHYXsMNXlCsEqxMCUe8Q2hK1U4Li27gNddt445JHkpOKtw==", "guider"=>{"first_name"=>"sikai    ", "middle_name"=>"", "last_name"=>"", "age"=>"", "email"=>"", "password"=>"[FILTERED]", "contact_number"=>"", "alter_number"=>""}, "commit"=>"Join us now!"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mGuider Exists (0.2ms)[0m  SELECT  1 AS one FROM "guiders" WHERE LOWER("guiders"."email") = LOWER('') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered guiders_sessions/_signin.html.haml (2.0ms)
+  Rendered guiders/new.html.haml within layouts/application (10.6ms)
+Completed 200 OK in 90ms (Views: 77.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/guiders" for ::1 at 2016-03-26 18:44:57 -0500
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQAOQlHNTHlo+v+AI+DJ0wXL6TpPU/kn4cgZKHaIzewy9urQJdssXmAjo+0WMRRaHKCTsEkzedJ2CcQ4uuhzLQ==", "guider"=>{"first_name"=>"sikai        ", "middle_name"=>"", "last_name"=>"", "age"=>"", "email"=>"", "password"=>"[FILTERED]", "contact_number"=>"", "alter_number"=>""}, "commit"=>"Join us now!"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mGuider Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "guiders" WHERE LOWER("guiders"."email") = LOWER('') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered guiders_sessions/_signin.html.haml (6.6ms)
+  Rendered guiders/new.html.haml within layouts/application (13.0ms)
+Completed 200 OK in 75ms (Views: 57.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/guiders" for ::1 at 2016-03-26 18:45:01 -0500
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Nq6oBlYlZJ0FttidrQj52NAcfSZ8cwIMAK3X9afOotelWEyUIjMEug1vhPCY2SRRyXcHrHoTgvmXbArla64cFg==", "guider"=>{"first_name"=>"   sikai        ", "middle_name"=>"", "last_name"=>"", "age"=>"", "email"=>"", "password"=>"[FILTERED]", "contact_number"=>"", "alter_number"=>""}, "commit"=>"Join us now!"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mGuider Exists (0.2ms)[0m  SELECT  1 AS one FROM "guiders" WHERE LOWER("guiders"."email") = LOWER('') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered guiders_sessions/_signin.html.haml (1.0ms)
+  Rendered guiders/new.html.haml within layouts/application (6.8ms)
+Completed 200 OK in 42ms (Views: 33.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/guiders" for ::1 at 2016-03-26 18:45:25 -0500
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vuaWNMce3ZKcRaT/TcoNbMZjx52ARei0FFaPbx7a590tEHKmswi9tZSc+JJ4G9Dl3wi9F4YlaEGDl1J/0rpZHA==", "guider"=>{"first_name"=>"    sikai", "middle_name"=>"", "last_name"=>"", "age"=>"", "email"=>"", "password"=>"[FILTERED]", "contact_number"=>"", "alter_number"=>""}, "commit"=>"Join us now!"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mGuider Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "guiders" WHERE LOWER("guiders"."email") = LOWER('') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered guiders_sessions/_signin.html.haml (0.9ms)
+  Rendered guiders/new.html.haml within layouts/application (6.6ms)
+Completed 200 OK in 39ms (Views: 30.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/guiders" for ::1 at 2016-03-26 18:45:55 -0500
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jZtLvaGf5xpYHqFVQs9oCqCDG6aEZiQ63ycQiU4gSf0eba8v1YmHPVDH/Th3HrWDuehhLIIGpM9I5s2ZgkD3PA==", "guider"=>{"first_name"=>"sikai", "middle_name"=>"", "last_name"=>"zhang", "age"=>"12", "email"=>"", "password"=>"[FILTERED]", "contact_number"=>"", "alter_number"=>""}, "commit"=>"Join us now!"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mGuider Exists (0.3ms)[0m  SELECT  1 AS one FROM "guiders" WHERE LOWER("guiders"."email") = LOWER('') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered guiders_sessions/_signin.html.haml (1.7ms)
+  Rendered guiders/new.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 42ms (Views: 33.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/guiders" for ::1 at 2016-03-26 18:46:05 -0500
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fRUd6Ne8NH1+dl/f2gQpdGQsnLpetGTJNqODa2fgYtLu4/l6o6pUWnavA7Lv1fT9fUfmMFjU5DyhYl57q4DcEw==", "guider"=>{"first_name"=>"sikai", "middle_name"=>"", "last_name"=>"zhang", "age"=>"12", "email"=>"zhang", "password"=>"[FILTERED]", "contact_number"=>"", "alter_number"=>""}, "commit"=>"Join us now!"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mGuider Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "guiders" WHERE LOWER("guiders"."email") = LOWER('zhang') LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered guiders_sessions/_signin.html.haml (1.2ms)
+  Rendered guiders/new.html.haml within layouts/application (6.2ms)
+Completed 200 OK in 39ms (Views: 30.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/guiders" for ::1 at 2016-03-26 18:46:13 -0500
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zkfyWWvRPIECnBC7FV+8VgG9pvMiGRny05Mh3LK9ZNddsRbLH8dcpgpFTNYgjmHfGNbceSR5mQdEUvzMft3aFg==", "guider"=>{"first_name"=>"sikai", "middle_name"=>"", "last_name"=>"zhang", "age"=>"12", "email"=>"zhang", "password"=>"[FILTERED]", "contact_number"=>"", "alter_number"=>""}, "commit"=>"Join us now!"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mGuider Exists (0.2ms)[0m  SELECT  1 AS one FROM "guiders" WHERE LOWER("guiders"."email") = LOWER('zhang') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered guiders_sessions/_signin.html.haml (0.9ms)
+  Rendered guiders/new.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 135ms (Views: 32.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/guiders" for ::1 at 2016-03-26 18:46:59 -0500
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RAD5jAqlXKCuldL4Goc1j9zPhhaQuEW0vvS/2agQ4MrX9h0efrM8h6ZMjpUvVugGxaT8nJbYxUEpNWLJZHBeCw==", "guider"=>{"first_name"=>"sikai", "middle_name"=>"", "last_name"=>"zhang", "age"=>"12", "email"=>"zhang", "password"=>"[FILTERED]", "contact_number"=>"", "alter_number"=>""}, "commit"=>"Join us now!"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mGuider Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "guiders" WHERE LOWER("guiders"."email") = LOWER('zhang') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered guiders_sessions/_signin.html.haml (1.4ms)
+  Rendered guiders/new.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 168ms (Views: 68.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/guiders" for ::1 at 2016-03-26 18:47:19 -0500
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WHSNrPF7S1Huhmu3KakHzV5InSCSJbxPyCQbRaHkbq3Lgmk+hW0rduZfN9oceNpERyPnqpRFPLpf5cZVbYTQbA==", "guider"=>{"first_name"=>"sikai", "middle_name"=>"", "last_name"=>"zhang", "age"=>"12", "email"=>"zhang", "password"=>"[FILTERED]", "contact_number"=>"n123", "alter_number"=>""}, "commit"=>"Join us now!"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mGuider Exists (0.1ms)[0m  SELECT  1 AS one FROM "guiders" WHERE LOWER("guiders"."email") = LOWER('zhang') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered guiders_sessions/_signin.html.haml (1.0ms)
+  Rendered guiders/new.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 151ms (Views: 52.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/guiders" for ::1 at 2016-03-26 18:47:29 -0500
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7eT/oW650rFBEQPEo6PTSE2pAEopmDmujlpXR5ZhI7x+EhszGq+ylknIX6mWcg7BVMJ6wC/4uVsZm4pXWgGdfQ==", "guider"=>{"first_name"=>"sikai", "middle_name"=>"", "last_name"=>"zhang", "age"=>"12", "email"=>"zhang", "password"=>"[FILTERED]", "contact_number"=>"123", "alter_number"=>""}, "commit"=>"Join us now!"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mGuider Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "guiders" WHERE LOWER("guiders"."email") = LOWER('zhang') LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  Rendered guiders_sessions/_signin.html.haml (1.0ms)
+  Rendered guiders/new.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 133ms (Views: 34.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/guiders" for ::1 at 2016-03-26 18:47:38 -0500
+Processing by GuidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CI9p3sD8aelpUPwxb0RQErJKc5+LEyhpJSg5q7PSvnWbeY1MtOoJzmGJoFxalY2bqyEJFY1zqJyy6eS7f7IAtA==", "guider"=>{"first_name"=>"sikai", "middle_name"=>"", "last_name"=>"zhang", "age"=>"12", "email"=>"zhang@yahoo.com", "password"=>"[FILTERED]", "contact_number"=>"123", "alter_number"=>""}, "commit"=>"Join us now!"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mGuider Exists (0.1ms)[0m  SELECT  1 AS one FROM "guiders" WHERE LOWER("guiders"."email") = LOWER('zhang@yahoo.com') LIMIT 1
+  [1m[36mSQL (8.4ms)[0m  [1mINSERT INTO "guiders" ("first_name", "middle_name", "last_name", "password_digest", "email", "age", "contact_number", "alter_number", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "sikai"], ["middle_name", ""], ["last_name", "zhang"], ["password_digest", "$2a$10$VOW1ZmOgx2C3hStVpQOcReh0lalXNZqnJh5c.Bu6zgVhgRZtSW1vi"], ["email", "zhang@yahoo.com"], ["age", 12], ["contact_number", "123"], ["alter_number", ""], ["created_at", "2016-03-26 23:47:38.929150"], ["updated_at", "2016-03-26 23:47:38.929150"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/guiders_login
+Completed 302 Found in 117ms (ActiveRecord: 10.4ms)
+
+
+Started GET "/guiders_login" for ::1 at 2016-03-26 18:47:38 -0500
+Processing by GuidersSessionsController#new as HTML
+  Rendered guiders_sessions/_signin.html.haml (1.0ms)
+  Rendered guiders_sessions/new.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/guiders_login" for ::1 at 2016-03-26 18:48:09 -0500
+Processing by GuidersSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YdEfn+5dfH7m9FiqbXO5R6EFqjP4QSJuzaPJDj7GuB7yJ/sNmkscWe4tBMdYomTOuG7Quf4hoptaYhQe8qYG3w==", "session"=>{"email"=>"zhang@yahoo.com", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[36mGuider Load (0.5ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."email" = ? LIMIT 1[0m  [["email", "zhang@yahoo.com"]]
+Redirected to http://localhost:3000/guiders/2
+Completed 302 Found in 101ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/guiders/2" for ::1 at 2016-03-26 18:48:09 -0500
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mGuider Load (0.6ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered guiders/show.html.haml within layouts/application (13.3ms)
+Completed 200 OK in 55ms (Views: 52.4ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/guiders/2" for ::1 at 2016-03-26 18:48:58 -0500
+Processing by GuidersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gFbZOjzZBQqHg8k/C4c/enL9qF16vXyhzPQ4TQ4QCBgToD2oSM9lLY9alVI+VuLza5bS13zd/FRbNeVdwnC22Q==", "guider"=>{"first_name"=>"sikai", "middle_name"=>"", "last_name"=>"zhang", "email"=>"zhang@yahoo.com", "contact_number"=>"123", "alter_number"=>"", "age"=>"12", "gender"=>"123", "street_address"=>"123", "city"=>"123", "state"=>"123", "country"=>"123", "zip_code"=>"123"}, "commit"=>"Update my profile", "id"=>"2"}
+  [1m[36mGuider Load (0.4ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 2]]
+Unpermitted parameter: country
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mGuider Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "guiders" WHERE (LOWER("guiders"."email") = LOWER('zhang@yahoo.com') AND "guiders"."id" != 2) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "guiders" SET "gender" = ?, "street_address" = ?, "city" = ?, "state" = ?, "zip_code" = ?, "updated_at" = ? WHERE "guiders"."id" = ?  [["gender", "123"], ["street_address", "123"], ["city", "123"], ["state", "123"], ["zip_code", "123"], ["updated_at", "2016-03-26 23:48:58.836005"], ["id", 2]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/guiders/2
+Completed 302 Found in 18ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/guiders/2" for ::1 at 2016-03-26 18:48:58 -0500
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mGuider Load (0.1ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered guiders/show.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/guiders/2" for ::1 at 2016-03-26 18:49:04 -0500
+Processing by GuidersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uX5Wufs8Eord7nQTElLI89/mpkw2XNWHK6JROjL4E14qiLIrjypyrdU3KH4ngxV6xo3cxjA8VXK8Y4wq/pitnw==", "guider"=>{"first_name"=>"sikai", "middle_name"=>"", "last_name"=>"zhang", "email"=>"zhang@yahoo.com", "contact_number"=>"123", "alter_number"=>"", "age"=>"12", "gender"=>"123", "street_address"=>"3r34", "city"=>"123", "state"=>"123", "country"=>"", "zip_code"=>"123"}, "commit"=>"Update my profile", "id"=>"2"}
+  [1m[36mGuider Load (0.1ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 2]]
+Unpermitted parameter: country
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mGuider Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "guiders" WHERE (LOWER("guiders"."email") = LOWER('zhang@yahoo.com') AND "guiders"."id" != 2) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "guiders" SET "street_address" = ?, "updated_at" = ? WHERE "guiders"."id" = ?  [["street_address", "3r34"], ["updated_at", "2016-03-26 23:49:04.066305"], ["id", 2]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/guiders/2
+Completed 302 Found in 9ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/guiders/2" for ::1 at 2016-03-26 18:49:04 -0500
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mGuider Load (0.1ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered guiders/show.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/guiders/2" for ::1 at 2016-03-26 18:49:26 -0500
+Processing by GuidersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+jATp7M1KPfI+2C/aW8IR5sroQSII2PJlcelk3XkShNpxvc1xyNI0MAiPNJcvtXOgkDbjo5D4zwCBniDuYT00g==", "guider"=>{"driver_license"=>"123", "passport_number"=>"123", "SSN"=>"123", "introduction"=>"2323", "rating"=>"22", "comment"=>"2323"}, "commit"=>"Submit my qualification form", "id"=>"2"}
+  [1m[36mGuider Load (0.1ms)[0m  [1mSELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mGuider Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "guiders" WHERE (LOWER("guiders"."email") = LOWER('zhang@yahoo.com') AND "guiders"."id" != 2) LIMIT 1[0m
+  [1m[35mSQL (1.1ms)[0m  UPDATE "guiders" SET "passport_number" = ?, "driver_license" = ?, "SSN" = ?, "rating" = ?, "introduction" = ?, "comment" = ?, "updated_at" = ? WHERE "guiders"."id" = ?  [["passport_number", "123"], ["driver_license", "123"], ["SSN", "123"], ["rating", 22], ["introduction", "2323"], ["comment", "2323"], ["updated_at", "2016-03-26 23:49:26.296828"], ["id", 2]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/guiders/2
+Completed 302 Found in 13ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/guiders/2" for ::1 at 2016-03-26 18:49:26 -0500
+Processing by GuidersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mGuider Load (0.1ms)[0m  SELECT  "guiders".* FROM "guiders" WHERE "guiders"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered guiders/show.html.haml within layouts/application (5.7ms)
+Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.1ms)

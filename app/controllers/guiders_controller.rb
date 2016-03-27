@@ -16,9 +16,19 @@ class GuidersController < ApplicationController
     if @guider.save
      redirect_to guiders_login_path 
     else  
-     flash.now[:notice] = 'Welcome back! Dear '+ @guider.first_name
+     flash.now[:danger] = 'Registration failed, some information is missing!'  
      render 'new'
     end  
+  end
+   def update
+    @guider = Guider.find_by(id: session[:id])
+    if @guider.update(guider_params)
+      flash[:danger]="Update succeeded!"      
+      redirect_to @guider
+    else 
+      flash[:danger]="Update failed!" 
+      redirect_to @guider
+    end 
   end
   
   def show

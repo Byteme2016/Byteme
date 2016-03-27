@@ -6611,3 +6611,783 @@ Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127
 Processing by NavigatorController#index as HTML
   Rendered navigator/index.haml within layouts/application (0.9ms)
 Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 129.110.242.99 at 2016-03-27 01:28:29 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (4.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (7.7ms)
+Completed 200 OK in 633ms (Views: 612.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers" for 129.110.242.99 at 2016-03-27 01:28:33 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TravelersController#index as HTML
+Redirected to https://testing-apps-sagarsamant51.c9users.io/travelers/new
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers/new" for 129.110.242.99 at 2016-03-27 01:28:34 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TravelersController#new as HTML
+  Rendered travelers/_navigation_bar.html.haml (2.9ms)
+  Rendered sessions/_signin.html.haml (17.0ms)
+  Rendered travelers/new.html.haml within layouts/application (55.1ms)
+Completed 200 OK in 200ms (Views: 126.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/bg1.jpg" for 129.110.242.99 at 2016-03-27 01:28:34 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/assets/bg1.jpg"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (163.3ms)
+
+
+Started GET "/travelers/new" for 129.110.242.99 at 2016-03-27 01:31:19 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TravelersController#new as HTML
+  Rendered travelers/_navigation_bar.html.haml (2.5ms)
+  Rendered sessions/_signin.html.haml (7.1ms)
+  Rendered travelers/new.html.haml within layouts/application (18.9ms)
+Completed 200 OK in 2333ms (Views: 2331.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-5210b025c1eb1ed6fcdfff67cb1dc1360c1007083b2eb99a1b136103047d080e.css?body=1" for 129.110.242.99 at 2016-03-27 01:31:22 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:31:22 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders_sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:31:22 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/navigator.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:31:22 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:31:22 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/travelers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:31:22 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.110.242.99 at 2016-03-27 01:31:22 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 129.110.242.99 at 2016-03-27 01:31:22 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 129.110.242.99 at 2016-03-27 01:31:22 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.110.242.99 at 2016-03-27 01:31:22 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:31:22 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders_sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:31:22 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/navigator.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:31:22 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:31:22 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/travelers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:31:23 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.110.242.99 at 2016-03-27 01:31:23 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/public/images/bg1.jpg" for 129.110.242.99 at 2016-03-27 01:31:24 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/public/images/bg1.jpg"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (191.4ms)
+
+
+Started GET "/public/images/bg1.jpg" for 129.110.242.99 at 2016-03-27 01:31:40 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/public/images/bg1.jpg"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (152.4ms)
+
+
+Started GET "/travelers/new" for 129.110.242.99 at 2016-03-27 01:33:35 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TravelersController#new as HTML
+  Rendered travelers/_navigation_bar.html.haml (0.7ms)
+  Rendered sessions/_signin.html.haml (1.3ms)
+  Rendered travelers/new.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 138ms (Views: 137.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-f8e6309985a6bfaba10a49ceea93678d527f6e791369fcaa077aa7e84520fb32.css?body=1" for 129.110.242.99 at 2016-03-27 01:33:35 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:33:35 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders_sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:33:35 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:33:35 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 129.110.242.99 at 2016-03-27 01:33:35 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/travelers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:33:35 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/navigator.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:33:35 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.110.242.99 at 2016-03-27 01:33:35 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 129.110.242.99 at 2016-03-27 01:33:36 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.110.242.99 at 2016-03-27 01:33:36 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/navigator.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:33:36 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:33:36 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/travelers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:33:36 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders_sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:33:36 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:33:36 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.110.242.99 at 2016-03-27 01:33:36 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bg1.jpg" for 129.110.242.99 at 2016-03-27 01:33:36 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/travelers/new" for 129.110.242.99 at 2016-03-27 01:35:39 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TravelersController#new as HTML
+  Rendered travelers/_navigation_bar.html.haml (0.3ms)
+  Rendered sessions/_signin.html.haml (1.3ms)
+  Rendered travelers/new.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 1812ms (Views: 1810.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/navigator.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:35:41 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:35:41 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders_sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:35:41 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:35:41 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/custom.self-484b1bb60162e4e1e14fb52c3ddd6136530c8dd511210331ae665042b08272a9.css?body=1" for 129.110.242.99 at 2016-03-27 01:35:41 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/travelers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:35:41 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.110.242.99 at 2016-03-27 01:35:41 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 129.110.242.99 at 2016-03-27 01:35:41 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 129.110.242.99 at 2016-03-27 01:35:41 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.110.242.99 at 2016-03-27 01:35:41 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:35:41 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/navigator.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:35:41 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders_sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:35:41 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/travelers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:35:41 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.110.242.99 at 2016-03-27 01:35:41 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:35:41 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bg1.jpg" for 129.110.242.99 at 2016-03-27 01:35:43 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/travelers/new" for 129.110.242.99 at 2016-03-27 01:37:24 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TravelersController#new as HTML
+  Rendered travelers/_navigation_bar.html.haml (0.2ms)
+  Rendered sessions/_signin.html.haml (1.2ms)
+  Rendered travelers/new.html.haml within layouts/application (6.3ms)
+Completed 200 OK in 1706ms (Views: 1704.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-0d77480b93e69c86a2c76d7acc4e74e85a5f05352e6ace54fd749e51c77a62a2.css?body=1" for 129.110.242.99 at 2016-03-27 01:37:26 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:37:26 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/navigator.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:37:26 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders_sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:37:26 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:37:26 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/travelers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:37:26 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 129.110.242.99 at 2016-03-27 01:37:26 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.110.242.99 at 2016-03-27 01:37:26 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:37:26 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.110.242.99 at 2016-03-27 01:37:26 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders_sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:37:26 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 129.110.242.99 at 2016-03-27 01:37:26 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/navigator.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:37:26 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:37:26 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/travelers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:37:26 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.110.242.99 at 2016-03-27 01:37:26 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bg1.jpg" for 129.110.242.99 at 2016-03-27 01:37:28 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/travelers/new" for 129.110.242.99 at 2016-03-27 01:42:59 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TravelersController#new as HTML
+  Rendered travelers/_navigation_bar.html.haml (0.5ms)
+  Rendered sessions/_signin.html.haml (1.9ms)
+  Rendered travelers/new.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 2172ms (Views: 2170.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/guiders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:43:02 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/navigator.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:43:02 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/custom.self-e0336cca96ec78f4260f2269bf74e9e066899abd72c58a2b344717cfd40f456f.css?body=1" for 129.110.242.99 at 2016-03-27 01:43:02 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:43:02 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/travelers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:43:02 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders_sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:43:02 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.110.242.99 at 2016-03-27 01:43:02 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 129.110.242.99 at 2016-03-27 01:43:02 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 129.110.242.99 at 2016-03-27 01:43:02 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.110.242.99 at 2016-03-27 01:43:02 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders_sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:43:02 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:43:02 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/navigator.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:43:02 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:43:02 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/travelers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:43:02 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.110.242.99 at 2016-03-27 01:43:02 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bg1.jpg" for 129.110.242.99 at 2016-03-27 01:43:04 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/travelers/new" for 129.110.242.99 at 2016-03-27 01:43:48 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TravelersController#new as HTML
+  Rendered travelers/_navigation_bar.html.haml (0.3ms)
+  Rendered sessions/_signin.html.haml (0.9ms)
+  Rendered travelers/new.html.haml within layouts/application (6.8ms)
+Completed 200 OK in 1801ms (Views: 1799.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/navigator.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:43:50 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:43:50 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/custom.self-64b71b3183bd80e520cfef7b3c37551bf652e3b256572607edfa0a9247810f59.css?body=1" for 129.110.242.99 at 2016-03-27 01:43:50 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders_sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:43:50 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/travelers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:43:50 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:43:50 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.110.242.99 at 2016-03-27 01:43:50 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 129.110.242.99 at 2016-03-27 01:43:50 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 129.110.242.99 at 2016-03-27 01:43:50 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.110.242.99 at 2016-03-27 01:43:50 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:43:50 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders_sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:43:50 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/navigator.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:43:50 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:43:50 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/travelers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:43:50 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.110.242.99 at 2016-03-27 01:43:50 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bg1.jpg" for 129.110.242.99 at 2016-03-27 01:43:51 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/travelers/new" for 129.110.242.99 at 2016-03-27 01:44:50 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TravelersController#new as HTML
+  Rendered travelers/_navigation_bar.html.haml (0.2ms)
+  Rendered sessions/_signin.html.haml (1.0ms)
+  Rendered travelers/new.html.haml within layouts/application (6.1ms)
+Completed 200 OK in 1727ms (Views: 1726.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-aa80beb30e8eb74de68003b6e712d866f30e40b30eac1f27a625260ef25b9dae.css?body=1" for 129.110.242.99 at 2016-03-27 01:44:52 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:44:52 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders_sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:44:52 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/navigator.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:44:52 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:44:52 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/travelers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.110.242.99 at 2016-03-27 01:44:52 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 129.110.242.99 at 2016-03-27 01:44:52 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 129.110.242.99 at 2016-03-27 01:44:52 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 129.110.242.99 at 2016-03-27 01:44:52 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 129.110.242.99 at 2016-03-27 01:44:52 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:44:52 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/guiders_sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:44:52 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/navigator.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:44:52 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/travelers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:44:52 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.110.242.99 at 2016-03-27 01:44:52 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.110.242.99 at 2016-03-27 01:44:52 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/travel-the-world.jpeg" for 129.110.242.99 at 2016-03-27 01:44:53 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/login" for 129.110.242.99 at 2016-03-27 02:14:20 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AsTAzgFBSTyNVhN0LEXHsSW/xKBZWuCXkWIjzpzoF/c3givnHxsu7zipFyZ3Y95I3ap07ZxiMVYQZsUX9MUI7w==", "session"=>{"email"=>"", "password"=>"[FILTERED]", "keep_me_logged_in"=>"0"}, "commit"=>"I am already a member!"}
+  [1m[35mTraveler Load (6.8ms)[0m  SELECT  "travelers".* FROM "travelers" WHERE "travelers"."email" = ? LIMIT 1  [["email", ""]]
+  Rendered travelers/show.html.haml within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 6.8ms)
+
+ActionView::Template::Error (Missing partial sessions/_navigation_bar, application/_navigation_bar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :haml, :jbuilder]}. Searched in:
+  * "/home/ubuntu/workspace/Byteme/app/views"
+):
+    1: .container
+    2:     =render :partial => 'navigation_bar'
+    3:     %h1 Login
+    4:     =render 'sessions/signin'
+  app/views/travelers/show.html.haml:2:in `_app_views_travelers_show_html_haml___1567578899234851378_69819052482280'
+  app/controllers/sessions_controller.rb:13:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (107.4ms)
+
+
+Started GET "/" for 129.110.242.99 at 2016-03-27 02:14:55 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (2.3ms)
+Completed 200 OK in 65ms (Views: 64.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for 129.110.242.99 at 2016-03-27 02:15:36 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#index as HTML
+Redirected to https://testing-apps-sagarsamant51.c9users.io/guiders/new
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for 129.110.242.99 at 2016-03-27 02:15:36 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GuidersController#new as HTML
+  Rendered guiders_sessions/_signin.html.haml (3.8ms)
+  Rendered guiders/new.html.haml within layouts/application (17.4ms)
+Completed 200 OK in 125ms (Views: 94.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/travelers" for 129.110.242.99 at 2016-03-27 02:15:43 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TravelersController#index as HTML
+Redirected to https://testing-apps-sagarsamant51.c9users.io/travelers/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers/new" for 129.110.242.99 at 2016-03-27 02:15:43 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TravelersController#new as HTML
+  Rendered travelers/_navigation_bar.html.haml (0.2ms)
+  Rendered sessions/_signin.html.haml (1.1ms)
+  Rendered travelers/new.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 63ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/travelers" for 129.110.242.99 at 2016-03-27 02:16:00 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TravelersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kPSFQdtrvYoWfdMvJ54Ml0wMAfSXrQTPSYWnbq6y38ulsm5oxTHaWaOC1318uBVutBmxuVKV1Q7IgUG3xp/A0w==", "traveler"=>{"first_name"=>"Sagar", "middle_name"=>"Shripad", "last_name"=>"Samant", "age"=>"", "email"=>"", "password"=>"[FILTERED]", "contact_number"=>"", "alter_number"=>"", "street_address"=>"401,Lincoln Avenue, Apartment No55", "city"=>"College Station", "state"=>"Texas", "country"=>"United States", "zip_code"=>"77840"}, "commit"=>"Join us now!"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  Rendered travelers/_navigation_bar.html.haml (0.3ms)
+  Rendered sessions/_signin.html.haml (1.4ms)
+  Rendered travelers/new.html.haml within layouts/application (127.3ms)
+Completed 200 OK in 191ms (Views: 171.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/travel-the-world.jpeg" for 129.110.242.99 at 2016-03-27 02:16:00 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/travelers" for 129.110.242.99 at 2016-03-27 02:16:17 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TravelersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SH/F6eUv3mWMKvAV4X27vOffeqIVzS9UBuazrgCi+qF9OS7A+3W5tjnV9Ee6W6JFH8rK79D1/pWH4lV3aI/luQ==", "traveler"=>{"first_name"=>"Sagar", "middle_name"=>"Shripad", "last_name"=>"Samant", "age"=>"", "email"=>"", "password"=>"[FILTERED]", "contact_number"=>"", "alter_number"=>"", "street_address"=>"401,Lincoln Avenue, Apartment No55", "city"=>"College Station", "state"=>"Texas", "country"=>"United States", "zip_code"=>"77840"}, "commit"=>"Join us now!"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "travelers" ("first_name", "middle_name", "last_name", "password_digest", "email", "contact_number", "alter_number", "street_address", "city", "state", "zip_code", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["first_name", "Sagar"], ["middle_name", "Shripad"], ["last_name", "Samant"], ["password_digest", "$2a$10$u5WwRopA7w.6W4SXERLG..jkn7A/ara4KtoqtRfg2Ni5cRTI66gWC"], ["email", ""], ["contact_number", ""], ["alter_number", ""], ["street_address", "401,Lincoln Avenue, Apartment No55"], ["city", "College Station"], ["state", "Texas"], ["zip_code", "77840"], ["country", "United States"], ["created_at", "2016-03-27 02:16:17.857243"], ["updated_at", "2016-03-27 02:16:17.857243"]]
+  [1m[36m (11.6ms)[0m  [1mcommit transaction[0m
+Redirected to https://testing-apps-sagarsamant51.c9users.io/travelers/4
+Completed 302 Found in 92ms (ActiveRecord: 12.3ms)
+
+
+Started GET "/travelers/4" for 129.110.242.99 at 2016-03-27 02:16:17 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TravelersController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendered travelers/_navigation_bar.html.haml (0.3ms)
+  Rendered sessions/_signin.html.haml (1.2ms)
+  Rendered travelers/show.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 57ms (Views: 56.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/travel-the-world.jpeg" for 129.110.242.99 at 2016-03-27 02:16:18 +0000
+Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255

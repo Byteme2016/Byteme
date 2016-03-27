@@ -24,7 +24,7 @@ class Guider < ActiveRecord::Base
   format: { without: INVALID_NAME_REGEX }
   #validates :unique email                                  
   validates  :email,
-  uniqueness: { case_sensitive: false }
+  uniqueness: { case_sensitive: false, on: [:create] }
   #####################################
   #validates :number validator 
   INVALID_NUMBER_REGEX = /[^0-9 	]/

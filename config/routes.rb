@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'guiders_sessions/new'
   get 'sessions/index'
+
   get 'navigator/index'
   get 'guiders_login' => 'guiders_sessions#new'
   post 'guiders_login' => 'guiders_sessions#create'

@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   get 'guiders_sessions/new'
   get 'sessions/index'
-
   get 'navigator/index'
   get 'guiders_login' => 'guiders_sessions#new'
   post 'guiders_login' => 'guiders_sessions#create'
@@ -11,12 +10,10 @@ Rails.application.routes.draw do
   resources :guiders
   resources :travelers do 
     resources :ordered_trips
+  end
   resources :trip_goods
- 
   get 'trip_goods/detail/:id' => 'trip_goods#detail'
-
   resources :ordered_trips
-
   post 'search_goods' => 'trip_goods#search'
   
   # The priority is based upon order of creation: first created -> highest priority.

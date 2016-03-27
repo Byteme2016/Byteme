@@ -6,3 +6,4 @@ class TripGood < ActiveRecord::Base
   validates :beginning_date, presence: true
   validates :end_date, presence: true
 end
+

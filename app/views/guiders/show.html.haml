@@ -1,9 +1,10 @@
-%h1 Travel Uber
 =render 'navigation_bar'
 .container1.container
+%br
+%br
 %flash
- =flash[:notice]
- =flash[:danger]
+ =flash.now[:notice]
+ =flash.now[:danger]
  =render'basic_info'
  =render'update_profile'
  =render'qualification'

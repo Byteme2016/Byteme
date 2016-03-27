@@ -1,0 +1,5 @@
+class AddColumnToGuider < ActiveRecord::Migration
+  def change
+    add_column :guider, :attachment, :string
+  end
+end

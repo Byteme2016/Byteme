@@ -19,5 +19,7 @@
   =f.text_field :country, {:placeholder => 'country'}
   %div{:style => "margin-bottom:10px"}
   =f.text_field :zip_code, {:placeholder => 'zip_code'}
+  =f.label :attachment
+  =f.file_field :attachment
   %p
   =f.submit 'Update my profile'

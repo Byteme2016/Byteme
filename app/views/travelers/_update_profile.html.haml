@@ -1,6 +1,6 @@
 %fieldset  
  %h3 Update my profile
- =form_for @traveler do |f|
+ =form_for @traveler, html: { multipart: true } do |f|
   =f.text_field :first_name, {:placeholder => 'Firstname'}
   =f.text_field :middle_name, {:placeholder => 'Middlename'}
   =f.text_field :last_name,  {:placeholder => 'Lastname'}
@@ -19,5 +19,7 @@
   =f.text_field :country, {:placeholder => 'country'}
   %div{:style => "margin-bottom:10px"}
   =f.text_field :zip_code, {:placeholder => 'zip_code'}
+  =f.label :attachment
+  =f.file_field :attachment
   %p
   =f.submit 'Update my profile'

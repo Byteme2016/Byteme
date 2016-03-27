@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'activerecord'
+gem 'carrierwave'
 gem 'email_verifier'
 gem 'email_validator'
 gem 'bcrypt'

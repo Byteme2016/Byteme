@@ -4617,6 +4617,7 @@ Processing by SessionsController#create as HTML
 Completed 200 OK in 87ms (Views: 70.5ms | ActiveRecord: 0.7ms)
 
 
+<<<<<<< Updated upstream
 Started GET "/" for 129.110.241.101 at 2016-03-26 19:23:14 +0000
 Cannot render console from 129.110.241.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
@@ -5065,6 +5066,7 @@ ActionView::Template::Error (Missing partial travelers/_navigation_bar, applicat
   Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.1ms)
   Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
   Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (100.5ms)
+<<<<<<< Updated upstream
 
 
 Started GET "/" for 129.110.241.101 at 2016-03-26 20:27:02 +0000
@@ -6604,3 +6606,42 @@ Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 129.110.242.99 at 2016-03-26 22:41:52 +0000
 Cannot render console from 129.110.242.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
+=======
+Started GET "/travelers/21" for ::1 at 2016-03-26 15:04:52 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TravelersController#show as HTML
+  Parameters: {"id"=>"21"}
+  Rendered sessions/_signin.html.haml (8.5ms)
+  Rendered travelers/show.html.haml within layouts/application (18.3ms)
+Completed 200 OK in 454ms (Views: 417.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-03-26 15:04:57 -0500
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (2.0ms)
+Completed 200 OK in 63ms (Views: 62.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers" for ::1 at 2016-03-26 15:04:59 -0500
+Processing by TravelersController#index as HTML
+Redirected to http://localhost:3000/travelers/new
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers/new" for ::1 at 2016-03-26 15:04:59 -0500
+Processing by TravelersController#new as HTML
+  Rendered sessions/_signin.html.haml (5.2ms)
+  Rendered travelers/new.html.haml within layouts/application (35.3ms)
+Completed 200 OK in 75ms (Views: 73.9ms | ActiveRecord: 0.0ms)
+>>>>>>> Stashed changes
+
+
+Started GET "/travelers/new" for ::1 at 2016-03-26 15:20:57 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TravelersController#new as HTML
+  Rendered travelers/_navigation_bar.html.haml (1.4ms)
+  Rendered sessions/_signin.html.haml (11.1ms)
+  Rendered travelers/new.html.haml within layouts/application (37.0ms)
+Completed 200 OK in 591ms (Views: 551.9ms | ActiveRecord: 0.5ms)
+>>>>>>> Stashed changes

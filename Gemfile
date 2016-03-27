@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'email_verifier'
+gem 'email_validator'
 gem 'bcrypt'
 gem 'rerun'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -30,7 +32,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'haml-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'sass','3.4.12'
+gem 'bootstrap-sass', '3.2.0.0'
 # Use Unicorn as the app server
 # gem 'unicorn'
 

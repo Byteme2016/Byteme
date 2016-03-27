@@ -19,3 +19,6 @@
 ehthumbs.db
 Thumbs.db
 server.pid
+db/development.sqlite3
+
+log/development.log

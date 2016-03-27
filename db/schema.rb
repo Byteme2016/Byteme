@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160326205149) do
+ActiveRecord::Schema.define(version: 20160326231230) do
 
   create_table "catagories", force: :cascade do |t|
     t.integer  "trip_good_id"
@@ -55,7 +55,7 @@ ActiveRecord::Schema.define(version: 20160326205149) do
     t.integer  "rating"
     t.string   "comment"
     t.string   "introduction"
-    t.string   "stree_address"
+    t.string   "street_address"
     t.string   "city"
     t.string   "state"
     t.datetime "created_at",      null: false

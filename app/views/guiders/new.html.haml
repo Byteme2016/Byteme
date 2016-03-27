@@ -1,35 +1,27 @@
-%h1
- Travel Uber
-=render 'guiders_sessions/signin'
-%fieldset
- %flash
-  =flash[:danger] 
- =form_for @guider do |f|
-  =f.text_field :first_name, {:placeholder => 'Firstname'}
-  =f.text_field :middle_name, {:placeholder => 'Middlename'}
-  =f.text_field :last_name,  {:placeholder => 'Lastname'}
-  %div{:style => "margin-bottom:10px"}
-  =f.text_field :age, {:placeholder => 'age'}
-  %div{:style => "margin-bottom:10px"}
-  =f.text_field :email, {:placeholder => 'E-mail'}
-  =f.text_field :password, {:type=>'password',:placeholder => 'password'}
-  %div{:style => "margin-bottom:10px"}
-  =f.text_field :contact_number, {:placeholder => 'Primary Contact Number'}
-  =f.text_field :alter_number, {:placeholder => 'Alternate Contact Number'}
-  %div{:style => "margin-bottom:10px"}
-  =f.text_field :city, {:placeholder => 'city'}
-  =f.text_field :stree_address, {:placeholder => 'street address'}
-  %div{:style => "margin-bottom:10px"}
-  =f.text_field :state, {:placeholder => 'state'}
-  =f.text_field :country, {:placeholder => 'country'}
-  =f.text_field :zip_code, {:placeholder => 'zip_code'}
-  %div{:style => "margin-bottom:10px"}
-  =f.text_field :driver_license, {:placeholder => 'driver_license'}
-  =f.text_field :passport_number, {:placeholder => 'passport_number'}
-  =f.text_field :SSN, {:placeholder => 'SSN '}
-  %div{:style => "margin-bottom:10px"}
-  =f.text_field :introduction, {:placeholder => 'introduction'}
-  =f.text_field :rating, {:placeholder => 'rating'}
-  =f.text_field :comment, {:placeholder => 'comment'}
-  %p
-  =f.submit 'Join us now!'
+=render 'guiders/signup_bar'
+.container1.container
+ =render 'guiders_sessions/signin'
+ %fieldset
+  -if @guider.errors.any?
+   %div{:id=>"error_explanations"}
+    =pluralize(@guider.errors.count, "error") #count the amount of errors(error)
+    has been found!
+    %ul
+     -@guider.errors.full_messages.each do |msg|
+      %li
+       =msg
+  =form_for @guider do |f|
+   =f.text_field :first_name, {:placeholder => 'Firstname'}
+   =f.text_field :middle_name, {:placeholder => 'Middlename'}
+   =f.text_field :last_name,  {:placeholder => 'Lastname'}
+   %div{:style => "margin-bottom:10px"}
+   =f.text_field :age, {:placeholder => 'age'}
+   %div{:style => "margin-bottom:10px"}
+   =f.text_field :email, {:placeholder => 'E-mail'}
+   =f.text_field :password, {:type=>'password',:placeholder => 'password'}
+   %div{:style => "margin-bottom:10px"}
+   =f.text_field :contact_number, {:placeholder => 'Primary Contact Number'}
+   =f.text_field :alter_number, {:placeholder => 'Alternate Contact Number'}
+   %div{:style => "margin-bottom:10px"}
+   %p
+   =f.submit 'Join us now!'

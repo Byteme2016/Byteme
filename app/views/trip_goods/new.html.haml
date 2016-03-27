@@ -1,0 +1,25 @@
+%h1 TripGood
+
+%fieldset
+ %flash
+  =flash[:danger] 
+ =form_for @trip_good do |f|
+  =f.text_field :guider_id, {:placeholder => 'guider_id'}
+  %div{:style => "margin-bottom:10px"}
+  =f.text_field :city_id, {:placeholder => 'city_id'}
+  %div{:style => "margin-bottom:10px"}
+  =f.text_field :beginning_date, {:placeholder => 'mm/dd/yyyy'}
+  =f.text_field :end_date, {:placeholder => 'mm/dd/yyyy'}
+  %div{:style => "margin-bottom:10px"}
+  =f.text_field :on_shelf, {:placeholder => 'on_shelf'}
+  %div{:style => "margin-bottom:10px"}
+  =f.text_field :title, {:placeholder => 'title'}
+  =f.text_field :review, {:placeholder => 'review'}
+  %div{:style => "margin-bottom:10px"}
+  =f.text_field :introduction, {:placeholder => 'introductionr'}
+  %div{:style => "margin-bottom:10px"}
+  =f.text_field :capacity, {:placeholder => 'capacity'}
+  =f.text_field :price, {:placeholder => 'price'}
+  %div{:style => "margin-bottom:10px"}
+  %p
+  =f.submit 'Generate Trip Good'

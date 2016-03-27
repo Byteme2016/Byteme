@@ -1,2 +1,27 @@
+<<<<<<< HEAD
 
 tmp/pids/server.pid
+=======
+# Cache #
+#########
+*.cache
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+server.pid
+*.cache
+>>>>>>> 387105f392ffdf26c92563c790840f3df7bf7cf2

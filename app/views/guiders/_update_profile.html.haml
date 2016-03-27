@@ -1,6 +1,6 @@
 %fieldset  
  %h3 Update my profile
- =form_for @guider do |f|
+ =form_for @guider, html:{ multipart: true } do  |f|
   =f.text_field :first_name, {:placeholder => 'Firstname'}
   =f.text_field :middle_name, {:placeholder => 'Middlename'}
   =f.text_field :last_name,  {:placeholder => 'Lastname'}

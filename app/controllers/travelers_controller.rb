@@ -13,10 +13,10 @@ class TravelersController < ApplicationController
   def update
     @traveler = Traveler.find_by(id: session[:id])
     if @traveler.update(traveler_params)
-      flash.now[:danger]="Update succeeded!"      
+      flash[:danger]="Update succeeded!"      
       redirect_to @traveler
     else 
-      flash.now[:danger]="Update failed!" 
+      flash[:danger]="Update failed!" 
       redirect_to @traveler     
     end 
   end

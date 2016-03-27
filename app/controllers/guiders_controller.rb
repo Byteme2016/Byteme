@@ -8,7 +8,7 @@ class GuidersController < ApplicationController
   end
   
   def edit
-       @traveler = Traveler.find_by(id: session[:id])  
+       @guider = Guider.find_by(id: session[:id])  
   end
   
   def create

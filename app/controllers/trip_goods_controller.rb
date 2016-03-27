@@ -17,6 +17,6 @@ class TripGoodsController < ApplicationController
     @trip_good = TripGood.new
   end
   def trip_good_params
-   params.require(:trip_good).permit(:guider_id,:date_begining,:date_end,:price,:rating,:email,:review,:on_shelf,:title,:introduction,:capacity,)
+   params.require(:trip_good).permit(:guider_id,:city_id,:beginning_date,:end_date,:price,:rating,:email,:review,:on_shelf,:title,:introduction,:capacity)
   end
 end

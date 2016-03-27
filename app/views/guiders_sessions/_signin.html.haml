@@ -1,8 +1,13 @@
 %flash
  =flash[:danger]
+ =flash[:notice]
 %fieldset
  %legend
+<<<<<<< HEAD
  =form_for(:session, url: guiders_login_path ) do |f|
+=======
+ =form_for(:session, url:guiders_login_path ) do |f|
+>>>>>>> 869bfbd7b0f71e0a0814c77e2b6f8ee0faf7b025
 
   =f.text_field :email, {:placeholder => 'E-mail' }
 

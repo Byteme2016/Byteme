@@ -1,2 +1,9 @@
-%h1 Login
-=render 'sessions/signin'
+=render 'navigation_bar'
+.container1.container
+%br
+%br
+%flash
+ =flash[:notice]
+ =flash[:danger]
+ =render 'basic_info'
+ =render 'update_profile'

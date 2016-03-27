@@ -19249,3 +19249,1234 @@ Migrating to ChangeColumn (20160327034911)
 >>>>>>> master
 >>>>>>> origin/tripgood
 >>>>>>> master
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangedColumnAddress (20160326231230)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TEMPORARY TABLE "aguiders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "middle_name" varchar, "last_name" varchar, "password_digest" varchar, "email" varchar, "user_name" varchar, "gender" varchar, "age" integer, "photo" blob, "contact_number" varchar, "alter_number" varchar, "driver_license" varchar, "passport_number" varchar, "SSN" varchar, "rating" integer, "comment" varchar, "introduction" varchar, "street_address" varchar, "city" varchar, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "country" varchar, "zip_code" varchar) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "guiders"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (1, 'swe', NULL, 's', NULL, NULL, NULL, NULL, 22, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2016-03-26 05:47:12.606025', '2016-03-26 05:47:12.606025', NULL, NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (2, 'Swetha', '', 'R', '$2a$10$GJXaJ.IaqFese9gz9eVlfeCnGOnBoC6HJBLeK2cFSOlEgj/m3LC3a', 'swethasridharan1236@gmail.com', NULL, NULL, 22, NULL, '', '', '', '', '', NULL, '', '', NULL, 'College Station', 'Texas', '2016-03-26 17:27:26.784589', '2016-03-26 17:27:26.784589', NULL, '778401231')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (3, 'Sagar', '', 's', '$2a$10$LFI7JRb2L01cSF5LF09WqOs3YaNa1ZkSF6DhJqaZFVmPWEhqbIt8C', 'swe@tamu.edu', NULL, NULL, NULL, NULL, '', '', '', '', '', NULL, '', '', NULL, '', '', '2016-03-26 17:29:05.391251', '2016-03-26 17:29:05.391251', NULL, '')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (7, '', '', '', '$2a$10$YfAaK7DuSPiAxk6xIQ1z5u61JxkXqfIWVG7.xzIBR8.wKqHEES1vy', '123', NULL, NULL, NULL, NULL, '', '', '', '', '', NULL, '', '', NULL, '', '', '2016-03-26 18:07:46.575615', '2016-03-26 18:07:46.575615', NULL, '')
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "guiders"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "guiders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "middle_name" varchar, "last_name" varchar, "password_digest" varchar, "email" varchar, "user_name" varchar, "gender" varchar, "age" integer, "photo" blob, "contact_number" varchar, "alter_number" varchar, "driver_license" varchar, "passport_number" varchar, "SSN" varchar, "rating" integer, "comment" varchar, "introduction" varchar, "street_address" varchar, "city" varchar, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "country" varchar, "zip_code" varchar) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "aguiders"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "guiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (1, 'swe', NULL, 's', NULL, NULL, NULL, NULL, 22, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2016-03-26 05:47:12.606025', '2016-03-26 05:47:12.606025', NULL, NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "guiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (2, 'Swetha', '', 'R', '$2a$10$GJXaJ.IaqFese9gz9eVlfeCnGOnBoC6HJBLeK2cFSOlEgj/m3LC3a', 'swethasridharan1236@gmail.com', NULL, NULL, 22, NULL, '', '', '', '', '', NULL, '', '', NULL, 'College Station', 'Texas', '2016-03-26 17:27:26.784589', '2016-03-26 17:27:26.784589', NULL, '778401231')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "guiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (3, 'Sagar', '', 's', '$2a$10$LFI7JRb2L01cSF5LF09WqOs3YaNa1ZkSF6DhJqaZFVmPWEhqbIt8C', 'swe@tamu.edu', NULL, NULL, NULL, NULL, '', '', '', '', '', NULL, '', '', NULL, '', '', '2016-03-26 17:29:05.391251', '2016-03-26 17:29:05.391251', NULL, '')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "guiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code") VALUES (7, '', '', '', '$2a$10$YfAaK7DuSPiAxk6xIQ1z5u61JxkXqfIWVG7.xzIBR8.wKqHEES1vy', '123', NULL, NULL, NULL, NULL, '', '', '', '', '', NULL, '', '', NULL, '', '', '2016-03-26 18:07:46.575615', '2016-03-26 18:07:46.575615', NULL, '')[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "aguiders"
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160326231230"]]
+  [1m[35m (8.9ms)[0m  commit transaction
+Migrating to AddColumnToGuiders (20160327031837)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "guiders" ADD "qualified" boolean
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160327031837"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to ChangeColumn (20160327034911)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TEMPORARY TABLE "aguiders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "middle_name" varchar, "last_name" varchar, "password_digest" varchar, "email" varchar, "user_name" varchar, "gender" varchar, "age" integer, "photo" blob, "contact_number" varchar, "alter_number" varchar, "driver_license" varchar, "passport_number" varchar, "SSN" varchar, "rating" integer, "comment" varchar, "introduction" varchar, "street_address" varchar, "city" varchar, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "country" varchar, "zip_code" varchar, "qualified" boolean) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "guiders"[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code","qualified") VALUES (1, 'swe', NULL, 's', NULL, NULL, NULL, NULL, 22, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2016-03-26 05:47:12.606025', '2016-03-26 05:47:12.606025', NULL, NULL, NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code","qualified") VALUES (2, 'Swetha', '', 'R', '$2a$10$GJXaJ.IaqFese9gz9eVlfeCnGOnBoC6HJBLeK2cFSOlEgj/m3LC3a', 'swethasridharan1236@gmail.com', NULL, NULL, 22, NULL, '', '', '', '', '', NULL, '', '', NULL, 'College Station', 'Texas', '2016-03-26 17:27:26.784589', '2016-03-26 17:27:26.784589', NULL, '778401231', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code","qualified") VALUES (3, 'Sagar', '', 's', '$2a$10$LFI7JRb2L01cSF5LF09WqOs3YaNa1ZkSF6DhJqaZFVmPWEhqbIt8C', 'swe@tamu.edu', NULL, NULL, NULL, NULL, '', '', '', '', '', NULL, '', '', NULL, '', '', '2016-03-26 17:29:05.391251', '2016-03-26 17:29:05.391251', NULL, '', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aguiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code","qualified") VALUES (7, '', '', '', '$2a$10$YfAaK7DuSPiAxk6xIQ1z5u61JxkXqfIWVG7.xzIBR8.wKqHEES1vy', '123', NULL, NULL, NULL, NULL, '', '', '', '', '', NULL, '', '', NULL, '', '', '2016-03-26 18:07:46.575615', '2016-03-26 18:07:46.575615', NULL, '', NULL)[0m
+  [1m[35m (0.5ms)[0m  DROP TABLE "guiders"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "guiders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "middle_name" varchar, "last_name" varchar, "password_digest" varchar, "email" varchar, "user_name" varchar, "gender" varchar, "age" integer, "photo" blob, "contact_number" varchar, "alter_number" varchar, "driver_license" varchar, "passport_number" varchar, "SSN" varchar, "rating" integer, "comment" varchar, "introduction" varchar, "street_address" varchar, "city" varchar, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "country" varchar, "zip_code" varchar, "qualified" boolean DEFAULT 'f' NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "aguiders"
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "guiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code","qualified") VALUES (1, 'swe', NULL, 's', NULL, NULL, NULL, NULL, 22, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2016-03-26 05:47:12.606025', '2016-03-26 05:47:12.606025', NULL, NULL, NULL)[0m
+SQLite3::ConstraintException: NOT NULL constraint failed: guiders.qualified: INSERT INTO "guiders" ("id","first_name","middle_name","last_name","password_digest","email","user_name","gender","age","photo","contact_number","alter_number","driver_license","passport_number","SSN","rating","comment","introduction","street_address","city","state","created_at","updated_at","country","zip_code","qualified") VALUES (1, 'swe', NULL, 's', NULL, NULL, NULL, NULL, 22, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2016-03-26 05:47:12.606025', '2016-03-26 05:47:12.606025', NULL, NULL, NULL)
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateGuiders (20160321164749)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "guiders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "middle_name" varchar, "last_name" varchar, "password_digest" varchar, "email" varchar, "user_name" varchar, "gender" varchar, "age" integer, "photo" blob(2097152), "contact_number" varchar, "alter_number" varchar, "driver_license" varchar, "passport_number" varchar, "SSN" varchar, "rating" integer, "comment" varchar, "introduction" varchar, "stree_address" varchar, "city" varchar, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160321164749"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Migrating to CreateCountries (20160321170339)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "countries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160321170339"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Migrating to CreateStates (20160321170417)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "states" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "country_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_states_on_country_id" ON "states" ("country_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160321170417"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCities (20160321170448)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "cities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "state_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_cities_on_state_id" ON "cities" ("state_id")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160321170448"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Migrating to CreateTripGoods (20160321170844)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamp` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /Users/zhangsikai/GitHub/Byteme/db/migrate/20160321170844_create_trip_goods.rb:15)
+  [1m[35m (0.6ms)[0m  CREATE TABLE "trip_goods" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "city_id" integer, "guider_id" integer, "date_begining" date, "date_end" date, "price" integer, "rating" integer, "review" varchar, "on_shelf" boolean, "introduction" varchar, "title" varchar, "capacity" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_trip_goods_on_city_id" ON "trip_goods" ("city_id")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_trip_goods_on_guider_id" ON "trip_goods" ("guider_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160321170844"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Migrating to CreateLanguages (20160321171003)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "languages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "guider_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_languages_on_guider_id" ON "languages" ("guider_id")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160321171003"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateCatagories (20160321171052)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "catagories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "trip_good_id" integer, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_catagories_on_trip_good_id" ON "catagories" ("trip_good_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160321171052"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateTravelers (20160321190508)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "travelers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "middle_name" varchar, "last_name" varchar, "password" varchar, "email" varchar, "username" varchar, "gender" varchar, "age" integer, "photo" blob(2097152), "contact_number" varchar, "alter_number" varchar, "street_address" varchar, "city" varchar, "state" varchar, "zip_code" varchar, "country" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160321190508"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreatePayingMethods (20160323024348)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "paying_methods" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "api_name" varchar(50), "traveler_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_paying_methods_on_traveler_id" ON "paying_methods" ("traveler_id")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160323024348"]]
+  [1m[35m (3.9ms)[0m  commit transaction
+Migrating to CreateOrderedTrips (20160323025552)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "ordered_trips" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ordered_time" datetime, "requirement" varchar(256), "trip_good_id_id" integer, "plan_id_id" integer, "traveler_id_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_ordered_trips_on_trip_good_id_id" ON "ordered_trips" ("trip_good_id_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_ordered_trips_on_plan_id_id" ON "ordered_trips" ("plan_id_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_ordered_trips_on_traveler_id_id" ON "ordered_trips" ("traveler_id_id")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_ordered_trips_on_requirement" ON "ordered_trips" ("requirement")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160323025552"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Migrating to CreatePlans (20160323025826)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "plans" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "plan_name" varchar(50), "budget" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160323025826"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to ChangeColoumnPassword (20160324231457)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TEMPORARY TABLE "atravelers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "middle_name" varchar, "last_name" varchar, "password_digest" varchar, "email" varchar, "username" varchar, "gender" varchar, "age" integer, "photo" blob, "contact_number" varchar, "alter_number" varchar, "street_address" varchar, "city" varchar, "state" varchar, "zip_code" varchar, "country" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "travelers"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "travelers"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "travelers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "middle_name" varchar, "last_name" varchar, "password_digest" varchar, "email" varchar, "username" varchar, "gender" varchar, "age" integer, "photo" blob, "contact_number" varchar, "alter_number" varchar, "street_address" varchar, "city" varchar, "state" varchar, "zip_code" varchar, "country" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "atravelers"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "atravelers"[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160324231457"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Migrating to ChangeOrderedtripColumn (20160325234242)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TEMPORARY TABLE "aordered_trips" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ordered_time" datetime, "requirement" varchar(256), "trip_good_id" integer, "plan_id_id" integer, "traveler_id_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "tindex_aordered_trips_on_requirement" ON "aordered_trips" ("requirement")
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "tindex_aordered_trips_on_traveler_id_id" ON "aordered_trips" ("traveler_id_id")[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "tindex_aordered_trips_on_plan_id_id" ON "aordered_trips" ("plan_id_id")
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "tindex_aordered_trips_on_trip_good_id_id" ON "aordered_trips" ("trip_good_id")[0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "ordered_trips"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "ordered_trips"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "ordered_trips" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ordered_time" datetime, "requirement" varchar(256), "trip_good_id" integer, "plan_id_id" integer, "traveler_id_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_aordered_trips_on_trip_good_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_aordered_trips_on_trip_good_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_aordered_trips_on_plan_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_aordered_trips_on_plan_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_aordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_aordered_trips_on_traveler_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_aordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_aordered_trips_on_requirement' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_ordered_trips_on_trip_good_id_id" ON "ordered_trips" ("trip_good_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_ordered_trips_on_plan_id_id" ON "ordered_trips" ("plan_id_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_ordered_trips_on_traveler_id_id" ON "ordered_trips" ("traveler_id_id")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_ordered_trips_on_requirement" ON "ordered_trips" ("requirement")
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "aordered_trips"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "aordered_trips"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_ordered_trips_on_trip_good_id" ON "ordered_trips" ("trip_good_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mDROP INDEX "index_ordered_trips_on_trip_good_id_id"[0m
+  [1m[35m (0.2ms)[0m  CREATE TEMPORARY TABLE "aordered_trips" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ordered_time" datetime, "requirement" varchar(256), "trip_good_id" integer, "plan_id" integer, "traveler_id_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "tindex_aordered_trips_on_trip_good_id" ON "aordered_trips" ("trip_good_id")[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "tindex_aordered_trips_on_requirement" ON "aordered_trips" ("requirement")
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "tindex_aordered_trips_on_traveler_id_id" ON "aordered_trips" ("traveler_id_id")[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "tindex_aordered_trips_on_plan_id_id" ON "aordered_trips" ("plan_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "ordered_trips"[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "ordered_trips"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "ordered_trips" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ordered_time" datetime, "requirement" varchar(256), "trip_good_id" integer, "plan_id" integer, "traveler_id_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_aordered_trips_on_plan_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_aordered_trips_on_plan_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_aordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_aordered_trips_on_traveler_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_aordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_aordered_trips_on_requirement' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_aordered_trips_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_aordered_trips_on_trip_good_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_ordered_trips_on_plan_id_id" ON "ordered_trips" ("plan_id")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_ordered_trips_on_traveler_id_id" ON "ordered_trips" ("traveler_id_id")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_ordered_trips_on_requirement" ON "ordered_trips" ("requirement")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_ordered_trips_on_trip_good_id" ON "ordered_trips" ("trip_good_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "aordered_trips"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "aordered_trips"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_ordered_trips_on_plan_id" ON "ordered_trips" ("plan_id")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  DROP INDEX "index_ordered_trips_on_plan_id_id"
+  [1m[36m (0.2ms)[0m  [1mCREATE TEMPORARY TABLE "aordered_trips" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ordered_time" datetime, "requirement" varchar(256), "trip_good_id" integer, "plan_id" integer, "traveler_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "tindex_aordered_trips_on_plan_id" ON "aordered_trips" ("plan_id")
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "tindex_aordered_trips_on_trip_good_id" ON "aordered_trips" ("trip_good_id")[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "tindex_aordered_trips_on_requirement" ON "aordered_trips" ("requirement")
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "tindex_aordered_trips_on_traveler_id_id" ON "aordered_trips" ("traveler_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "ordered_trips"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "ordered_trips"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "ordered_trips" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ordered_time" datetime, "requirement" varchar(256), "trip_good_id" integer, "plan_id" integer, "traveler_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_aordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_aordered_trips_on_traveler_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_aordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_aordered_trips_on_requirement' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_aordered_trips_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_aordered_trips_on_trip_good_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_aordered_trips_on_plan_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_aordered_trips_on_plan_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_ordered_trips_on_traveler_id_id" ON "ordered_trips" ("traveler_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_ordered_trips_on_requirement" ON "ordered_trips" ("requirement")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_ordered_trips_on_trip_good_id" ON "ordered_trips" ("trip_good_id")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_ordered_trips_on_plan_id" ON "ordered_trips" ("plan_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "aordered_trips"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "aordered_trips"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_ordered_trips_on_traveler_id" ON "ordered_trips" ("traveler_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mDROP INDEX "index_ordered_trips_on_traveler_id_id"[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160325234242"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Migrating to AddCountryToGuiders (20160326064816)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "guiders" ADD "country" varchar[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160326064816"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Migrating to AddZipCodeToGuiders (20160326075022)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "guiders" ADD "zip_code" varchar[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160326075022"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Migrating to ChangeColumnDate (20160326205149)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TEMPORARY TABLE "atrip_goods" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "city_id" integer, "guider_id" integer, "beginning_date" date, "date_end" date, "price" integer, "rating" integer, "review" varchar, "on_shelf" boolean, "introduction" varchar, "title" varchar, "capacity" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "tindex_atrip_goods_on_guider_id" ON "atrip_goods" ("guider_id")
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "tindex_atrip_goods_on_city_id" ON "atrip_goods" ("city_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "trip_goods"
+  [1m[36m (0.5ms)[0m  [1mDROP TABLE "trip_goods"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "trip_goods" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "city_id" integer, "guider_id" integer, "beginning_date" date, "date_end" date, "price" integer, "rating" integer, "review" varchar, "on_shelf" boolean, "introduction" varchar, "title" varchar, "capacity" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_atrip_goods_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_atrip_goods_on_city_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_atrip_goods_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_atrip_goods_on_guider_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_trip_goods_on_city_id" ON "trip_goods" ("city_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_trip_goods_on_guider_id" ON "trip_goods" ("guider_id")[0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "atrip_goods"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "atrip_goods"[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  CREATE TEMPORARY TABLE "atrip_goods" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "city_id" integer, "guider_id" integer, "beginning_date" date, "end_date" date, "price" integer, "rating" integer, "review" varchar, "on_shelf" boolean, "introduction" varchar, "title" varchar, "capacity" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "tindex_atrip_goods_on_guider_id" ON "atrip_goods" ("guider_id")[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "tindex_atrip_goods_on_city_id" ON "atrip_goods" ("city_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "trip_goods"[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "trip_goods"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "trip_goods" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "city_id" integer, "guider_id" integer, "beginning_date" date, "end_date" date, "price" integer, "rating" integer, "review" varchar, "on_shelf" boolean, "introduction" varchar, "title" varchar, "capacity" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_atrip_goods_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_atrip_goods_on_city_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_atrip_goods_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_atrip_goods_on_guider_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_trip_goods_on_city_id" ON "trip_goods" ("city_id")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_trip_goods_on_guider_id" ON "trip_goods" ("guider_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "atrip_goods"[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "atrip_goods"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160326205149"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Migrating to ChangedColumnAddress (20160326231230)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TEMPORARY TABLE "aguiders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "middle_name" varchar, "last_name" varchar, "password_digest" varchar, "email" varchar, "user_name" varchar, "gender" varchar, "age" integer, "photo" blob, "contact_number" varchar, "alter_number" varchar, "driver_license" varchar, "passport_number" varchar, "SSN" varchar, "rating" integer, "comment" varchar, "introduction" varchar, "street_address" varchar, "city" varchar, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "country" varchar, "zip_code" varchar) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "guiders"[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "guiders"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "guiders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "middle_name" varchar, "last_name" varchar, "password_digest" varchar, "email" varchar, "user_name" varchar, "gender" varchar, "age" integer, "photo" blob, "contact_number" varchar, "alter_number" varchar, "driver_license" varchar, "passport_number" varchar, "SSN" varchar, "rating" integer, "comment" varchar, "introduction" varchar, "street_address" varchar, "city" varchar, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "country" varchar, "zip_code" varchar) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "aguiders"
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "aguiders"[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160326231230"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Migrating to AddColumnToGuiders (20160327031837)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "guiders" ADD "qualified" boolean[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160327031837"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Migrating to ChangeColumn (20160327034911)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TEMPORARY TABLE "aguiders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "middle_name" varchar, "last_name" varchar, "password_digest" varchar, "email" varchar, "user_name" varchar, "gender" varchar, "age" integer, "photo" blob, "contact_number" varchar, "alter_number" varchar, "driver_license" varchar, "passport_number" varchar, "SSN" varchar, "rating" integer, "comment" varchar, "introduction" varchar, "street_address" varchar, "city" varchar, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "country" varchar, "zip_code" varchar, "qualified" boolean) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "guiders"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "guiders"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "guiders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "middle_name" varchar, "last_name" varchar, "password_digest" varchar, "email" varchar, "user_name" varchar, "gender" varchar, "age" integer, "photo" blob, "contact_number" varchar, "alter_number" varchar, "driver_license" varchar, "passport_number" varchar, "SSN" varchar, "rating" integer, "comment" varchar, "introduction" varchar, "street_address" varchar, "city" varchar, "state" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "country" varchar, "zip_code" varchar, "qualified" boolean DEFAULT 'f' NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "aguiders"[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "aguiders"
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160327034911"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_catagories_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_catagories_on_trip_good_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_cities_on_state_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_cities_on_state_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_languages_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_languages_on_guider_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_traveler_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_traveler_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_plan_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_trip_good_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ordered_trips_on_requirement' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_paying_methods_on_traveler_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_paying_methods_on_traveler_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_states_on_country_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_states_on_country_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_guider_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trip_goods_on_city_id' AND type='index'
+

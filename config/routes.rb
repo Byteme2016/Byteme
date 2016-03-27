@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get 'trip_goods/detail/:id' => 'trip_goods#detail'
   resources :ordered_trips
   post 'search_goods' => 'trip_goods#search'
+  get 'search_goods' => 'travelers#show'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

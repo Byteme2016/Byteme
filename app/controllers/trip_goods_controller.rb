@@ -10,7 +10,7 @@ class TripGoodsController < ApplicationController
 
 	  	@city = params[:trip_good] ? params[:trip_good][:city] : session['city']
 	  	@price =  params[:trip_good] ? params[:trip_good][:price] : session['price']
-	  	
+	  	@traveler = Traveler.find_by(id: session[:id])
 	  	# Build date strings for query
 	  	if !session['beginning_date']
 	  		start_year = params[:trip_good]["beginning_date(1i)"]

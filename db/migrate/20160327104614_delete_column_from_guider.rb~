@@ -1,0 +1,5 @@
+class DeleteColumnFromGuider < ActiveRecord::Migration
+  def change
+    delete_column :guiders, :photo, :binary
+  end
+end

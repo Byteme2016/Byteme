@@ -14684,3 +14684,114 @@ Processing by GuidersController#show as HTML
   Rendered guiders/show.html.haml within layouts/application (5.7ms)
 Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.1ms)
 >>>>>>> master
+
+
+Started GET "/" for ::1 at 2016-03-26 19:12:23 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (4.0ms)
+Completed 200 OK in 4188ms (Views: 4176.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-10db40f836475389192f9c1556c4d641e2725c7cd59d2e8a4aebac64c24a83fe.css?body=1" for ::1 at 2016-03-26 19:12:28 -0500
+
+
+Started GET "/" for ::1 at 2016-03-26 19:12:52 -0500
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (0.5ms)
+Completed 200 OK in 40ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-26 19:15:30 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (5.1ms)
+Completed 200 OK in 466ms (Views: 451.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-26 19:15:55 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (2.8ms)
+Completed 200 OK in 352ms (Views: 342.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-26 19:15:58 -0500
+Processing by NavigatorController#index as HTML
+  Rendered navigator/index.haml within layouts/application (0.7ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders" for ::1 at 2016-03-26 19:15:59 -0500
+Processing by GuidersController#index as HTML
+Redirected to http://localhost:3000/guiders/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for ::1 at 2016-03-26 19:15:59 -0500
+Processing by GuidersController#new as HTML
+  Rendered guiders_sessions/_signin.html.haml (7.9ms)
+  Rendered guiders/new.html.haml within layouts/application (27.9ms)
+Completed 200 OK in 99ms (Views: 69.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/travelers" for ::1 at 2016-03-26 19:16:02 -0500
+Processing by TravelersController#index as HTML
+Redirected to http://localhost:3000/travelers/new
+Completed 302 Found in 25ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers/new" for ::1 at 2016-03-26 19:16:02 -0500
+Processing by TravelersController#new as HTML
+  Rendered travelers/_navigation_bar.html.haml (1.5ms)
+  Rendered travelers/new.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 69ms (Views: 49.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/guiders" for ::1 at 2016-03-26 19:16:09 -0500
+Processing by GuidersController#index as HTML
+Redirected to http://localhost:3000/guiders/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/guiders/new" for ::1 at 2016-03-26 19:16:09 -0500
+Processing by GuidersController#new as HTML
+  Rendered guiders_sessions/_signin.html.haml (1.6ms)
+  Rendered guiders/new.html.haml within layouts/application (6.4ms)
+Completed 200 OK in 66ms (Views: 64.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers" for ::1 at 2016-03-26 19:16:14 -0500
+Processing by TravelersController#index as HTML
+Redirected to http://localhost:3000/travelers/new
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers/new" for ::1 at 2016-03-26 19:16:14 -0500
+Processing by TravelersController#new as HTML
+  Rendered travelers/_navigation_bar.html.haml (0.2ms)
+  Rendered travelers/new.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 70ms (Views: 69.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers" for ::1 at 2016-03-26 19:16:58 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TravelersController#index as HTML
+Redirected to http://localhost:3000/travelers/new
+Completed 302 Found in 12ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/travelers/new" for ::1 at 2016-03-26 19:16:58 -0500
+Processing by TravelersController#new as HTML
+  Rendered travelers/_navigation_bar.html.haml (2.7ms)
+  Rendered sessions/_signin.html.haml (12.8ms)
+  Rendered travelers/new.html.haml within layouts/application (42.6ms)
+Completed 200 OK in 492ms (Views: 459.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/travelers/new" for ::1 at 2016-03-26 19:17:42 -0500
+Processing by TravelersController#new as HTML
+  Rendered travelers/_navigation_bar.html.haml (0.3ms)
+  Rendered sessions/_signin.html.haml (1.6ms)
+  Rendered travelers/new.html.haml within layouts/application (15.7ms)
+Completed 200 OK in 58ms (Views: 57.6ms | ActiveRecord: 0.0ms)

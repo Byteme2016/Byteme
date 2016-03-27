@@ -1,0 +1,11 @@
+.container-fluid
+  .container
+    .row.col-sm-offset-1
+      #p.h1 #{@trip_good.title}
+
+    .row.col-sm-offset-1
+      #p.h3 #{@trip_good.introduction}
+
+    .row.col-sm-offset-9
+      =button_to "Order Now!", ordered_trips_path, :id=>'#{@trip_good.id}', :confirm=>"Are you sure to order this trip?", :class=>"btn btn-default"
+      =button_to "Go Back", '/search_goods', :class=>"btn btn-default"

@@ -1,0 +1,47 @@
+=render 'travelers/navigation_bar'
+.container1.container
+.container-fluid
+  .row
+    .row.col-sm-offset-1
+      %h1 Trip Goods
+
+#search-box.container-fluid
+= form_tag '/search_goods', :method => :post do
+  .container
+    .row.col-sm-offset-1(style="padding-top: 15px")
+      = label :trip_good, :city, 'City*'
+      = text_field :trip_good, :city, :required=>true, :value=>@city
+
+    .row.col-sm-offset-1(style="padding-top: 15px")
+      = label :trip_good, :price, 'Price'
+      = text_field :trip_good, :price, :value=>@price
+
+    .row.col-sm-offset-1(style="padding-top: 15px")
+      = label_tag 'Trip Start*' 
+      = date_select('trip_good','beginning_date',:use_two_digit_numbers =>true,:required=>true,:default => @start_date, :include_blank=> @start_date.nil?) 
+
+      = label_tag 'Trip End*'
+      = date_select('trip_good','end_date',:use_two_digit_numbers =>true,:required=>true,:default => @end_date, :include_blank=> @end_date.nil?)
+
+    .row(style="padding-top: 15px")
+      .col-sm-offset-1
+        %button.btn.btn-default 
+          Launch Search
+
+#search-result.container-fluid(style="padding-top: 25px")
+- if @trip_goods == nil || @trip_goods.size == 0
+  .row.col-sm-offset-1
+    %h2 No result
+- else
+  .container
+    .row
+      - @trip_goods.each do |e|
+        .col-sm-6.col-md-4
+          .thumbnail
+            .container
+              .row
+                =link_to "#{e.title}", "trip_goods/detail/#{e.id}", :class=>"h3"
+              .row
+                %span #{e.price}
+              .row
+                %p #{e.introduction}

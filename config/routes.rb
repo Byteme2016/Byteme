@@ -1,18 +1,22 @@
 Rails.application.routes.draw do
   get 'guiders_sessions/new'
   get 'sessions/index'
-
   get 'navigator/index'
   get 'guiders_login' => 'guiders_sessions#new'
   post 'guiders_login' => 'guiders_sessions#create'
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   get    'workspace' => 'sessions#show'#this should be changed into the address of worksspace
-  resources :travelers 
   resources :guiders
+  resources :travelers do 
+    resources :ordered_trips
+  end
   resources :trip_goods
+  get 'trip_goods/detail/:id' => 'trip_goods#detail'
+  resources :ordered_trips
+  post 'search_goods' => 'trip_goods#search'
+  get 'search_goods' => 'travelers#show'
   
- 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

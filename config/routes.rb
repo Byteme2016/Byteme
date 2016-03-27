@@ -8,12 +8,10 @@ Rails.application.routes.draw do
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   get    'workspace' => 'sessions#show'#this should be changed into the address of worksspace
-  resources :travelers 
   resources :guiders
-
   resources :travelers do 
     resources :ordered_trips
-  end
+  resources :trip_goods
  
   get 'trip_goods/detail/:id' => 'trip_goods#detail'
 

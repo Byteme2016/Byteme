@@ -1,4 +1,4 @@
-%flash
+%flash{:class=>'flash'}
  =flash[:danger]
  =flash[:notice]
 %fieldset
@@ -10,7 +10,7 @@
   =f.text_field :password,{:placeholder => 'Password', :type=>'password'}
   
   =f.submit 'I am already a member!'
-  %div{:style => 'margin-bottom:5px'}
+  %div{:style => 'margin-bottom:0px'}
   .checkbox
   =f.check_box :keep_me_logged_in 
   keep me logged in 

@@ -1,27 +1,30 @@
-=render 'guiders/signup_bar'
-.container1.container
- =render 'sessions/signin'
- %fieldset
-  -if @traveler.errors.any?
-   %div{:id=>"error_explanations"}
-    =pluralize(@traveler.errors.count, "error") #count the amount of errors(error)
-    has been found!
-    %ul
-     -@traveler.errors.full_messages.each do |msg|
-      %li
-       =msg
-      
-  =form_for @traveler do |f|
-   =f.text_field :first_name, {:placeholder => 'Firstname'}
-   =f.text_field :middle_name, {:placeholder => 'Middlename'}
-   =f.text_field :last_name,  {:placeholder => 'Lastname'}
-   %div{:style => "margin-bottom:10px"}
-   =f.text_field :email, {:placeholder => 'E-mail'}
-   =f.text_field :password, {:type=>'password',:placeholder => 'password'}
-   %div{:style => "margin-bottom:10px"}
-   =f.text_field :contact_number, {:placeholder => 'Primary Contact Number'}
-   =f.text_field :alter_number, {:placeholder => 'Alternate Contact Number'}
-   %div{:style => "margin-bottom:10px"}
-   %p
-   =f.submit 'Join us now!'
+%div
+ =render 'guiders/signup_bar'
+ .container1.container
+  .myedit.well.e1
+   %h2 Current Users
+   =render 'sessions/signin'
+   %fieldset
+    -if @traveler.errors.any?
+     %div{:id=>"error_explanations"}
+      =pluralize(@traveler.errors.count, "error") #count the amount of errors(error)
+      has been found!
+      %ul
+       -@traveler.errors.full_messages.each do |msg|
+        %li
+         =msg
+    %h2 New Users    
+    =form_for @traveler do |f|
+     =f.text_field :first_name, {:placeholder => 'Firstname'}
+     =f.text_field :middle_name, {:placeholder => 'Middlename'}
+     =f.text_field :last_name,  {:placeholder => 'Lastname'}
+     %div{:style => "margin-bottom:10px"}
+     =f.text_field :email, {:placeholder => 'E-mail'}
+     =f.text_field :password, {:type=>'password',:placeholder => 'password'}
+     %div{:style => "margin-bottom:10px"}
+     =f.text_field :contact_number, {:placeholder => 'Primary Contact Number'}
+     =f.text_field :alter_number, {:placeholder => 'Alternate Contact Number'}
+     %div{:style => "margin-bottom:10px"}
+     %p
+     =f.submit 'Join us now!'
 

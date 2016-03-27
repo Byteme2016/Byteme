@@ -1,5 +1,7 @@
+%h1 Travel Uber
 =render 'navigation_bar'
 .container1.container
+<<<<<<< HEAD
 %br
 %br
 %flash
@@ -10,3 +12,12 @@
  %div{:id=>'search',:class=>'button'}
   =button_to 'Find my dream trips!', search_goods_path 
 
+=======
+ %br
+ %br
+ %flash
+  =flash[:notice]
+  =flash[:danger]
+  =render 'basic_info'
+  =render 'update_profile'
+>>>>>>> master
